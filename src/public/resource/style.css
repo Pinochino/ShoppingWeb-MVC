@@ -2,52 +2,134 @@
     font-family: FONT;
     src: url('/src/public/resource/Roboto/Roboto-Medium.ttf');
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.uk-container-1520{
+
+.uk-container-1520 {
     max-width: 1520px;
     font-family: FONT;
 }
+
 /************HEADER***************/
-.header-upper{
+.header-upper {
     background: #f2f2f2;
     padding: 10.5px 0;
     font-size: 13px;
 }
+
 .header-upper a {
     color: black
 }
-.header-contact .header-contact-item{
+
+.header-contact .header-contact-item {
     position: relative;
     padding-left: 20px;
 }
-.header-contact .header-contact-item span.uk-icon{
+
+.header-contact .header-contact-item span.uk-icon {
     top: 0;
     left: 10;
     font-size: 10px;
 }
-.header-contact .header-contact-item span.uk-icon svg{
+
+.header-contact .header-contact-item span.uk-icon svg {
     width: 15px;
 }
- .contact-link:not(:last-child){
+
+.contact-link:not(:last-child) {
     margin-right: 10px;
     padding-right: 10px;
     position: relative;
 }
-.header-contact .header-contact-item:not(:last-child)::before{
-    content: '';
+
+ .contact-link:not(:last-child):before {
+    content: " ";
     position: absolute;
+    display: block;
     right: 0;
     top: 0;
-    width: 18px;
+    width: 1px;
+    height: 18px;
     background: #d4d4d4;
 }
-.header-middle{
+
+.header-middle {
     padding: 25px 0 10px 0;
 }
-.header-middle .logo{
+
+.header-middle .logo {
     max-width: 103px;
+}
+.header-search{
+    width: 810px;
+}
+.header-search .input-text{
+    width: 100%;
+    height: 48px;
+    border-radius: 100px;
+    border: 1px solid #e9e9e9;
+    padding-left: 20px;
+    outline: 0;
+    padding-right: 220px;
+}
+
+.input-text::-webkit-input-placeholder{
+    font-family: FONT;
+}
+.header-search .uk-form{
+    position: relative;
+}
+.header-search .btn-search,
+.header-search .search-dropdown{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header-search .search-dropdown{
+    right: 100px;
+}
+.header-search .btn-search{
+    right: 7px;
+}
+.header-search .form-row:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 30%;
+    height: 30px;
+    width: 1px;
+    background-color: #e9e9e9;
+}
+.search-category-title{
+    font-size: 14px;
+}
+.search-category-title svg{
+    width: 15px;
+}
+.header-search .btn-search{
+    width: 76px;
+    height: 36px;
+    background: #000;
+    border-radius: 100px;
+    color: white;
+}
+
+.widget-item .uk-badge.uk-badge-danger{
+    transform: translate(-50%, -20%);
+    background: red;
+}
+
+.header-search .uk-form {
+    margin-bottom: 5px;
+}
+.most-search > *{
+    font-size:13px;
+    font-family: 300;
+    color: black;
 }

@@ -35,10 +35,10 @@
                                 <span>All category</span>
                                 <span class="uk-icon" uk-icon="chevron-down"></span>
                             </div>
-                            <button class="btn-search">
-                                <span class="uk-icon" uk-icon="search"></span>
-                            </button>
                         </div>
+                        <button class="btn-search">
+                            <span class="uk-icon" uk-icon="search"></span>
+                        </button>
                     </form>
                     <div class="most-search">
                         <span class="search-item">Most search: </span>
@@ -55,15 +55,15 @@
                     <div class="uk-flex">
                         <a href="" class="widget-item">
                             <span class="uk-icon" uk-icon="user"></span>
-                            <span class="number">0</span>
                         </a>
                         <a href="" class="widget-item">
                             <span class="uk-icon" uk-icon="heart"></span>
-                            <span class="number">3</span>
+                            <sup class="uk-badge uk-badge-danger">3</sup>
                         </a>
                         <a href="" class="widget-item">
                             <span class="uk-icon" uk-icon="cart"></span>
-                            <span class="number">4</span>
+                            <sup class="uk-badge uk-badge-danger">4</sup>
+                    </a>
                     </div>
                 </div>
             </div>
