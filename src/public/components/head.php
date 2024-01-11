@@ -5,3 +5,5 @@
 <link rel="stylesheet" href="/src/public/resource/style.css">
 <script src="/src/public/resource/uikit-3.17.11/js/uikit.min.js"></script>
 <script src="/src/public/resource/uikit-3.17.11/js/uikit-icons.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="/src/public/resource/base.js"></script>

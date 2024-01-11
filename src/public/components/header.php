@@ -23,17 +23,32 @@
                 <div class="header-search">
                     <form action="" class="uk-form">
                         <div class="form-row">
-                            <input 
-                            type="text" 
-                            class="input-text" 
-                            value="" 
-                            placeholder="Search Product..." 
-                            autocompleted="off">
+                            <input type="text" class="input-text" value="" placeholder="Search Product..." autocompleted="off">
                         </div>
                         <div class="search-dropdown">
-                            <div class="search-category-title">
+                            <div class="search-category-title" uk-toggle="target: #my-dropdown">
                                 <span>All category</span>
                                 <span class="uk-icon" uk-icon="chevron-down"></span>
+                            </div>
+                            <div id="my-dropdown" class="dropdown-content uk-position-fixed">
+                                <!-- Your dropdown content goes here -->
+                                <ul class="uk-nav uk-nav-default">
+                                    <li><a href="#">Category 1</a></li>
+                                    <li><a href="#">Category 2</a></li>
+                                    <li><a href="#">Category 3</a></li>
+                                    <li><a href="#">Category 3</a></li>
+                                    <li><a href="#">Category 3</a></li>
+                                    <li><a href="#">Category 3</a></li>
+                                    <li><a href="#">Category 3</a></li>
+                                    <li><a href="#">Category 3</a></li>
+                                    <li><a href="#">Category 3</a></li>
+                                    <li><a href="#">Category 3</a></li>
+                                    <li><a href="#">Category 3</a></li>
+                                    <li><a href="#">Category 3</a></li>
+                                    <li><a href="#">Category 3</a></li>
+
+                                    <!-- Add more categories as needed -->
+                                </ul>
                             </div>
                         </div>
                         <button class="btn-search">
@@ -63,11 +78,38 @@
                         <a href="" class="widget-item">
                             <span class="uk-icon" uk-icon="cart"></span>
                             <sup class="uk-badge uk-badge-danger">4</sup>
-                    </a>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="header"></div>
+    <div class="header-lower">
+        <div class="uk-container uk-container-1520">
+            <div class="uk-flex uk-flex-between uk-flex-middle">
+                <div class="header-category">
+                    <div class="uk-flex uk-flex-middle">
+                        <div class="department-wrapper">
+                            <span>All Category</span>
+                        </div>
+                        <nav class="navigation">
+                            <ul class="uk-clearfix clear-list">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Shop</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Page</a></li>
+                                <li><a href="">Vendor</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-notice">
+                    <div class="uk-flex uk-flex-middle">
+                        <span class="uk-icon" uk-icon="icon: twitter"></span>
+                        <span>Free Shipping on Orders $300</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
