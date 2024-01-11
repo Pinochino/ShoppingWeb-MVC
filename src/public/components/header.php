@@ -90,11 +90,33 @@
                 <div class="header-category">
                     <div class="uk-flex uk-flex-middle">
                         <div class="department-wrapper">
-                            <span>All Category</span>
+                            <span>
+                                <span>All Department <i class="uk-icom" uk-icon="icon: chevron-down;"></i></span>
+                            </span>
+                            <div class="category-dropdown">
+                            <ul class="clear-list uk-clear-fix">
+                                <li><a href="" class="text-bold blue">Best Seller</a></li>
+                                <li><a href="" class="text-bold green">Top 100 Products </a></li>
+                                <li><a href="" class="text-bold purple">Handpick By Digic</a></li>
+                                <li>
+                                    <a href="">Computers & Laptop <i class="uk-icon" uk-icon="icon: chevron-right"></i></a></li>
+                                <li>
+                                    <a href="">Digital Camera <i class="uk-icon" uk-icon="icon: chevron-right"></i></a></li>
+                                <li>
+                                    <a href="">Audio & Video <i class="uk-icon" uk-icon="icon:  chevron-right"></i></a></li>
+                                <li>
+                                    <a href="">Mobiles & Tablets <i class="uk-icon" uk-icon="icon:  chevron-right"></i></a></li>
+                                <li><a href="">TV & Home Theater</a></li>
+                                <li><a href="">Portable Speaker</a></li>
+                                <li><a href="">Home applicates</a></li>
+                                <li><a href="">Musics & Video Games</a></li>
+                            </ul>
+                            <div class="close-categories"><span><i class="uk-icon" uk-icon="icon: minus"></i> Close</span></div>
+                        </div>
                         </div>
                         <nav class="navigation">
-                            <ul class="uk-clearfix clear-list">
-                                <li><a href="">Home</a></li>
+                            <ul class="uk-clearfix clear-list uk-flex main-menu">
+                                <li><a href="">Home<i class="uk-icom" uk-icon="icon: chevron-down;"></i></a></li>
                                 <li><a href="">Shop</a></li>
                                 <li><a href="">Blog</a></li>
                                 <li><a href="">Page</a></li>
