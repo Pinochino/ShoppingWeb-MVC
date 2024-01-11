@@ -265,6 +265,7 @@ a:hover{
 }
 .department-wrapper{
     position: relative;
+    transition: 0.4s ease;
 }
 .category-dropdown{
     position: absolute;
@@ -332,9 +333,8 @@ a:hover{
     font-size: 14px;
     color: #000;
 }
-.open > span > span.uk-icon{
+.open > span > span .uk-icon{
     rotate: -180deg;
-    transition: 0.4s ease;
 }
 
 

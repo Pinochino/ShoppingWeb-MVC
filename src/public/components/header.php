@@ -89,7 +89,7 @@
             <div class="uk-flex uk-flex-between uk-flex-middle">
                 <div class="header-category">
                     <div class="uk-flex uk-flex-middle">
-                        <div class="department-wrapper">
+                        <div class="department-wrapper" data-open="0">
                             <span>
                                 <span>All Department <i class="uk-icom" uk-icon="icon: chevron-down;"></i></span>
                             </span>
