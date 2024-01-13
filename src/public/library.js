@@ -24,10 +24,21 @@ HT.openCategoryDropdown = () => {
     })
 }
 HT.swiper = () => {
-
+    var swiper = new Swiper(".panel-slide .swiper-container",{
+        loop: true,
+        pagitination: {
+            el: '.swiper-pagtination',
+        },
+        slidePerview: 1,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 }
 $(document).ready(function(){
     HT.openCategoryDropdown();
+    HT.swiper();
 });
 })(jQuery);
 
