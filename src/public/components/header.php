@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header uk-visible@m">
     <div class="header-upper">
         <div class="uk-container uk-container-1520">
             <div class="uk-flex uk-flex-between">
@@ -134,4 +134,45 @@
             </div>
         </div>
     </div>
+</header>
+
+<header class="mobile header uk-hidden@m">
+    <nav class="sidebar">
+        <div class="logo-menu">
+            <h2 class="logo">Codehal</h2>
+            <span class="uk-icon toggle-btn" uk-icon="icon: table"></span>
+        </div>
+        <ul class="list">
+            <li class="list-item">
+                <a href="">
+                    <span class="uk-icon" uk-icon="icon: home"></span>
+                    <span class="list-name">Dashboard</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="">
+                <span class="uk-icon" uk-icon="icon: user"></span>
+                    <span class="list-name">User</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="">
+                <span class="uk-icon" uk-icon="icon: info"></span>
+                    <span class="list-name">Messages</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="">
+                <span class="uk-icon" uk-icon="icon: cart"></span>
+                    <span class="list-name">Order</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="">
+                <span class="uk-icon" uk-icon="icon: cog"></span>
+                    <span class="list-name">Setting</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>

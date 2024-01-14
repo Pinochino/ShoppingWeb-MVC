@@ -1,38 +1,44 @@
 /*OVERIDE SWIPER SLIDE */
-.swiper-container{
-  overflow: hidden;
-  position: relative;
+.swiper-container {
+    overflow: hidden;
+    position: relative;
 }
-.uk-grid{
+
+.uk-grid {
     margin-right: 0;
 }
+
 /**CONFIG IMAGE **/
 .img-cover,
-.img-scaledown{
+.img-scaledown {
     display: block;
 }
-.img-cover > img {
+
+.img-cover>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.img-scaledown > img{
+
+.img-scaledown>img {
     width: 100%;
     height: 100%;
     object-fit: scale-down;
 }
-.onePercent{
+
+.onePercent {
     padding-right: 0;
     padding-left: 2.1%;
- 
+
 }
-.twoPercent{
+
+.twoPercent {
     padding-right: 0;
     padding-left: 1.5%;
 }
 
 /*BUTTON*/
-.btn{
+.btn {
     display: inline-block;
     padding: 5px 20px;
     background: green;
