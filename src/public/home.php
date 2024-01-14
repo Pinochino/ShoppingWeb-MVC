@@ -19,7 +19,7 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="slide-item">
-                                            <span class="img img-scaledown"><img src="/src/public/resource/Images/Swiper1.webp" alt=""></span>
+                                            <span class="img img-scaledown"><img src="/src/public/resource/Images/Swiper/Swiper1.webp" alt=""></span>
                                             <div class="slide-overlay">
                                                 <div class="slide-title">
                                                     Heavy on <br>
@@ -35,10 +35,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
+                                    <div class="swiper-slide">
                                         <div class="slide-item">
-                                            <span class="img img-scaledown"><img src="/src/public/resource/Images/Swiper1.webp" alt=""></span>
+                                            <span class="img img-scaledown"><img src="/src/public/resource/Images/Swiper/Swiper1.webp" alt=""></span>
                                             <div class="slide-overlay">
                                                 <div class="slide-title">
                                                     Heavy on <br>
@@ -55,13 +54,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-pagtination"></div>
-
+                                
+                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
                     </div>
                     <div class="uk-width-1-3@m">
-
+                    <div class="banner-wrapper">
+                        <div class="banner-item"><img class="img img-cover" src="/src/public/resource/Images/Swiper/Swiper2.webp" alt=""></div>
+                        <div class="banner-item"><img class="img img-cover"  class="img img-cover"src="/src/public/resource/Images/Swiper/Swiper3.jpg" alt=""></div>
+                    </div>
                     </div>
 
                 </div>

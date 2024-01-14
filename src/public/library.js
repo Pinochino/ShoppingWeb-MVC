@@ -26,8 +26,8 @@ HT.openCategoryDropdown = () => {
 HT.swiper = () => {
     var swiper = new Swiper(".panel-slide .swiper-container",{
         loop: true,
-        pagitination: {
-            el: '.swiper-pagtination',
+        pagination: {
+            el: '.swiper-pagination',
         },
         slidePerview: 1,
         navigation: {

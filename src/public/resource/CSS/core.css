@@ -1,8 +1,9 @@
 /*OVERIDE SWIPER SLIDE */
 .swiper-container{
   overflow: hidden;
+  position: relative;
 }
-/**CONGIG IMAGE **/
+/**CONFIG IMAGE **/
 .img-cover,
 .img-scaledown{
     display: block;
@@ -20,6 +21,7 @@
 .uk-grid .twoPercent {
     padding: 0 3.9%;
 }
+
 /*BUTTON*/
 .btn{
     display: inline-block;
