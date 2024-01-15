@@ -143,34 +143,34 @@
             <span class="uk-icon toggle-btn" uk-icon="icon: table"></span>
         </div>
         <ul class="list">
-            <li class="list-item">
+            <li class="list-item active">
                 <a href="">
                     <span class="uk-icon" uk-icon="icon: home"></span>
-                    <span class="list-name">Dashboard</span>
+                    <span class="list-name" style="--i:1;">Dashboard</span>
                 </a>
             </li>
             <li class="list-item">
                 <a href="">
                 <span class="uk-icon" uk-icon="icon: user"></span>
-                    <span class="list-name">User</span>
+                    <span class="list-name" style="--i:2;">User</span>
                 </a>
             </li>
             <li class="list-item">
                 <a href="">
                 <span class="uk-icon" uk-icon="icon: info"></span>
-                    <span class="list-name">Messages</span>
+                    <span class="list-name" style="--i:3;">Messages</span>
                 </a>
             </li>
             <li class="list-item">
                 <a href="">
                 <span class="uk-icon" uk-icon="icon: cart"></span>
-                    <span class="list-name">Order</span>
+                    <span class="list-name" style="--i:4;">Order</span>
                 </a>
             </li>
             <li class="list-item">
                 <a href="">
                 <span class="uk-icon" uk-icon="icon: cog"></span>
-                    <span class="list-name">Setting</span>
+                    <span class="list-name" style="--i:5;">Setting</span>
                 </a>
             </li>
         </ul>
