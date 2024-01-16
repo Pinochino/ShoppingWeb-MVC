@@ -3,12 +3,25 @@
     src: url('/src/public/resource/Roboto/Roboto-Medium.ttf');
 }
 
+.panel-banner {
+    padding: 0 14px;
+}
+
 :root {
     --white-color: #fff;
     --black-color: black;
     --border-radius-50px: 50%;
     --fz-14: 14px;
     --background-btn: #f03333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
 }
 
 * {
@@ -586,7 +599,8 @@ a:hover {
     text-align: center;
     line-height: 43px;
 }
-.sidebar .list-name{
+
+.sidebar .list-name {
     opacity: 0;
     pointer-events: none;
     transition: opacity .3s;
@@ -595,5 +609,14 @@ a:hover {
 .sidebar.active .list-name {
     opacity: 1;
     pointer-events: auto;
-    transition-delay: calc(.1s * var(--i)) ;
+    transition-delay: calc(.1s * var(--i));
+}
+
+/****panel-commit*****/
+.commit-item .elementor-icon svg {
+    fill: var(--background-btn);
+}
+
+.commit-item .infor-title h3 span {
+    font-size: var(--fz-14);
 }

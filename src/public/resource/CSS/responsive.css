@@ -28,6 +28,16 @@
         width: 1px;
         background-color: #e9e9e9;
     }
+
+    .twoPercent .slide-item .img img {
+        height: 346px;
+    }
+}
+
+@media(min-width: 1025px) and (max-width: 1079px) {
+    .twoPercent .slide-item .img img {
+        max-height: 340px;
+    }
 }
 
 @media(max-width: 1024px) {
@@ -48,6 +58,10 @@
 
     .banner-wrapper .banner-item:not(:last-child) {
         margin-bottom: 0;
+    }
+
+    .twoPercent .slide-item .img img {
+        height: 337px;
     }
 
 }
@@ -73,22 +87,45 @@
     .twoPercent img {
         vertical-align: 0%;
     }
-    .banner-wrapper > *{
+
+    .banner-wrapper>* {
         padding-left: 15px;
     }
-    .onePercent .banner-wrapper{
+
+    .onePercent .banner-wrapper {
         margin-left: -15px;
     }
 }
-@media(max-width: 415px) {
-    .content-overlay .overlay-title {
-        font-size: 20px;
-        line-height: 23px;
+
+@media(min-width: 415px) and (max-width: 767px) {
+    .banner-item:nth-child(2) .content-overlay {
+        left: 49%;
     }
-    .content-overlay .overlay-discription{
+}
+
+@media(min-width: 315px) and (max-width: 415px) {
+    .content-overlay .overlay-title {
+        font-size: 26px;
+        line-height: 29px;
+    }
+
+    .content-overlay .overlay-discription {
         font-size: smaller;
     }
-    .panel-slide .content-overlay .overlay-discription{
 
+    .content-overlay .btn-readmore {
+        padding: 5px 13%;
+    }
+
+    .onePercent .banner-wrapper {
+        display: block;
+    }
+
+    .panel-banner {
+        padding: 0;
+    }
+
+    .banner-wrapper .banner-item:not(:last-child) {
+        margin-bottom: 5px;
     }
 }
