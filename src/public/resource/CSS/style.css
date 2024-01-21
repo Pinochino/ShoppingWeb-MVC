@@ -57,7 +57,7 @@ h6 {
     margin-bottom: 3%;
 }
 
-.content-overlay .btn-readmore {
+.btn-readmore {
     background: var(--white-color);
     border-radius: 50px;
     font-size: var(--fz-14);
@@ -66,7 +66,7 @@ h6 {
     position: relative;
 }
 
-.content-overlay .btn-readmore::before {
+.btn-readmore::before {
     content: ' ';
     display: block;
     position: absolute;
@@ -74,12 +74,12 @@ h6 {
     width: 20%;
 }
 
-.content-overlay .btn-readmore:hover {
+.btn-readmore:hover {
     background: var(--black-color);
     color: var(--white-color);
 }
 
-.content-overlay .btn-readmore .uk-icon {
+.btn-readmore .uk-icon {
     max-width: 16px;
     position: absolute;
     bottom: 25%;
@@ -88,7 +88,7 @@ h6 {
     border-radius: var(--border-radius-50px);
 }
 
-.content-overlay .btn-readmore .uk-icon svg {
+.btn-readmore .uk-icon svg {
     color: var(--white-color);
 }
 
@@ -482,15 +482,15 @@ a:hover {
     line-height: 23px;
 }
 
-.banner-item .content-overlay .btn-readmore:hover {
+.btn-readmore:hover {
     background: var(--background-btn);
 }
 
-.banner-item .content-overlay .btn-readmore:hover::before {
+.btn-readmore:hover::before {
     background: white;
 }
 
-.banner-item .content-overlay .btn-readmore:hover .uk-icon svg {
+.btn-readmore:hover .uk-icon svg {
     color: #000;
 }
 
@@ -613,10 +613,102 @@ a:hover {
 }
 
 /****panel-commit*****/
+
+.panel-commit {
+    padding: 25px 14px;
+}
+
 .commit-item .elementor-icon svg {
     fill: var(--background-btn);
+    width: 40px;
 }
 
 .commit-item .infor-title h3 span {
     font-size: var(--fz-14);
 }
+
+.commit-item .elementor-icon {
+    margin-right: 15px;
+}
+
+.commit-item .infor-title .title>* {
+    color: black;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.commit-item .infor-title .description {
+    font-size: 13px;
+    color: #999;
+}
+
+.btn-readmore.btn span:first-child {
+    border: #e9e9e9;
+    padding-right: 10px;
+}
+
+.btn-readmore.btn:hover {
+    background: var(--background-btn);
+}
+
+.heading-1 {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.panel-head {
+    margin-bottom: 30px;
+}
+
+/*****panel-category********/
+.category-item {
+    padding: 20px;
+    border: 1px solid #e9e9e9;
+    border-radius: 10px;
+}
+
+.category-item .infor-title {
+    margin-left: 20px;
+}
+
+.category-item .infor-title .name {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.category-item .infor-title ul {
+    margin-bottom: 20px;
+}
+
+.category-item .infor-title ul li {
+    line-height: 19.2px;
+    list-style: none;
+
+}
+
+.category-item .infor-title ul li>a {
+    color: black;
+    font-size: 13px;
+}
+
+.btn-readmore {
+    border: 1px solid #e9e9e9;
+    font-weight: 13px;
+}
+
+/* panel-advertise */
+.advertise-item .overlay .sub-title {
+    color: var(--white-color);
+    font-size: 13px;
+    font-weight: 500;
+}
+.advertise-item .overlay .title{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--white-color);
+    font-family: FONT;
+}
+
+

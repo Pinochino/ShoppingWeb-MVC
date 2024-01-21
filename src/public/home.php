@@ -19,7 +19,7 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="slide-item">
-                                            <span class="img img-scaledown"><img src="/src/public/resource/Images/Swiper/Swiper1.webp" alt=""></span>
+                                            <span class="img img-cover"><img src="/src/public/resource/Images/Swiper/Swiper1.webp" alt=""></span>
                                             <div class="content-overlay">
                                                 <div class="overlay-title">
                                                     Heavy on <br>
@@ -177,6 +177,142 @@
 
 
 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-category mb50">
+            <div class="uk-container uk-container-1520">
+                <div class="panel-head">
+                    <h2 class="heading-1">
+                        <span>Top Categories</span>
+                    </h2>
+                    <div class="panel-body">
+                        <div uk-grid>
+                            <div class="uk-width-1-2@s uk-width-1-3@m top-categories">
+                                <div class="category-item">
+                                    <div class="uk-flex uk-flex-middle">
+                                        <a href="" class="img img-scaledown"><img src="/src/public/resource/Images/Top-category/img1.webp" alt="" srcset=""></a>
+                                        <div class="infor-title">
+                                            <div class="name"><a href="">Accessries</a></div>
+                                            <ul class="uk-clearfix">
+                                                <li><a href="">Car Electronics</a></li>
+                                                <li><a href="">Garden Tools</a></li>
+                                                <li><a href="">Office Electronics</a></li>
+                                                <li><a href="">Watch</a></li>
+                                            </ul>
+                                            <?php require '/Website/src/public/components/readmore.php'?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-1-2@s uk-width-1-3@m top-categories">
+                                <div class="category-item">
+                                    <div class="uk-flex uk-flex-middle">
+                                        <a href="" class="img img-scaledown"><img src="/src/public/resource/Images/Top-category/img2.webp" alt="" srcset=""></a>
+                                        <div class="infor-title">
+                                            <div class="name"><a href="">Accessries</a></div>
+                                            <ul class="uk-clearfix">
+                                                <li><a href="">Car Electronics</a></li>
+                                                <li><a href="">Garden Tools</a></li>
+                                                <li><a href="">Office Electronics</a></li>
+                                                <li><a href="">Watch</a></li>
+                                            </ul>
+                                            <?php require '/Website/src/public/components/readmore.php'?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-1-2@s uk-width-1-3@m top-categories">
+                                <div class="category-item">
+                                    <div class="uk-flex uk-flex-middle">
+                                        <a href="" class="img img-scaledown"><img src="/src/public/resource/Images/Top-category/img3.webp" alt="" srcset=""></a>
+                                        <div class="infor-title">
+                                            <div class="name"><a href="">Accessries</a></div>
+                                            <ul class="uk-clearfix">
+                                                <li><a href="">Car Electronics</a></li>
+                                                <li><a href="">Garden Tools</a></li>
+                                                <li><a href="">Office Electronics</a></li>
+                                                <li><a href="">Watch</a></li>
+                                            </ul>
+                                            <?php require '/Website/src/public/components/readmore.php'?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-1-2@s uk-width-1-3@m top-categories">
+                                <div class="category-item">
+                                    <div class="uk-flex uk-flex-middle">
+                                        <a href="" class="img img-scaledown"><img src="/src/public/resource/Images/Top-category/img4.webp" alt="" srcset=""></a>
+                                        <div class="infor-title">
+                                            <div class="name"><a href="">Accessries</a></div>
+                                            <ul class="uk-clearfix">
+                                                <li><a href="">Car Electronics</a></li>
+                                                <li><a href="">Garden Tools</a></li>
+                                                <li><a href="">Office Electronics</a></li>
+                                                <li><a href="">Watch</a></li>
+                                            </ul>
+                                            <?php require '/Website/src/public/components/readmore.php'?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-1-2@s uk-width-1-3@m top-categories">
+                                <div class="category-item">
+                                    <div class="uk-flex uk-flex-middle">
+                                        <a href="" class="img img-scaledown"><img src="/src/public/resource/Images/Top-category/img5.webp" alt="" srcset=""></a>
+                                        <div class="infor-title">
+                                            <div class="name"><a href="">Accessries</a></div>
+                                            <ul class="uk-clearfix">
+                                                <li><a href="">Car Electronics</a></li>
+                                                <li><a href="">Garden Tools</a></li>
+                                                <li><a href="">Office Electronics</a></li>
+                                                <li><a href="">Watch</a></li>
+                                            </ul>
+                                            <?php require '/Website/src/public/components/readmore.php'?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-1-2@s uk-width-1-3@m top-categories">
+                                <div class="category-item">
+                                    <div class="uk-flex uk-flex-middle">
+                                        <a href="" class="img img-scaledown"><img src="/src/public/resource/Images/Top-category/img6.webp" alt="" srcset=""></a>
+                                        <div class="infor-title">
+                                            <div class="name"><a href="">Accessries</a></div>
+                                            <ul class="uk-clearfix">
+                                                <li><a href="">Car Electronics</a></li>
+                                                <li><a href="">Garden Tools</a></li>
+                                                <li><a href="">Office Electronics</a></li>
+                                                <li><a href="">Watch</a></li>
+                                            </ul>
+                                            <?php require '/Website/src/public/components/readmore.php'?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------panel-advertise--------->
+        <div class="panel-advertise mb50">
+            <div class="uk-container uk-container-1520">
+                <div class="panel-body">
+                    <div class="uk-grid-medium uk-flex uk-flex-nowrap" uk-grid>
+                        <?php for($i = 1; $i <=2; $i++){ ?>
+                            <div class="uk-grid-1-2@s">
+                                <div class="advertise-item uk-position-relative">
+                                    <span class="img img-cover img-zoomin"><img src="/src/public/resource/Images/Top-category/advertise-<?php echo $i; ?>.webp" alt="" srcset=""></span>
+                                    <div class="overlay uk-position-absolute transform-0-50 l10 t50">
+                                        <div class="sub-title">START FROM 3.900.000</div>
+                                        <div class="title mb20 mt10">Samsung Wireless <br> Headphones </div>
+                                        <?php require '/Website/src/public/components/readmore.php'?>
+                                    </div>
+                                </div>
+                            </div>
+                       <?php } ?>
                     </div>
                 </div>
             </div>
