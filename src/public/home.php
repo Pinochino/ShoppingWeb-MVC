@@ -11,7 +11,7 @@
         <div class="panel-banner">
             <div class="uk-container uk-container-1520">
                 <div class="uk-grid">
-                    <div class="uk-width-2-3@m twoPercent">
+                    <div class="uk-width-2-3@m twoPercent uk-width-2-3@s">
                         <div class="panel-slide">
                             <div class="swiper-container">
                                 <div class="swiper-button-next"></div>
@@ -37,7 +37,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slide-item">
-                                            <span class="img img-scaledown"><img src="/src/public/resource/Images/Swiper/Swiper1.webp" alt=""></span>
+                                            <span class="img img-cover"><img src="/src/public/resource/Images/Swiper/Swiper1.webp" alt=""></span>
                                             <div class="content-overlay">
                                                 <div class="overlay-title">
                                                     Heavy on <br>
@@ -59,7 +59,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="uk-width-1-3@m onePercent">
+                    <div class="uk-width-1-3@m onePercent uk-width-1-3@s">
                         <div class="banner-wrapper">
                             <div class="banner-item"><a href=""><img class="img img-scaledown" src="/src/public/resource/Images/Swiper/Swiper2.webp" alt=""></a>
                                 <div class="content-overlay">
@@ -201,7 +201,7 @@
                                                 <li><a href="">Office Electronics</a></li>
                                                 <li><a href="">Watch</a></li>
                                             </ul>
-                                            <?php require '/Website/src/public/components/readmore.php'?>
+                                            <?php require '/Website/src/public/components/readmore.php' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -218,7 +218,7 @@
                                                 <li><a href="">Office Electronics</a></li>
                                                 <li><a href="">Watch</a></li>
                                             </ul>
-                                            <?php require '/Website/src/public/components/readmore.php'?>
+                                            <?php require '/Website/src/public/components/readmore.php' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -235,7 +235,7 @@
                                                 <li><a href="">Office Electronics</a></li>
                                                 <li><a href="">Watch</a></li>
                                             </ul>
-                                            <?php require '/Website/src/public/components/readmore.php'?>
+                                            <?php require '/Website/src/public/components/readmore.php' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -252,7 +252,7 @@
                                                 <li><a href="">Office Electronics</a></li>
                                                 <li><a href="">Watch</a></li>
                                             </ul>
-                                            <?php require '/Website/src/public/components/readmore.php'?>
+                                            <?php require '/Website/src/public/components/readmore.php' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -269,7 +269,7 @@
                                                 <li><a href="">Office Electronics</a></li>
                                                 <li><a href="">Watch</a></li>
                                             </ul>
-                                            <?php require '/Website/src/public/components/readmore.php'?>
+                                            <?php require '/Website/src/public/components/readmore.php' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -286,7 +286,7 @@
                                                 <li><a href="">Office Electronics</a></li>
                                                 <li><a href="">Watch</a></li>
                                             </ul>
-                                            <?php require '/Website/src/public/components/readmore.php'?>
+                                            <?php require '/Website/src/public/components/readmore.php' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -301,18 +301,64 @@
             <div class="uk-container uk-container-1520">
                 <div class="panel-body">
                     <div class="uk-grid-medium uk-flex uk-flex-nowrap" uk-grid>
-                        <?php for($i = 1; $i <=2; $i++){ ?>
+                        <?php for ($i = 1; $i <= 2; $i++) { ?>
                             <div class="uk-grid-1-2@s">
                                 <div class="advertise-item uk-position-relative">
                                     <span class="img img-cover img-zoomin"><img src="/src/public/resource/Images/Top-category/advertise-<?php echo $i; ?>.webp" alt="" srcset=""></span>
                                     <div class="overlay uk-position-absolute transform-0-50 l10 t50">
                                         <div class="sub-title">START FROM 3.900.000</div>
                                         <div class="title mb20 mt10">Samsung Wireless <br> Headphones </div>
-                                        <?php require '/Website/src/public/components/readmore.php'?>
+                                        <?php require '/Website/src/public/components/readmore.php' ?>
                                     </div>
                                 </div>
                             </div>
-                       <?php } ?>
+                        <?php } ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-product mb50">
+            <div class="uk-container uk-container-1520">
+                <div class="panel-body">
+                    <div class="uk-grid-medium" uk-grid>
+                        <div class="uk-width-1-4@l">
+                            <div class="special-offer">
+                                <div class="heading-1">
+                                    <span>Special Offer.</span>
+                                </div>
+                                <div class="product-item">
+                                    <a href="" class="img img-scaledown">
+                                        <img src="/src/public/resource/Images/Product/img1.webp" alt="" srcset="">
+                                        <div class="product-toolbox">
+                                            <div class="uk-grid-medium" uk-grid>
+                                               <?php require '/Website/src/public/components/toolbox.php'?> 
+                                               <div class="info">
+                                
+                                                        <div class="product-review">
+                                                        <?php for($i= 0; $i <= 4; $i++){ ?>
+                                                        <span class="uk-icon" uk-icon="icon: star;"></span>
+                                                        <?php } ?>
+                                                        <div class="product-name">
+                                                            <a href="">I lov y</a>
+                                                        </div>
+                                                        <div class="product-price">
+                                                            <div class="uk-flex uk-flex-middle uk-flex-center">
+                                                                <div class="price-sale">3333</div>
+                                                                <div class="price-main">555</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-3-4@l">
+
+                        </div>
                     </div>
                 </div>
             </div>

@@ -74,40 +74,43 @@
     .twoPercent .slide-item .img img {
         height: 337px;
     }
-
+    .panel-banner{
+        padding: 0;
+    }
+    .onePercent{
+        padding-left: 14px;
+    }
+    .twoPercent .slide-item .img img{
+        height: 367px;
+    }
+    
 
 }
 
 @media(min-width: 769px) and (max-width: 1023px) {
+    .panel-banner{
+        padding: 0;
+    }
     .uk-container {
         padding: 0;
     }
-
-    .twoPercent {
-        margin-bottom: 22px;
-    }
-
-    .onePercent .banner-wrapper {
-        display: inline-flex;
-        justify-content: space-between;
+    .panel-banner .banner-item img{
+        height: 168px;
     }
 
     .uk-grid .onePercent {
         padding-left: 0;
-        margin-top: -10px;
     }
 
     .banner-wrapper .banner-item img {
-        padding: 0 5px;
+       padding-left: 9px;
     }
 
     .panel-commit {
         padding: 20px 36px;
     }
-
-    .uk-grid .top-categories {
-        padding-right: 20px;
-        padding-left: 20px;
+    .banner-item:nth-child(2) .content-overlay {
+        left: 51%;
     }
 }
 
@@ -115,20 +118,23 @@
     .uk-grid {
         padding: 0;
     }
-
-    .uk-container {
-        padding: 0;
+    .panel-banner .banner-item img{
+        height: 168px;
     }
-
-    .onePercent .banner-wrapper {
-        display: flex;
-        align-items: baseline;
+    .panel-banner .uk-container{
+        padding-left: 0;
+        padding-right: 0;
     }
-
+    
+    .banner-wrapper .banner-item img {
+        padding-left: 9px;
+     }
     .twoPercent .slide-item .img.img-scaledown {
         height: auto;
     }
-
+    .banner-item:nth-child(2) .content-overlay {
+        left: 48%;
+    }
     .onePercent {
         padding-left: 0;
     }
@@ -141,34 +147,46 @@
         vertical-align: 0%;
     }
 
-    .banner-wrapper>* {
-        padding-left: 15px;
-    }
-
-    .onePercent .banner-wrapper {
-        margin-left: -15px;
-    }
-
     .panel-commit {
         padding: 36px 48px;
-        ;
     }
 
     .uk-grid .top-categories {
         padding-right: 20px;
         padding-left: 20px;
     }
+    .panel-category .uk-grid{
+        margin-right: 0;
+    }
+      .uk-grid .uk-first-column .commit-item .uk-flex.uk-flex-middle {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+    .panel-banner{
+        padding: 0 9px;
+    }
+    .uk-grid-stack .uk-first-column {
+        padding-right: 0;
+    }
+   
 }
 
 @media(min-width: 360px) and (max-width: 530px) {
     .uk-container {
         padding: 0;
     }
-
+    .panel-banner{
+        padding: 0 7.5px;
+    }
     .onePercent {
         display: contents;
     }
-
+    .twoPercent{
+        margin-bottom: 2px;
+    }
     .slide-item .overlay-title {
         font-size: 25px;
         line-height: 28px;
