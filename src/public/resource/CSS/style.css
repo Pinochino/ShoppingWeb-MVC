@@ -737,7 +737,7 @@ a:hover {
     padding: 1px 10px;
     font-size: 12px;
     background: var(--background-btn);
-    top: 1%;
+    top: -4%;
 }
 
 .product-item .image {
@@ -751,6 +751,7 @@ a:hover {
 }
 
 .product-item .thumb {
+    padding-bottom: 20px;
     overflow: hidden;
 }
 
@@ -759,7 +760,7 @@ a:hover {
     transform: translate(-50%, 100%);
     padding: 0 50px;
     transition: all 0.4s ease-in-out;
-    bottom: 30px;
+    bottom: 42px;
 }
 
 .toolbox-item:hover {
@@ -850,6 +851,9 @@ a:hover {
 }
 .countdown-item{
     text-align: center;
+}
+.thumb img{
+    max-height: 205px;
 }
 
 
