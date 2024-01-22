@@ -13,7 +13,10 @@
     --border-radius-50px: 50%;
     --fz-14: 14px;
     --background-btn: #f03333;
+    --text-product-color: #216fe6;
+    --text-span-color: #a3a3a3;
 }
+
 
 h1,
 h2,
@@ -703,7 +706,8 @@ a:hover {
     font-size: 13px;
     font-weight: 500;
 }
-.advertise-item .overlay .title{
+
+.advertise-item .overlay .title {
     font-size: 25px;
     font-weight: 600;
     line-height: 28px;
@@ -711,5 +715,141 @@ a:hover {
     font-family: FONT;
 }
 
+/**** PANEL PRODUCT *****/
+.special-offer {
+    border: 2px solid #F03333;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.special-offer .heading-1 {
+    color: #5fca51;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.special-offer .product-item .image {
+    height: 277px;
+}
+
+/*** PRODUCT ITEM ***/
+.product-item .badge {
+    padding: 1px 10px;
+    font-size: 12px;
+    background: var(--background-btn);
+    top: 1%;
+}
+
+.product-item .image {
+    height: 240px;
+}
+
+.product-item>.uk-grid {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.product-item .thumb {
+    overflow: hidden;
+}
+
+.product-item .thumb .product-toolbox {
+    left: 50%;
+    transform: translate(-50%, 100%);
+    padding: 0 50px;
+    transition: all 0.4s ease-in-out;
+    bottom: 30px;
+}
+
+.toolbox-item:hover {
+    background: var(--background-btn);
+    color: white;
+}
+
+.toolbox-item {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: transparent;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    color: #333;
+    cursor: pointer;
+}
+
+.toolbox-item:nth-child(2),
+.toolbox-item:nth-child(3) {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.product-item:hover .product-toolbox {
+    transform: translate(-50%, 0) !important;
+}
+
+.product-review {
+    margin-bottom: 15px;
+}
+
+.product-item .product-name {
+    color: var(--text-product-color);
+    font-weight: 600;
+}
+
+.price-container {
+    margin-bottom: 10px;
+}
+
+.product-sold .uk-progress {
+    height: 6px;
+    margin-bottom: 10px;
+}
+.product-item .uk-flex span{
+    font-size: 13px;
+    color: var(--text-span-color);
+    margin-bottom: 15px;
+}
+.product-sold span {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-span-color);
+}
+
+.product-sold span .special-offer {
+    color: var(--background-btn);
+}
+
+.countdown-text-main {
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.countdown-text-sub {
+    font-size: 13px;
+    color: var(--text-span-color);
+    font-weight: 500;
+}
+
+.countdown-text {
+    text-align: left;
+}
+
+.countdown-value{
+    color: var(--white-color);
+    background: var(--background-btn);
+    font-size: 13px;
+}
+.countdown-type{
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-span-color);
+}
+.countdown-item{
+    text-align: center;
+}
 
 

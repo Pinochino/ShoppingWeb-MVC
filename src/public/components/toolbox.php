@@ -1,24 +1,16 @@
-<div class="product-toolbox">
-    <div class="uk-grid-medium" uk-grid>
-        <div class="uk-width-1-4">
-            <div class="toolbox-item">
-                <span class="uk-icon" uk-icon="icon: bag;"></span>
-            </div>
-        </div>
-        <div class="uk-width-1-4">
-            <div class="toolbox-item">
-                <span class="uk-icon" uk-icon="icon: heart;"></span>
-            </div>
-        </div>
-        <div class="uk-width-1-4">
-            <div class="toolbox-item">
-                <span class="uk-icon" uk-icon="icon: social;"></span>
-            </div>
-        </div>
-        <div class="uk-width-1-4">
-            <div class="toolbox-item">
-                <span class="uk-icon" uk-icon="icon: eye;"></span>
-            </div>
-        </div>
+<div class="product-toolbox uk-position-absolute">
+    <div class="uk-flex uk-flex-middle">
+        <a class="toolbox-item">
+            <i class='bx bx-shopping-bag'></i>
+        </a>
+        <a class="toolbox-item">
+            <i class='bx bx-heart'></i>
+        </a>
+        <a class="toolbox-item">
+            <i class='bx bx-git-compare'></i>
+        </a>
+        <a class="toolbox-item">
+            <i class='uk-icon bx bx-bullseye'></i>
+        </a>
     </div>
 </div>

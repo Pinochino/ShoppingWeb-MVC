@@ -326,39 +326,42 @@
                                 <div class="heading-1">
                                     <span>Special Offer.</span>
                                 </div>
-                                <div class="product-item">
-                                    <a href="" class="img img-scaledown">
-                                        <img src="/src/public/resource/Images/Product/img1.webp" alt="" srcset="">
-                                               <?php require '/Website/src/public/components/toolbox.php'?> 
-                                               <div class="info uk-text-center">
-                                                        <div class="product-review">
-                                                        <?php for($i= 0; $i <= 4; $i++){ ?>
-                                                        <span class="uk-icon" uk-icon="icon: star;"></span>
-                                                        <?php } ?>
-                                                        <div class="product-name">
-                                                            <a href="">I lov y</a>
-                                                        </div>
-                                                        <div class="product-price">
-                                                            <div class="uk-flex uk-flex-middle uk-flex-center">
-                                                                <div class="price-sale">3333</div>
-                                                                <div class="price-main">555</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    
-                                               </div>
-                                            </div>
+                                <div class="product-item uk-position-relative">
+                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                    <div class="thumb uk-position-relative">
+                                        <a href="" class="image img-scaledown">
+                                            <img src="/src/public/resource/Images/Product/img1.webp" alt="" srcset=""></a>
+                                        <?php require '/Website/src/public/components/toolbox.php' ?>
+                                    </div>
+                                    <div class="info uk-text-center">
+                                        <?php require '/Website/src/public/components/review.php' ?>
+                                        <div class="product-name">
+                                            <a href="">I lov y</a>
                                         </div>
-                                    </a>
+                                        <?php require '/Website/src/public/components/price.php' ?>
+                                        <div class="product-sold">
+                                            <progress class="uk-progress" value="10" max="100"></progress>
+                                        </div>
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <span>Avalable</span>
+                                            <span>Sold: <span style="color: red;">3</span></span>
+                                        </div>
+                                        <?php require'/Website/src/public/components/countdown.php'?>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="uk-width-3-4@l">
 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="uk-width-3-4@l">
+
+        </div>
+        </div>
+        </div>
+        </div>
         </div>
     </main>
     <?php require_once 'components/footer.php' ?>
