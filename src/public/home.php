@@ -329,11 +329,8 @@
                                 <div class="product-item">
                                     <a href="" class="img img-scaledown">
                                         <img src="/src/public/resource/Images/Product/img1.webp" alt="" srcset="">
-                                        <div class="product-toolbox">
-                                            <div class="uk-grid-medium" uk-grid>
                                                <?php require '/Website/src/public/components/toolbox.php'?> 
-                                               <div class="info">
-                                
+                                               <div class="info uk-text-center">
                                                         <div class="product-review">
                                                         <?php for($i= 0; $i <= 4; $i++){ ?>
                                                         <span class="uk-icon" uk-icon="icon: star;"></span>
