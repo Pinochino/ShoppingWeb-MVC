@@ -171,12 +171,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
-
                     </div>
                 </div>
             </div>
@@ -326,30 +320,40 @@
                                 <div class="heading-1">
                                     <span>Special Offer.</span>
                                 </div>
-                                <div class="product-item uk-position-relative">
-                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
-                                    <div class="thumb uk-position-relative">
-                                        <a href="" class="image img-scaledown">
-                                            <img src="/src/public/resource/Images/Product/img1.webp" alt="" srcset=""></a>
-                                        <?php require '/Website/src/public/components/toolbox.php' ?>
+                                <div class="swiper-container">
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-wrapper">
+                                        <?php for($i=0; $i <=3; $i++){ ?>
+                                        <div class="swiper-slide">
+                                            <div class="product-item uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-<?php echo $i; ?>.webp" alt="" srcset=""></a>
+                                                    <?php require '/Website/src/public/components/toolbox.php' ?>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require '/Website/src/public/components/review.php' ?>
+                                                    <div class="product-name">
+                                                        <a href="">I lov y</a>
+                                                    </div>
+                                                    <?php require '/Website/src/public/components/price.php' ?>
+                                                    <div class="product-sold">
+                                                        <progress class="uk-progress" value="10" max="100"></progress>
+                                                    </div>
+                                                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                                                        <span>Avalable</span>
+                                                        <span>Sold: <span style="color: red;">3</span></span>
+                                                    </div>
+                                                    <?php require '/Website/src/public/components/countdown.php' ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <?php } ?>
                                     </div>
-                                    <div class="info uk-text-center">
-                                        <?php require '/Website/src/public/components/review.php' ?>
-                                        <div class="product-name">
-                                            <a href="">I lov y</a>
-                                        </div>
-                                        <?php require '/Website/src/public/components/price.php' ?>
-                                        <div class="product-sold">
-                                            <progress class="uk-progress" value="10" max="100"></progress>
-                                        </div>
-                                        <div class="uk-flex uk-flex-middle uk-flex-between">
-                                            <span>Avalable</span>
-                                            <span>Sold: <span style="color: red;">3</span></span>
-                                        </div>
-                                        <?php require'/Website/src/public/components/countdown.php'?>
-                                    </div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
-
                             </div>
                         </div>
                     </div>

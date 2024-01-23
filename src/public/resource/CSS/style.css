@@ -15,6 +15,7 @@
     --background-btn: #f03333;
     --text-product-color: #216fe6;
     --text-span-color: #a3a3a3;
+    --swiper-navigation-size:15px !important;
 }
 
 
@@ -657,7 +658,7 @@ a:hover {
 .heading-1 {
     font-size: 30px;
     font-weight: 600;
-    padding: 20px;
+    padding: 10px;
 }
 
 .panel-head {
@@ -716,10 +717,24 @@ a:hover {
 }
 
 /**** PANEL PRODUCT *****/
+.special-offer .swiper-container{
+    padding-bottom: 40px;
+}
+
 .special-offer {
     border: 2px solid #F03333;
     border-radius: 15px;
     padding: 20px;
+}
+.special-offer .swiper-pagination-bullet{
+    width: 5px;
+    height: 5px;
+    transition: all 0.3s ease;
+}
+.special-offer .swiper-pagination-bullet-active{
+    width: 20px;
+    border-radius: 3px;
+    background-color: var(--background-btn);
 }
 
 .special-offer .heading-1 {
@@ -729,7 +744,15 @@ a:hover {
 }
 
 .special-offer .product-item .image {
-    height: 277px;
+    height: 210px;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-next,
+.swiper-button-prev, .swiper-rtl .swiper-button-prev{
+    width:  40px;
+    height: 40px;
+    background: #be4545;
+    border-radius: 50%;
+    color: #fff;
 }
 
 /*** PRODUCT ITEM ***/
@@ -737,7 +760,8 @@ a:hover {
     padding: 1px 10px;
     font-size: 12px;
     background: var(--background-btn);
-    top: -4%;
+    top: 1%;
+    z-index: 999;
 }
 
 .product-item .image {
@@ -760,7 +784,7 @@ a:hover {
     transform: translate(-50%, 100%);
     padding: 0 50px;
     transition: all 0.4s ease-in-out;
-    bottom: 42px;
+    bottom: 33px;
 }
 
 .toolbox-item:hover {

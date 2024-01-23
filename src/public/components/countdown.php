@@ -8,25 +8,25 @@
             <ul class="uk-clearfix uk-flex uk-flex-middle">
                 <li>
                     <div class="countdown-item">
-                        <div class="countdown-value">393</div>
+                        <div id="day" class="countdown-value">393</div>
                         <div class="countdown-type">Days</div>
                     </div>
                 </li>
                 <li class="mr10 ml10">
                     <div class="countdown-item">
-                        <div class="countdown-value">393</div>
-                        <div class="countdown-type">Days</div>
+                        <div id="hour" class="countdown-value">393</div>
+                        <div class="countdown-type">Hours</div>
                     </div>
                 </li>
                 <li class="mr10">
                     <div class="countdown-item">
-                        <div class="countdown-value">13</div>
-                        <div class="countdown-type">Hours</div>
+                        <div id="minute" class="countdown-value">13</div>
+                        <div class="countdown-type">Minutes</div>
                     </div>
                 </li>
                 <li>
                     <div class="countdown-item">
-                        <div class="countdown-value">44</div>
+                        <div id="milis" class="countdown-value">44</div>
                         <div class="countdown-type">Mins</div>
                     </div>
                 </li>
