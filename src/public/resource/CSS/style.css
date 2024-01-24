@@ -15,7 +15,7 @@
     --background-btn: #f03333;
     --text-product-color: #216fe6;
     --text-span-color: #a3a3a3;
-    --swiper-navigation-size:15px !important;
+    --swiper-navigation-size: 15px !important;
 }
 
 
@@ -717,7 +717,7 @@ a:hover {
 }
 
 /**** PANEL PRODUCT *****/
-.special-offer .swiper-container{
+.special-offer .swiper-container {
     padding-bottom: 40px;
 }
 
@@ -726,12 +726,14 @@ a:hover {
     border-radius: 15px;
     padding: 20px;
 }
-.special-offer .swiper-pagination-bullet{
+
+.special-offer .swiper-pagination-bullet {
     width: 5px;
     height: 5px;
     transition: all 0.3s ease;
 }
-.special-offer .swiper-pagination-bullet-active{
+
+.special-offer .swiper-pagination-bullet-active {
     width: 20px;
     border-radius: 3px;
     background-color: var(--background-btn);
@@ -746,9 +748,12 @@ a:hover {
 .special-offer .product-item .image {
     height: 210px;
 }
-.swiper-button-next, .swiper-rtl .swiper-button-next,
-.swiper-button-prev, .swiper-rtl .swiper-button-prev{
-    width:  40px;
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-next,
+.swiper-button-prev,
+.swiper-rtl .swiper-button-prev {
+    width: 40px;
     height: 40px;
     background: #be4545;
     border-radius: 50%;
@@ -831,11 +836,13 @@ a:hover {
     height: 6px;
     margin-bottom: 10px;
 }
-.product-item .uk-flex span{
+
+.product-item .uk-flex span {
     font-size: 13px;
     color: var(--text-span-color);
     margin-bottom: 15px;
 }
+
 .product-sold span {
     font-size: 13px;
     font-weight: 500;
@@ -862,22 +869,43 @@ a:hover {
     text-align: left;
 }
 
-.countdown-value{
+.countdown-value {
     color: var(--white-color);
     background: var(--background-btn);
     font-size: 13px;
 }
-.countdown-type{
+
+.countdown-type {
     font-size: 10px;
     font-weight: 600;
     text-transform: uppercase;
     color: var(--text-span-color);
 }
-.countdown-item{
+
+.countdown-item {
     text-align: center;
 }
-.thumb img{
+
+.thumb img {
     max-height: 205px;
 }
 
+.product-switcher .product-countdown .countdown-text {
+    display: none;
+}
 
+.product-switcher .product-countdown>.uk-flex {
+    display: inline-block;
+}
+
+.product-switcher .product-countdown {
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.product-switcher .product-item:hover .product-countdown{
+    visibility: hidden;
+    opacity: 0;
+}
+.product-switcher .product-item .thumb{
+    margin-bottom: 20px;
+}
