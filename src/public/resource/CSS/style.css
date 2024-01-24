@@ -780,17 +780,26 @@ a:hover {
 }
 
 .product-item .thumb {
-    padding-bottom: 20px;
+    padding-bottom: 37px;
     overflow: hidden;
+    position: relative;
 }
 
 .product-item .thumb .product-toolbox {
+    position: absolute;
     left: 50%;
-    transform: translate(-50%, 100%);
+    transform: translateX(-50%);
     padding: 0 50px;
-    transition: all 0.4s ease-in-out;
-    bottom: 33px;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    bottom: 0; /* Thay đổi giá trị bottom để ẩn .product-toolbox ban đầu ở dưới */
+    opacity: 0;
 }
+
+.product-item:hover .thumb .product-toolbox {
+    bottom: 33px; /* Di chuyển .product-toolbox lên trên */
+    opacity: 1;
+}
+
 
 .toolbox-item:hover {
     background: var(--background-btn);
@@ -815,9 +824,6 @@ a:hover {
     margin-right: 10px;
 }
 
-.product-item:hover .product-toolbox {
-    transform: translate(-50%, 0) !important;
-}
 
 .product-review {
     margin-bottom: 15px;
@@ -890,22 +896,28 @@ a:hover {
     max-height: 205px;
 }
 
-.product-switcher .product-countdown .countdown-text {
+.st-2 .product-countdown .countdown-text {
     display: none;
 }
 
-.product-switcher .product-countdown>.uk-flex {
+.st-2 .product-countdown > .uk-flex {
     display: inline-block;
 }
 
-.product-switcher .product-countdown {
+.st-2 .product-countdown {
     text-align: center;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
-.product-switcher .product-item:hover .product-countdown{
+.st-2:hover .product-countdown{
     visibility: hidden;
     opacity: 0;
 }
-.product-switcher .product-item .thumb{
-    margin-bottom: 20px;
+.st-2 .thumb{
+    margin-bottom: 30px;
 }
+.st-2 .product-overlay{
+    margin-top: -40px;
+    height: 50px;
+    overflow: hidden;
+}
+

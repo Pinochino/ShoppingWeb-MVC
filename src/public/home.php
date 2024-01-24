@@ -366,37 +366,38 @@
                                 <ul class="uk-switcher uk-margin">
                                     <li>
                                         <div class="uk-grid-collapse" uk-grid>
-                                            <?php for($j= 0; $j <= 1; $j++) { ?>
-                                            <?php for($i = 0; $i <=3; $i++){ ?>
-                                            <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m">
-                                                <div class="product-item">
-                                                    <div class="product-item uk-position-relative">
-                                                        <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
-                                                        <div class="thumb uk-position-relative">
-                                                            <a href="" class="image img-scaledown">
-                                                                <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
-                                                            <?php require '/Website/src/public/components/countdown.php' ?>
-
-                                                            <?php require '/Website/src/public/components/toolbox.php' ?>
-                                                        </div>
-                                                        <div class="info uk-text-center">
-                                                            <?php require '/Website/src/public/components/review.php' ?>
-                                                            <div class="product-name">
-                                                                <a href="">I lov y</a>
-                                                            </div>
-                                                            <?php require '/Website/src/public/components/price.php' ?>
-                                                            <div class="product-sold">
-                                                                <progress class="uk-progress" value="10" max="100"></progress>
-                                                            </div>
-                                                            <div class="uk-flex uk-flex-middle uk-flex-between">
-                                                                <span>Avalable</span>
-                                                                <span>Sold: <span style="color: red;">3</span></span>
+                                            <?php for ($j = 0; $j <= 1; $j++) { ?>
+                                                <?php for ($i = 0; $i <= 3; $i++) { ?>
+                                                    <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m">
+                                                        <div class="product-item">
+                                                            <div class="product-item st-2 uk-position-relative">
+                                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                <div class="thumb uk-position-relative">
+                                                                    <a href="" class="image img-scaledown">
+                                                                        <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                    <div class="product-overlay">
+                                                                        <?php require '/Website/src/public/components/toolbox.php' ?>
+                                                                        <?php require '/Website/src/public/components/countdown.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="info uk-text-center">
+                                                                    <?php require '/Website/src/public/components/review.php' ?>
+                                                                    <div class="product-name">
+                                                                        <a href="">I lov y</a>
+                                                                    </div>
+                                                                    <?php require '/Website/src/public/components/price.php' ?>
+                                                                    <div class="product-sold">
+                                                                        <progress class="uk-progress" value="10" max="100"></progress>
+                                                                    </div>
+                                                                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                                                                        <span>Avalable</span>
+                                                                        <span>Sold: <span style="color: red;">3</span></span>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <?php } ?>
+                                                <?php } ?>
                                             <?php } ?>
                                         </div>
                                     </li>
