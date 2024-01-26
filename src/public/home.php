@@ -195,7 +195,7 @@
                                                 <li><a href="">Office Electronics</a></li>
                                                 <li><a href="">Watch</a></li>
                                             </ul>
-                                            <?php require '/Website/src/public/components/readmore.php' ?>
+                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\readmore.php' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -212,7 +212,7 @@
                                                 <li><a href="">Office Electronics</a></li>
                                                 <li><a href="">Watch</a></li>
                                             </ul>
-                                            <?php require '/Website/src/public/components/readmore.php' ?>
+                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\readmore.php' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -229,7 +229,7 @@
                                                 <li><a href="">Office Electronics</a></li>
                                                 <li><a href="">Watch</a></li>
                                             </ul>
-                                            <?php require '/Website/src/public/components/readmore.php' ?>
+                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\readmore.php' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -246,7 +246,7 @@
                                                 <li><a href="">Office Electronics</a></li>
                                                 <li><a href="">Watch</a></li>
                                             </ul>
-                                            <?php require '/Website/src/public/components/readmore.php' ?>
+                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\readmore.php' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -263,7 +263,7 @@
                                                 <li><a href="">Office Electronics</a></li>
                                                 <li><a href="">Watch</a></li>
                                             </ul>
-                                            <?php require '/Website/src/public/components/readmore.php' ?>
+                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\readmore.php' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -280,7 +280,7 @@
                                                 <li><a href="">Office Electronics</a></li>
                                                 <li><a href="">Watch</a></li>
                                             </ul>
-                                            <?php require '/Website/src/public/components/readmore.php' ?>
+                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\readmore.php' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -302,7 +302,7 @@
                                     <div class="overlay uk-position-absolute transform-0-50 l10 t50">
                                         <div class="sub-title">START FROM 3.900.000</div>
                                         <div class="title mb20 mt10">Samsung Wireless <br> Headphones </div>
-                                        <?php require '/Website/src/public/components/readmore.php' ?>
+                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\readmore.php' ?>
                                     </div>
                                 </div>
                             </div>
@@ -331,14 +331,14 @@
                                                     <div class="thumb uk-position-relative">
                                                         <a href="" class="image img-scaledown">
                                                             <img src="/src/public/resource/Images/Product/special-<?php echo $i; ?>.webp" alt="" srcset=""></a>
-                                                        <?php require '/Website/src/public/components/toolbox.php' ?>
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
                                                     </div>
                                                     <div class="info uk-text-center">
-                                                        <?php require '/Website/src/public/components/review.php' ?>
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
                                                         <div class="product-name">
                                                             <a href="">I lov y</a>
                                                         </div>
-                                                        <?php require '/Website/src/public/components/price.php' ?>
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
                                                         <div class="product-sold">
                                                             <progress class="uk-progress" value="10" max="100"></progress>
                                                         </div>
@@ -346,7 +346,7 @@
                                                             <span>Avalable</span>
                                                             <span>Sold: <span style="color: red;">3</span></span>
                                                         </div>
-                                                        <?php require '/Website/src/public/components/countdown.php' ?>
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
                                                     </div>
                                                 </div>
                                             </div>
@@ -376,16 +376,16 @@
                                                                     <a href="" class="image img-scaledown">
                                                                         <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
                                                                     <div class="product-overlay">
-                                                                        <?php require '/Website/src/public/components/toolbox.php' ?>
-                                                                        <?php require '/Website/src/public/components/countdown.php' ?>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
                                                                     </div>
                                                                 </div>
                                                                 <div class="info uk-text-center">
-                                                                    <?php require '/Website/src/public/components/review.php' ?>
+                                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
                                                                     <div class="product-name">
                                                                         <a href="">I lov y</a>
                                                                     </div>
-                                                                    <?php require '/Website/src/public/components/price.php' ?>
+                                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
                                                                     <div class="product-sold">
                                                                         <progress class="uk-progress" value="10" max="100"></progress>
                                                                     </div>
