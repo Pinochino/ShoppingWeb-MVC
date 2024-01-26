@@ -8,6 +8,7 @@
 <body>
     <?php require_once 'components/header.php' ?>
     <main id="homepage">
+        <!---------------panel-banner--------->
         <div class="panel-banner">
             <div class="uk-container uk-container-1520">
                 <div class="uk-grid">
@@ -96,6 +97,7 @@
                 </div>
             </div>
         </div>
+        <!---------------panel-commit--------->
         <div class="panel-commit">
             <div class="uk-container uk-container-1520">
                 <div class="panel-body">
@@ -175,6 +177,7 @@
                 </div>
             </div>
         </div>
+        <!---------------panel-category--------->
         <div class="panel-category mb50">
             <div class="uk-container uk-container-1520">
                 <div class="panel-head">
@@ -311,6 +314,7 @@
                 </div>
             </div>
         </div>
+        <!---------------panel-product--------->
         <div class="panel-product mb50">
             <div class="uk-container uk-container-1520">
                 <div class="panel-body">
@@ -358,55 +362,104 @@
                         </div>
                         <div class="uk-width-3-4@l">
                             <div class="product-wrapper product-switcher">
-                                <ul class="uk-subnav uk-subnav-pill" uk-switcher>
+                                <ul class="uk-subnav uk-subnav-pill uk-flex uk-flex-center" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium uk-animation-fade">
                                     <li><a href="#">Lastest Product</a></li>
                                     <li><a href="#">Top Rating</a></li>
                                     <li><a href="#">Best Selling</a></li>
                                 </ul>
                                 <ul class="uk-switcher uk-margin">
-                                    <li>
-                                        <div class="uk-grid-collapse" uk-grid>
-                                            <?php for ($j = 0; $j <= 1; $j++) { ?>
-                                                <?php for ($i = 0; $i <= 3; $i++) { ?>
-                                                    <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m">
-                                                        <div class="product-item">
-                                                            <div class="product-item st-2 uk-position-relative">
-                                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
-                                                                <div class="thumb uk-position-relative">
-                                                                    <a href="" class="image img-scaledown">
-                                                                        <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
-                                                                    <div class="product-overlay">
-                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
-                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                    <?php for ($z = 0; $z <= 2; $z++) { ?>
+                                        <li>
+                                            <div class="uk-grid-collapse" uk-grid>
+                                                <?php for ($j = 0; $j <= 1; $j++) { ?>
+                                                    <?php for ($i = 0; $i <= 3; $i++) { ?>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                                <div class="info uk-text-center">
-                                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
-                                                                    <div class="product-name">
-                                                                        <a href="">I lov y</a>
-                                                                    </div>
-                                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
-                                                                    <div class="product-sold">
-                                                                        <progress class="uk-progress" value="10" max="100"></progress>
-                                                                    </div>
-                                                                    <div class="uk-flex uk-flex-middle uk-flex-between">
-                                                                        <span>Avalable</span>
-                                                                        <span>Sold: <span style="color: red;">3</span></span>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    <?php } ?>
                                                 <?php } ?>
-                                            <?php } ?>
-                                        </div>
-                                    </li>
-                                    <li></li>
-                                    <li></li>
+                                            </div>
+                                        </li>
+                                    <?php  } ?>
                                 </ul>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- PANEL BACKGROUND -->
+        <div class="uk-container uk-container-1520 mb50">
+            <div class="panel-background uk-position-relative">
+                <span class="img img-cover">
+                    <img src="/src/public/resource/Images/banner.webp" alt="">
+                </span>
+                <div class="overlay uk-position-absolute transform-50-50 t50 l50 uk-text-center">
+                    <div class="overlay-name">News gadgets for new year</div>
+                    <div class="overlay-discription">Up to 60% of consumer electronics</div>
+                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\readmore.php'   ?>
+                </div>
+            </div>
+        </div>
+        <!---------------panel-property--------->
+        <div class="panel-property mb50">
+            <div class="uk-container uk-container-1520">
+                <div class="heading-2">Laptops & Computers</div>
+                <div class="h">
+                    <span><a href="">Asus</a></span>
+                    <span><a href="">Dell</a></span>
+                    <span><a href="">Acer</a></span>
+                    <span><a href="">HP</a></span>
+                    <span><a href="">Lenovo</a></span>
+                    <span><a href="">MSI</a></span>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-wrapper">
+                        <?php for($i = 0; $i <= 3; $i++)  { ?>
+                        <div class="swiper-slide">
+                            <div class="slide-item">
+                                <span class="img img-cover"><img src="/src/public/resource/Images/Swiper/Swiper1.webp" alt=""></span>
+                                <div class="content-overlay">
+                                    <div class="overlay-title">
+                                        Heavy on <br>
+                                        Features <br>
+                                        Light on price. <br>
+                                    </div>
+                                    <div class="overlay-discription">
+                                        Start from 399
+                                    </div>
+                                    <div class="overlay-readmore">
+                                        <a href="" class="btn-readmore btn"><span>Learn more</span><span class="uk-icon" uk-icon="icon:  chevron-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <?php } ?>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>

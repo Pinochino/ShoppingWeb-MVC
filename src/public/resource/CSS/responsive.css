@@ -211,12 +211,28 @@
         align-content: center;
         text-align: center;
     }
-
-    .uk-grid-stack .uk-first-column {
-        padding-right: 0;
+    .panel-advertise .uk-flex-nowrap{
+       flex-wrap: wrap;
     }
-
-}
+    .st-2 img{
+        height: 148px;
+    }
+    .panel-product .product-overlay{
+        visibility: hidden;
+    }
+    .product-wrapper.product-switcher .info{
+        transform: translateY(-95%);
+    }   
+    .product-wrapper .uk-subnav-pill > .uk-active > a::before{
+        height: 0.5px;
+    }
+    .product-item .product-name > *{
+        font-size: 13px;
+    }
+    .product-price .uk-flex{
+        display: block;
+    }
+    }
 
 @media(min-width: 315px) and (max-width: 415px) {
     .content-overlay .overlay-title {
