@@ -480,6 +480,28 @@
             </div>
         </div>
         <?php } ?>
+        <div class="panel-brand">
+            <div class="uk-container uk-container-1520">
+                <div class="panel-head uk-text-center">
+                    <div class="heading-1"><span>Top brands</span></div>
+                </div>
+                <div class="panel-body">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <?php for($i = 1; $i <= 5; $i++) {?>
+                                <div class="swiper-slide">
+                                    <div class="brand-item">
+                                    <a href="" class="img img-cover img-zoomin"><img src="/src/public/resource/Images/Brands/Brand-<?php echo $i; ?>.png" alt=""></a>
+                                  </div>
+                                </div>
+                            <?php } ?>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </main>
     <?php require_once 'components/footer.php' ?>
     <?php require_once 'components/script.php' ?>
