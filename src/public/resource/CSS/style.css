@@ -365,6 +365,7 @@ a:hover {
 }
 
 .category-dropdown {
+    z-index: 999;
     position: absolute;
     left: 0;
     top: 100%;
@@ -660,7 +661,29 @@ a:hover {
     font-weight: 600;
     padding: 10px;
 }
-
+.heading-2{
+    margin-bottom: 0;
+}
+.heading-2{
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    font-family: 'Poppins';
+    padding: 10px 0;
+}
+.heading-2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0;
+    top: initial;
+    bottom: 0;
+    height: 2px;
+    background: var(--background-btn);
+}
 .panel-head {
     margin-bottom: 30px;
 }
@@ -1031,4 +1054,90 @@ a:hover {
     color: var(--white-color);
     font-family: url('/src/public/resource/Roboto/Roboto-Light.ttf');
     margin-bottom: 20px;
+}
+
+/** PANEL PROPERTY **/
+.panel-property{
+    position: relative;
+}
+.panel-property .swiper-button-next,
+.panel-property .swiper-button-prev{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.panel-property .swiper-button-prev, 
+.panel-property .swiper-rtl  .swiper-button-next, 
+.panel-property .swiper-button-next, 
+.panel-property .swiper-rtl .swiper-button-prev{
+    width: 21px;
+    height: 21px;
+    background: transparent;
+    color: #000;
+    border: 1px solid black;
+    border-radius: 0;
+}
+.panel-property  .swiper-button-prev{
+    left: initial;
+    right: 30px;
+}
+.panel-property .panel-head{
+    border-bottom: 1px solid #e9e9e9;
+}
+.panel-property .category-children{
+    padding-right: 100px; 
+}
+.category-children a{
+    margin-left: 20px;
+    padding: 3px 11px;
+    font-size: 14px;
+    color: #000;
+}
+.category-children a.active{
+    border: 1px dashed;
+    border-color: var(--background-btn);
+    border-radius: 50px;
+    font-weight: 600;
+}
+.panel-property .st-2 .info{
+    transform: translateY(-40%);
+}
+.panel-property .swiper-pagination{
+    display: none;
+}
+.info .uk-button{
+    position: relative;
+    border-radius: 10px;
+    height: 30px;
+    min-width: 120px;
+    padding: 0 10px;
+}
+.hovered {
+    display: none;
+    padding: 0 35px;
+}
+
+.info .uk-button:hover .default {
+    display: none;
+    transition: all 0.4s ease-out;
+    font-size: 10px;
+}
+
+.info .uk-button .default{
+    font-size: 10px;
+}
+
+.info .uk-button:hover .hovered {
+    display: block;
+    transition: all 0.4s ease-out;
+}
+.info .uk-button .uk-icon svg{
+    width: 18px;
+    height: 18px;
+    top: 0;
+    line-height: 18px;
+    color: white;
+}
+.info .uk-button:hover{
+    background: var(--background-btn);
 }

@@ -422,47 +422,64 @@
             </div>
         </div>
         <!---------------panel-property--------->
-        <div class="panel-property mb50">
-            <div class="uk-container uk-container-1520">
-                <div class="heading-2">Laptops & Computers</div>
-                <div class="h">
-                    <span><a href="">Asus</a></span>
-                    <span><a href="">Dell</a></span>
-                    <span><a href="">Acer</a></span>
-                    <span><a href="">HP</a></span>
-                    <span><a href="">Lenovo</a></span>
-                    <span><a href="">MSI</a></span>
-                </div>
-                <div class="swiper-container">
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-wrapper">
-                        <?php for($i = 0; $i <= 3; $i++)  { ?>
-                        <div class="swiper-slide">
-                            <div class="slide-item">
-                                <span class="img img-cover"><img src="/src/public/resource/Images/Swiper/Swiper1.webp" alt=""></span>
-                                <div class="content-overlay">
-                                    <div class="overlay-title">
-                                        Heavy on <br>
-                                        Features <br>
-                                        Light on price. <br>
-                                    </div>
-                                    <div class="overlay-discription">
-                                        Start from 399
-                                    </div>
-                                    <div class="overlay-readmore">
-                                        <a href="" class="btn-readmore btn"><span>Learn more</span><span class="uk-icon" uk-icon="icon:  chevron-right"></span></a>
-                                    </div>
-                                </div>
+        <?php for($k = 0; $k <= 1; $k++) {?>
+        <div class="uk-container uk-container-1520 mb50">
+                <div class="panel-property">
+                <div class="panel-head">
+                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                        <div class="heading-2">Laptops & Computers</div>
+                        <div class="uk-flex uk-flex-middle">
+                            <div class="category-children">
+                            <a class="active" href="">Asus</a>
+                            <a href="">Dell</a>
+                            <a href="">Acer</a>
+                            <a href="">HP</a>
+                            <a href="">Lenovo</a>
+                            <a href="">MSI</a>
                             </div>
                         </div>
-                       
-                        <?php } ?>
                     </div>
-                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="panel-body">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <?php for ($i = 0; $i <= 12; $i++) { ?>
+                                <div class="swiper-slide">
+                                    <div class="slide-item">
+                                        <div class="product-item st-2 uk-position-relative">
+                                            <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                            <div class="thumb uk-position-relative">
+                                                <a href="" class="image img-scaledown">
+                                                    <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                <div class="product-overlay">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                </div>
+                                            </div>
+                                            <div class="info uk-text-center">
+                                                <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                <span>Computers</span>
+                                                <div class="product-name">
+                                                    <a href="">I lov y</a>
+                                                </div>
+                                                <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                    <div class="default">Add to card</div>
+                                                    <div class="hovered"><span class="uk-icon" uk-icon="icon: bag;"></span></div>
+                                                </button></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
         </div>
+        <?php } ?>
     </main>
     <?php require_once 'components/footer.php' ?>
     <?php require_once 'components/script.php' ?>
