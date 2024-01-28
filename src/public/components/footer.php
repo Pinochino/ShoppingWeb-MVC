@@ -24,7 +24,7 @@
             <div class="uk-width-1-2">
                 <div class="footer-menu">
                     <div class="uk-grid-medium" uk-grid>
-                        <div class="uk-width-1-2">
+                        <div class="uk-width-1-2@s">
                             <div class="ft-menu-item">
                                 <div class="ft-heading">Categories</div>
                                 <ul class="uk-list uk-clearfix">
@@ -37,7 +37,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="uk-width-1-2">
+                        <div class="uk-width-1-2@s">
                             <div class="ft-menu-item">
                                 <div class="ft-heading">CUSTOMER SERVICE</div>
                                 <ul class="uk-list uk-clearfix">

@@ -18,7 +18,7 @@
         <div class="uk-container uk-container-1520">
             <div class="uk-flex uk-flex-between">
                 <div class="logo">
-                    <a href="#"><span><img src="/src/public/resource/Images/LOGO.webp" alt=""></span></a>
+                    <a href="home.php"><span><img src="/src/public/resource/Images/LOGO.webp" alt=""></span></a>
                 </div>
                 <div class="header-search">
                     <form action="" class="uk-form">

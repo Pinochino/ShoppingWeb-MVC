@@ -789,3 +789,19 @@
   text-align: center;
   border-radius: 50%;
 }
+/* BREADCUMB */
+.breadcumb{
+  background: url('/src/public/resource/Images/banner-bredcumb.jpg.webp');
+  padding: 20px 0;
+}
+.breadcumb ul li > *{
+  font-size: 14px;
+}
+.breadcumb ul li:last-child > *{
+  color: #f00000;
+}
+.uk-breadcrumb>:nth-child(n+2):not(.uk-first-column)::before{
+  content: '\ea50';
+  font-family: 'boxicons' !important;
+  margin: 0 10px;
+}

@@ -112,6 +112,28 @@
     .banner-item:nth-child(2) .content-overlay {
         left: 51%;
     }
+    .heading-2{
+        padding: 10px;
+    }
+    
+.panel-property .st-2 .info {
+    transform: translateY(-88%);
+}
+.st-2{
+    height: 350px;
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-next,
+.swiper-button-prev,
+.swiper-rtl .swiper-button-prev {
+    display: none;
+}
+.commit-item .infor-title .title>*{
+    font-size: 12px;
+}
+.panel-commit .uk-grid-medium{
+    flex-wrap: nowrap;
+}
 }
 
 @media(min-width: 531px) and (max-width: 768px) {

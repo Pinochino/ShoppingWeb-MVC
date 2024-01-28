@@ -44,7 +44,7 @@
                 el: '.swiper-pagination',
             },
             // Default parameters
-            slidesPerView: 2,
+            slidesPerView: 2.5,
             spaceBetween: 0,
             // Responsive breakpoints
             breakpoints: {
@@ -78,7 +78,7 @@
                 el: '.swiper-pagination',
             },
             // Default parameters
-            slidesPerView: 2,
+            slidesPerView: 2.5,
             spaceBetween: 0,
             // Responsive breakpoints
             breakpoints: {

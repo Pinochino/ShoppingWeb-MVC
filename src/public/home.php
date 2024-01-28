@@ -333,7 +333,7 @@
                                                 <div class="product-item uk-position-relative">
                                                     <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
                                                     <div class="thumb uk-position-relative">
-                                                        <a href="" class="image img-scaledown">
+                                                        <a href="product-catalogue.php" class="image img-scaledown">
                                                             <img src="/src/public/resource/Images/Product/special-<?php echo $i; ?>.webp" alt="" srcset=""></a>
                                                         <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
                                                     </div>
@@ -422,63 +422,77 @@
             </div>
         </div>
         <!---------------panel-property--------->
-        <?php for($k = 0; $k <= 1; $k++) {?>
-        <div class="uk-container uk-container-1520 mb50">
+        <?php for ($k = 0; $k <= 1; $k++) { ?>
+            <div class="uk-container uk-container-1520 mb50">
                 <div class="panel-property">
-                <div class="panel-head">
-                    <div class="uk-flex uk-flex-middle uk-flex-between">
-                        <div class="heading-2">Laptops & Computers</div>
-                        <div class="uk-flex uk-flex-middle">
-                            <div class="category-children">
-                            <a class="active" href="">Asus</a>
-                            <a href="">Dell</a>
-                            <a href="">Acer</a>
-                            <a href="">HP</a>
-                            <a href="">Lenovo</a>
-                            <a href="">MSI</a>
+                    <div class="panel-head">
+                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                            <div class="heading-2">Laptops & Computers</div>
+                            <div class="uk-flex uk-flex-middle">
+                                <div class="category-children uk-visible@l">
+                                    <a class="active" href="">Asus</a>
+                                    <a href="">Dell</a>
+                                    <a href="">Acer</a>
+                                    <a href="">HP</a>
+                                    <a href="">Lenovo</a>
+                                    <a href="">MSI</a>
+                                </div>
+                            </div>
+                            <div class="uk-inline uk-hidden@l">
+                                <button class="uk-button uk-button-default" type="button">
+                                    <i class="uk-icon" uk-icon="icon: menu;"></i></button>
+                                <div uk-dropdown="mode: click">
+                                    <ul class="uk-list uk-clearfix mobile-category-children">
+                                        <li><a href="">Asus</a></li>
+                                        <li><a href="">Dell</a></li>
+                                        <li><a href="">Acer</a></li>
+                                        <li><a href="">HP</a></li>
+                                        <li><a href="">Lenovo</a></li>
+                                        <li><a href="">MSI</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="panel-body">
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <?php for ($i = 0; $i <= 12; $i++) { ?>
-                                <div class="swiper-slide">
-                                    <div class="slide-item">
-                                        <div class="product-item st-2 uk-position-relative">
-                                            <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
-                                            <div class="thumb uk-position-relative">
-                                                <a href="" class="image img-scaledown">
-                                                    <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
-                                                <div class="product-overlay">
-                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                    <div class="panel-body">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <?php for ($i = 0; $i <= 12; $i++) { ?>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="info uk-text-center">
-                                                <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
-                                                <span>Computers</span>
-                                                <div class="product-name">
-                                                    <a href="">I lov y</a>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a href="">I lov y</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            <div class="default">Add to card</div>
+                                                            <div class="hovered"><span class="uk-icon" uk-icon="icon: bag;"></span></div>
+                                                        </button></span>
                                                 </div>
-                                                <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
-                                                <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
-                                                    <div class="default">Add to card</div>
-                                                    <div class="hovered"><span class="uk-icon" uk-icon="icon: bag;"></span></div>
-                                                </button></span>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            <?php } ?>
+                                <?php } ?>
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
-                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
-        </div>
         <?php } ?>
         <div class="panel-brand">
             <div class="uk-container uk-container-1520">
@@ -488,22 +502,21 @@
                 <div class="panel-body">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <?php for($i = 1; $i <= 5; $i++) {?>
+                            <?php for ($i = 1; $i <= 5; $i++) { ?>
                                 <div class="swiper-slide">
                                     <div class="brand-item">
-                                    <a href="" class="img img-cover img-zoomin"><img src="/src/public/resource/Images/Brands/Brand-<?php echo $i; ?>.png" alt=""></a>
-                                  </div>
+                                        <a href="" class="img img-cover img-zoomin"><img src="/src/public/resource/Images/Brands/Brand-<?php echo $i; ?>.png" alt=""></a>
+                                    </div>
                                 </div>
                             <?php } ?>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                
             </div>
+            <?php require_once 'components/footer.php' ?>
         </div>
     </main>
-    <?php require_once 'components/footer.php' ?>
     <?php require_once 'components/script.php' ?>
 </body>
 
