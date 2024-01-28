@@ -525,8 +525,26 @@ a:hover {
 
 .sidebar.active {
     width: 260px;
+    left: auto;
+    transition: all 0.4s ease-out;
 }
-
+button.uk-icon:not(:disabled) {
+    transform: translate(13rem, 1.9rem);
+    color: #000;
+}
+.mobile .uk-container{
+    padding: 10px 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+.mobile .uk-container .sidebar-left{
+    margin-right: 70px;
+}
+.mobile .bx-menu-alt-right{
+    font-size: 21px;
+    line-height: 21px;
+    transform: translate(0, 3px);
+}
 .sidebar .logo-menu {
     width: 100%;
     align-items: center;
@@ -616,7 +634,9 @@ a:hover {
     pointer-events: auto;
     transition-delay: calc(.1s * var(--i));
 }
-
+    .uk-offcanvas-bar.uk-offcanvas-bar-animation{
+        background: white;
+    }
 /****panel-commit*****/
 
 .panel-commit {
@@ -1316,12 +1336,72 @@ a:hover {
 }
 .aside-head{
     border: 1px solid #e5e5e5;
-    font-size: 15px;
+    font-size: 17px;
     text-transform: uppercase;
     font-weight: 500;
     color: #000;
     padding: 10px 20px;
 }
-.aside-body{
+.uk-accordion .bxs-right-arrow{
+    font-size: 9px;
+    margin-right: 5px;
+}
+.aside-body .uk-accordion-title{
+    color: black;
+    font-size: 14px;
+    line-height: 17px;
+}
+.uk-accordion-title::before{
+    float: right;
+    margin-left: 7rem;
+}
+.aside-body .uk-accordion-title::before{
+    content: '\ea4a';
+    font-family: 'boxicons'!important;
+    background-image: none;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    right: 0;
+    transform: translate(10px, 2%);
+}
+.aside-body > ul > li{
+    padding: 10px 20px;
+    margin-top: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.aside-body ul li:last-child{
+    border: 0;
+}
+.uk-accordion-content{
+    font-size: 13px;
+}
+.uk-accordion-content  li  > a{
+    color: black;
+}
+.aside-price .aside-body{
     padding: 20px;
+}
+#slider-range .ui-slider-range{
+    background: #000;
+}
+#slider-range {
+    height: 3px;
+    background: #f5f5f5;
+}
+.ui-slider-handle {
+    width: 12px!important;
+    height: 12px!important;
+    border: 0!important;
+    background: var(--background-btn)!important;
+    border-radius: 50%!important;
+}
+.aside-panel .aside-body{
+    padding: 20px;
+}
+.color-item{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
 }

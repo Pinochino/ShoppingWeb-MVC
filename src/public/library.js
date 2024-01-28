@@ -150,6 +150,20 @@
             });
         }
     }
+    HT.setUpPriceRange = () => {
+        $("#slider-range").slider({
+            range: true,
+            min: 0,
+            max: 500,
+            values: [75, 300],
+            slide: function (event, ui) {
+                $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+            }
+        });
+        $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+            " - $" + $("#slider-range").slider("values", 1));
+    };
+
     $(document).ready(function () {
         HT.openCategoryDropdown();
         HT.swiper();
@@ -157,6 +171,7 @@
         HT.countdown();
         HT.propertySwiper();
         HT.brandSwiper();
+        HT.setUpPriceRange();
     });
 })(jQuery);
 const sidebar = document.querySelector('.sidebar');
@@ -164,6 +179,11 @@ const toggleBtn = document.querySelector('.toggle-btn');
 toggleBtn.addEventListener('click', () => {
     sidebar.classList.toggle('active');
 });
+const closeBtn = document.querySelector('.btnClose');
+closeBtn.addEventListener('click', () => {
+    sidebar.classList.remove('active');
+});
+
 
 
 // let endDate = new Date("2024-01-25T00:00:00").getTime();

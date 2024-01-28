@@ -94,25 +94,29 @@
                                 <span>All Department <i class="uk-icom" uk-icon="icon: chevron-down;"></i></span>
                             </span>
                             <div class="category-dropdown">
-                            <ul class="clear-list uk-clear-fix">
-                                <li><a href="" class="text-bold blue">Best Seller</a></li>
-                                <li><a href="" class="text-bold green">Top 100 Products </a></li>
-                                <li><a href="" class="text-bold purple">Handpick By Digic</a></li>
-                                <li>
-                                    <a href="">Computers & Laptop <i class="uk-icon" uk-icon="icon: chevron-right"></i></a></li>
-                                <li>
-                                    <a href="">Digital Camera <i class="uk-icon" uk-icon="icon: chevron-right"></i></a></li>
-                                <li>
-                                    <a href="">Audio & Video <i class="uk-icon" uk-icon="icon:  chevron-right"></i></a></li>
-                                <li>
-                                    <a href="">Mobiles & Tablets <i class="uk-icon" uk-icon="icon:  chevron-right"></i></a></li>
-                                <li><a href="">TV & Home Theater</a></li>
-                                <li><a href="">Portable Speaker</a></li>
-                                <li><a href="">Home applicates</a></li>
-                                <li><a href="">Musics & Video Games</a></li>
-                            </ul>
-                            <div class="close-categories"><span><i class="uk-icon" uk-icon="icon: minus"></i> Close</span></div>
-                        </div>
+                                <ul class="clear-list uk-clear-fix">
+                                    <li><a href="" class="text-bold blue">Best Seller</a></li>
+                                    <li><a href="" class="text-bold green">Top 100 Products </a></li>
+                                    <li><a href="" class="text-bold purple">Handpick By Digic</a></li>
+                                    <li>
+                                        <a href="">Computers & Laptop <i class="uk-icon" uk-icon="icon: chevron-right"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Digital Camera <i class="uk-icon" uk-icon="icon: chevron-right"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Audio & Video <i class="uk-icon" uk-icon="icon:  chevron-right"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Mobiles & Tablets <i class="uk-icon" uk-icon="icon:  chevron-right"></i></a>
+                                    </li>
+                                    <li><a href="">TV & Home Theater</a></li>
+                                    <li><a href="">Portable Speaker</a></li>
+                                    <li><a href="">Home applicates</a></li>
+                                    <li><a href="">Musics & Video Games</a></li>
+                                </ul>
+                                <div class="close-categories"><span><i class="uk-icon" uk-icon="icon: minus"></i> Close</span></div>
+                            </div>
                         </div>
                         <nav class="navigation">
                             <ul class="uk-clearfix clear-list uk-flex main-menu">
@@ -137,39 +141,56 @@
 </header>
 
 <header class="mobile header uk-hidden@m">
+    <div class="uk-container uk-container-1520 mb30">
+        <div class="uk-flex uk-flex-middle uk-flex-between">
+            <div class="sidebar-left toggle-btn">
+                <span class="uk-icon" uk-icon="icon: table"></span>
+            </div>
+            <div class="ft-logo"><a href=""><img src="/src/public/resource/Images/LOGO.webp" alt=""></a></div>
+            <div class="sidebar-right"><i class='bx bx-menu-alt-right' uk-toggle="target: #offcanvas-overlay"></i></div>
+            <div id="offcanvas-overlay" uk-offcanvas="overlay: true; mode: slide">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    ****************<h3>Title</h3>
+                    ***********<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div id="CART" class="uk-icon" uk-icon="icon: bag;"></div>
+        </div>
+    </div>
     <nav class="sidebar">
         <div class="logo-menu">
             <h2 class="logo">Codehal</h2>
-            <span class="uk-icon toggle-btn" uk-icon="icon: table"></span>
+            <button class="uk-offcanvas-close btnClose" type="button" uk-close></button>
         </div>
         <ul class="list">
             <li class="list-item active">
                 <a href="">
-                    <span class="uk-icon" uk-icon="icon: home"></span>
+                    <span class="uk-icon menu-icon" uk-icon="icon: home"></span>
                     <span class="list-name" style="--i:1;">Dashboard</span>
                 </a>
             </li>
             <li class="list-item">
                 <a href="">
-                <span class="uk-icon" uk-icon="icon: user"></span>
+                <span class="uk-icon menu-icon" uk-icon="icon: user"></span>
                     <span class="list-name" style="--i:2;">User</span>
                 </a>
             </li>
             <li class="list-item">
                 <a href="">
-                <span class="uk-icon" uk-icon="icon: info"></span>
+                <span class="uk-icon menu-icon" uk-icon="icon: info"></span>
                     <span class="list-name" style="--i:3;">Messages</span>
                 </a>
             </li>
             <li class="list-item">
                 <a href="">
-                <span class="uk-icon" uk-icon="icon: cart"></span>
+                <span class="uk-icon menu-icon" uk-icon="icon: cart"></span>
                     <span class="list-name" style="--i:4;">Order</span>
                 </a>
             </li>
             <li class="list-item">
                 <a href="">
-                <span class="uk-icon" uk-icon="icon: cog"></span>
+                <span class="uk-icon menu-icon" uk-icon="icon: cog"></span>
                     <span class="list-name" style="--i:5;">Setting</span>
                 </a>
             </li>

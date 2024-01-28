@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="/src/public/resource/CSS/style.css">
 <link rel="stylesheet" href="/src/public/resource/CSS/core.css">
 <link rel="stylesheet" href="/src/public/resource/CSS/responsive.css">
+<link rel="stylesheet" href="/src/public/resource/jquery-ui-1.13.2/jquery-ui-1.13.2/jquery-ui.min.css">
 <link rel="stylesheet" href="/src/public/resource/boxicons-master/boxicons-master/css/boxicons.min.css">
 <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
