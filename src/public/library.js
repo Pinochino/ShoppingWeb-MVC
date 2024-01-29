@@ -43,6 +43,10 @@
             pagination: {
                 el: '.swiper-pagination',
             },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             // Default parameters
             slidesPerView: 2.5,
             spaceBetween: 0,
@@ -77,6 +81,7 @@
             pagination: {
                 el: '.swiper-pagination',
             },
+
             // Default parameters
             slidesPerView: 2.5,
             spaceBetween: 0,
@@ -174,6 +179,7 @@
         HT.setUpPriceRange();
     });
 })(jQuery);
+/// SIDEBAR
 const sidebar = document.querySelector('.sidebar');
 const toggleBtn = document.querySelector('.toggle-btn');
 toggleBtn.addEventListener('click', () => {
@@ -182,125 +188,6 @@ toggleBtn.addEventListener('click', () => {
 const closeBtn = document.querySelector('.btnClose');
 closeBtn.addEventListener('click', () => {
     sidebar.classList.remove('active');
-});
-
-
-
-// let endDate = new Date("2024-01-25T00:00:00").getTime();
-// let check = setInterval(function(){
-//     let now = new Date().getTime();
-//     let distance = endDate - now;
-//     let day = Math.floor(distance / (24 * 60 * 60 * 1000));
-//     let hour = Math.floor((distance % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
-//     let minute = Math.floor((distance % (60 * 60 * 1000)) / (60 * 1000));
-//     let seconds = Math.floor((distance % (60 * 1000)) / 1000);
-//     document.getElementById('day').innerText = day;
-//     document.getElementById('hour').innerText = hour;
-//     document.getElementById('minute').innerText = minute;
-//     document.getElementById('milis').innerText = seconds;
-//     if(distance <= 0){
-//         clearInterval(check);
-//     }
-// }, 1000);
-
-
-// Begin ms
-// 1s = 1000 ms
-// 1p = 60s = 60 * 1000 ms
-// 1h = 60p = 60 * 60 * 1000 ms
-// 1d = 24h = 24 * 60 * 60 * 1000 ms
-
-const btn = document.querySelectorAll(".btncart");
-btn.forEach(function (btncart, index) {
-    btncart.addEventListener("click", function (event) {
-        var btnItem = event.target;
-        var product = btnItem.parentElement.parentElement;
-        var productImg = product.querySelector("img").src;
-        var productName = product.querySelector(".product-name").innerText;
-        var productCost = product.querySelector(".price-sale").innerText;
-        addCart(productImg, productName, productCost);
-    });
-});
-
-function addCart(productImg, productName, productCost) {
-    var cartItem = document.querySelectorAll(".panel-body .info");
-    for (var i = 0; i < cartItem.length; i++) {
-        let productT = cartItem[i].querySelector(".title");
-        if (productT && productT.innerHTML === productName) {
-            alert("Sản phẩm của bạn đã có trong giỏ hàng");
-            return;
-        }
-    }
-
-
-    var addtr = document.createElement("tr");
-    var trcontent = `
-        <tr>
-            <td class="col-sm-3">
-                <img class="img-fluid" src="${productImg}" alt="">
-                <span class="title">${productName}</span>
-            </td>
-            <td class="col-sm-3 Cost">
-                <p><span class="prices">${productCost}</span><sup>$</sup></p>
-            </td>
-            <td class="col-sm-3"><input type="number" value="1" min="1"></td>
-            <td class="col-sm-3 " style="cursor: pointer;"><span class="cart-delete">Delete</span></td>
-        </tr>
-    `;
-    addtr.innerHTML = trcontent;
-    var carttable = document.querySelector("tbody");
-    carttable.appendChild(addtr);
-    cartTotal();
-    deleteCart();
-}
-// ----------------------totalPrice---------------
-function cartTotal() {
-    var cartItem = document.querySelectorAll("tbody tr")
-    var totalC = 0;
-    for (var i = 0; i < cartItem.length; i++) {
-        var inputValue = parseInt(cartItem[i].querySelector("input").value);
-        var productPrice = parseFloat(cartItem[i].querySelector(".prices").innerHTML);
-        var totalA = inputValue * productPrice * 1000;
-        var totalC = totalA + totalC;
-    }
-    // var totalD = totalC.toLocaleString('de-DE');
-    var cartTotalE = document.querySelector(".price-total span");
-    var cartPrice = document.querySelector(".cartIcon span");
-    cartTotalE.innerHTML = totalC.toLocaleString('de-DE');
-    cartPrice.innerHTML = totalC.toLocaleString('de-DE');
-    inputchange();
-}
-//-------------------------Delete cart-----------
-function deleteCart() {
-    var cartItem = document.querySelectorAll("tbody tr");
-    for (var i = 0; i < cartItem.length; i++) {
-        let productT = document.querySelectorAll(".cart-delete");
-        productT[i].addEventListener("click", function (event) {
-            var cartDelete = event.target;
-            var cartItemR = cartDelete.parentElement.parentElement;
-            cartItemR.remove();
-            cartTotal();
-        });
-    }
-}
-deleteCart();
-
-function inputchange() {
-    var cartItem = document.querySelectorAll("tbody tr");
-    for (var i = 0; i < cartItem.length; i++) {
-        let inputValue = cartItem[i].querySelector("input");
-        inputValue.addEventListener("change", function () {
-            cartTotal();
-        });
-    }
-}
-const cartbutton1 = document.querySelector(".button-close");
-const cartshow = document.querySelector(".cartIcon");
-cartshow.addEventListener("click", function () {
-    document.querySelector("#cart-table").style.right = "0";
-});
-cartbutton1.addEventListener("click", function () {
-    document.querySelector("#cart-table").style.right = "-100%";
 });
 
 function overImage(element) {
@@ -314,3 +201,80 @@ function outImage(element) {
         element.src = element.dataset.out;
     }
 }
+
+/// CART
+const btn = document.querySelectorAll('.btncart');
+// console.log(btn);
+btn.forEach(function (button, index) {
+    button.addEventListener("click", function (event) {
+        {
+            let btnItem = event.target;
+            let product = btnItem.parentElement.parentElement.parentElement;
+            let productImg = product.querySelector('img').src;
+            let productName = product.querySelector('.product-name-main').innerText;
+            let productPrice = product.querySelector('.price-sale').innerText;
+
+            addCart(productImg, productName, productPrice);
+        }
+    });
+});
+
+// THÊM SẢN PHẨM VÀO GIỎ HÀNG
+function addCart(productImg, productName, productPrice) {
+    let addtr = document.createElement('tr');
+    let cartItem = document.querySelectorAll("tbody tr");
+    for (let l = 0; l < cartItem.length; l++) {
+        const element = document.querySelectorAll(".table-product-name");
+            if (element[l].innerHTML == productName) {
+                alertE= "Sản phẩm của bạn đã có"
+                alert(alertE);
+                return;
+            }
+        }
+        let trContent = '<tr><td><img class="img img-cover" src="' + productImg + '" alt="" /></td><td><span class="table-product-name" >' + productName + '</span></td><td><span class="table-price">' + productPrice + '</span></td><td><input type="number" value="1" min="0" /></td><td><span class="remove">Xóa</span></td></tr>';
+        addtr.innerHTML = trContent;
+        let cartTable = document.querySelector("tbody");
+        cartTable.append(addtr);
+        cartTotal();
+        removeItem();
+        inputChange();
+    }
+    // Tính tổng của sản phẩm
+    function cartTotal() {
+        let cartItem = document.querySelectorAll("tbody tr");
+        let total = 0;
+        for (let i = 0; i < cartItem.length; i++) {
+            let inputValue = parseInt(cartItem[i].querySelector("input").value, 10);
+            var productPrice = parseFloat(cartItem[i].querySelector(".table-price").innerHTML);
+            let quotion = (inputValue * productPrice * 1000)
+            // .toLocaleString('de-DE');
+            total = total + quotion;
+            // totalNew = total.toLocaleString('de-DE');
+        }
+        var sum = document.querySelector('.price-total span');
+        sum.innerHTML = total;
+        console.log(sum);
+    }
+// XÓA SẢN PHẨM TRONG GIỎ HÀNG 
+function removeItem(){
+    let cartItem = document.querySelectorAll("tbody tr");
+    for (let k = 0; k< cartItem.length; k++) {
+        const ele = document.querySelectorAll(".remove");
+        ele[k].addEventListener("click", function(event){
+            let cartDelete = event.target;
+            let cartDeleteA = cartDelete.parentElement.parentElement;
+            cartDeleteA.remove();
+            cartTotal();
+        });
+         
+    }
+}
+function inputChange(){
+    let cartItem = document.querySelectorAll("tbody tr");
+    for (let k = 0; k< cartItem.length; k++) {
+        const num = cartItem[k].querySelector("input");
+       num.addEventListener("change", function(){
+        cartTotal();
+       }); 
+    };
+};

@@ -84,7 +84,7 @@
             </div>
         </div>
     </div>
-    <div class="header-lower">
+    <!-- <div class="header-lower">
         <div class="uk-container uk-container-1520">
             <div class="uk-flex uk-flex-between uk-flex-middle">
                 <div class="header-category">
@@ -137,7 +137,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </header>
 
 <header class="mobile header uk-hidden@m">

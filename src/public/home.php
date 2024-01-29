@@ -457,9 +457,12 @@
                     <div class="panel-body">
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
-                        <div class="swiper-container">
+                        <div class="swiper-container" autoplay="true" autoplay-delay="2500" autoplay-disable-on-interaction="false" pagination-clickable="true" navigation="true">
                             <div class="swiper-wrapper">
-                                <?php for ($i = 0; $i <= 12; $i++) { ?>
+                                <?php $productNames = array("iPhone 5", "iPhone 6", "Samsung Galaxy S21", "Google Pixel 4", "OnePlus 9", "Xiaomi Mi 11");
+                                $totalProducts = count($productNames);
+                                for ($i = 0; $i <= 12; $i++) {
+                                    $productName = $productNames[$i % $totalProducts]; ?>
                                     <div class="swiper-slide">
                                         <div class="slide-item">
                                             <div class="product-item st-2 uk-position-relative">
@@ -475,12 +478,11 @@
                                                     <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
                                                     <span>Computers</span>
                                                     <div class="product-name">
-                                                        <a href="">I lov y</a>
+                                                        <a class="product-name-main" href=""><?php echo $productName; ?></a>
                                                     </div>
                                                     <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
                                                     <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
-                                                            <div class="default">Add to card</div>
-                                                            <div class="hovered"><span class="uk-icon" uk-icon="icon: bag;"></span></div>
+                                                            Add to card
                                                         </button></span>
                                                 </div>
                                             </div>
@@ -494,6 +496,7 @@
                 </div>
             </div>
         <?php } ?>
+
         <div class="panel-brand">
             <div class="uk-container uk-container-1520">
                 <div class="panel-head uk-text-center">
@@ -518,6 +521,36 @@
         </div>
     </main>
     <?php require_once 'components/script.php' ?>
+    <section class="cart mt30">
+        <h2>Cart </h2>
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Chọn</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <?php for ($i = 0; $i <= 1; $i++) { ?>
+                        <tr>
+                            <td><img class="img img-cover" src="/src/public/resource/Images/Product/special-<?php echo $i ?>.webp" alt=""></td>
+                            <td><span>Laptops</span></td>
+                            <td><span>320.000 <sup>đ</sup></span></td>
+                            <td><input type="number" value="1" min="0"></td>
+                            <td>Xóa</td>
+                        </tr>
+                    <?php  } ?> -->
+                </tbody>
+            </table>
+            <div class="price-total">
+                <p>Total: <span>0<sup>đ</sup></span></p>
+            </div>
+        </form>
+    </section>
 </body>
 
 </html>
