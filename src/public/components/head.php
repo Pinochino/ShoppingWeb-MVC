@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="/src/public/resource/jquery-ui-1.13.2/jquery-ui-1.13.2/jquery-ui.min.css">
 <link rel="stylesheet" href="/src/public/resource/boxicons-master/boxicons-master/css/boxicons.min.css">
 <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-gQlJZ0iEXYsdXQFiN47LHXJ5fpjYUic8GOF+dt1pe0Qa6tr5QFaA2J1f4QfAtSxj" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="/src/public/resource/JAVASCRIPT/base.js"></script>
 <script src="/src/public/resource/JAVASCRIPT/jquery-3.7.1.min.js"></script>

@@ -8,9 +8,9 @@
                     If you have any question, please contact us at <br>
                 </div>
                 <div class="email mb20">Email: support@example.com</div>
-                <div class=" ft-item address"><span class="uk-icon" uk-icon="icon: location;"></span>30 Buttonwood St.Pataskala
-                    OH 43062</div>
-                <div class=" ft-item hotline"><span class="uk-icon" uk-icon="icon: phone;"></span>(+1)-613-333-0101</div>
+                <div class=" ft-item address"><span class="uk-icon" uk-icon="icon: location;"></span><span>30 Buttonwood St.Pataskala
+                    OH 43062</span></div>
+                <div class=" ft-item hotline"><span class="uk-icon" uk-icon="icon: phone;"></span><span>(+1)-613-333-0101</span></div>
                 <div class="ft-social mt10">
                     <div class="uk-flex uk-flex-middle">
                         <a href="" class="uk-icon ft-social-item" uk-icon="icon: twitter;"></a>

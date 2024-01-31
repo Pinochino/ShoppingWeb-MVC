@@ -252,8 +252,10 @@ function addCart(productImg, productName, productPrice) {
             // totalNew = total.toLocaleString('de-DE');
         }
         var sum = document.querySelector('.price-total span');
-        sum.innerHTML = total;
-        console.log(sum);
+        sum.innerHTML = total.toLocaleString('de-DE');
+        // var carMoney = document.querySelector(".button-cart")
+        // carMoney.innerHTML = total.toLocaleString('de-DE');
+        inputChange();
     }
 // XÓA SẢN PHẨM TRONG GIỎ HÀNG 
 function removeItem(){
@@ -275,6 +277,104 @@ function inputChange(){
         const num = cartItem[k].querySelector("input");
        num.addEventListener("change", function(){
         cartTotal();
+        sortItem();
        }); 
     };
 };
+function sortItem() {
+    let arr = document.querySelectorAll(""); // Bạn cần đưa ra arr từ một nguồn dữ liệu nào đó
+    let left = 0;
+    let right = arr.length - 1;
+    mergeSort(arr, left, right);
+    console.log(arr);
+}
+
+function mergeSort(arr, left, right) {
+    if (left < right) {
+        let mid = Math.floor((left + right) / 2);
+        mergeSort(arr, left, mid);
+        mergeSort(arr, mid + 1, right);
+        merge(arr, left, mid, right);
+    }
+}
+
+function merge(arr, left, mid, right) {
+    let i = left;
+    let j = mid + 1;
+    let k = 0;
+    const c = new Array(right - left + 1);
+
+    while (i <= mid && j <= right) {
+        if (arr[i] < arr[j]) {
+            c[k++] = arr[i++];
+        } else {
+            c[k++] = arr[j++];
+        }
+    }
+
+    while (i <= mid) {
+        c[k++] = arr[i++];
+    }
+
+    while (j <= right) {
+        c[k++] = arr[j++];
+    }
+
+    for (let t = 0; t < k; t++) {
+        arr[left + t] = c[t];
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const cartShow = document.querySelector("i.button-cart.uk-icon");
+    const cartClose = document.querySelector("button.table-close.uk-icon.uk-close");
+    
+    if (cartShow) {
+        document.querySelector(".cart").classList.add("show");
+        cartShow.addEventListener('click', function() {
+            document.querySelector(".cart").style.right = "0";
+        });
+    }
+
+    if (cartClose) {
+        cartClose.addEventListener('click', function() {
+            document.querySelector(".cart").style.right = '-100%';
+        });
+    }
+});
+document.addEventListener("click", function(event) {
+    if (event.target.matches('i.button-cart.uk-icon')) {
+        console.log("Cart icon clicked");
+        document.querySelector(".cart").style.right = "0";
+    }
+
+    if (event.target.matches('button.table-close.uk-icon.uk-close')) {
+        console.log("Close button clicked");
+        document.querySelector(".cart").style.right = '-100%';
+    }
+});
+document.querySelector(".cart").classList.remove("show");
+
+function searchItem(){
+    let menuSearh = document.querySelector(".input-text");
+    let menuItems = Array.from(document.querySelectorAll("product-name-main"));
+    menuSearh.value = menuSearh.value.toLowerCase();
+    menuItems.forEach(function(el){
+        let text = el.innerHTML;
+        if(text.indexOf(menuSearh.value) > -1)
+        el.style.display = "";
+    else el.style.display="none";
+    });
+}
+
+
+
+
+
+
+
+
+   
+
+
+

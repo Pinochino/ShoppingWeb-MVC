@@ -811,11 +811,25 @@
   margin-bottom: 15px;
 }
 /*Giỏ Hàng */
-.cart{
-  width: 50%;
-  margin: auto;
+.cart {
+  position: fixed;
+  height: 100vh;
+  width: 38%; /* Adjusted width */
+  right: -100%;
+  top: 0;
+  background-color: #e5e5e5;
+  z-index: 1000;
+  padding: 12px 20px;
+  overflow-y: scroll;
+  margin: auto; /* Centering the cart */
   text-align: center;
-  padding-top: 30px;
+  transition: all 0.2s ease-in-out;
+}
+.mobile .uk-flex .uk-icon svg{
+  transform: translateY(-3px);
+}
+.cart.show {
+  right: 0; 
 }
 .cart tbody tr td .img{
   width: 70px;
@@ -848,5 +862,62 @@
   text-align: right;
 }
 .cart table tbody tr td:last-child{
-  text-align: right;
+text-align: right;
 }
+ .table-button{
+  padding: 5px 10px;
+  background: tomato;
+  color: #ddd;
+  border-radius: 10px;
+  border: 1px none;
+  cursor: pointer;
+}
+.logo-menu .uk-icon:not(:disabled) {
+  transform: translate(122px, 7px);
+  cursor: pointer;
+}
+.offcanvas-body h3, p{
+  color: black;
+}
+/* MODAL */
+.modal-body-high .bx-shopping-bag{
+  font-size: 60px;
+}
+.uk-modal-dialog.uk-modal-body{
+  position: relative;
+}
+.modal-body-high{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-body-high .modal-title{
+  font-size: 17px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.modal-body-low{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-body-low a:first-child,
+.modal-body-low  span{
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #828282;
+}
+.modal-body-low .Shop{
+  border-bottom: 2px solid #000;
+}
+.modal-body-low span a{
+  font-weight: bold;
+  text-decoration: underline;
+}
+.Shop .uk-icon{
+  color: #000;
+}
+

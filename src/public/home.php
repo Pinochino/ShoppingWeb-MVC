@@ -521,7 +521,8 @@
         </div>
     </main>
     <?php require_once 'components/script.php' ?>
-    <section class="cart mt30">
+    <section class="cart mt30 uk-visible@m" >
+        <button class="table-close" type="button" uk-close></button>
         <h2>Cart </h2>
         <form action="">
             <table>
@@ -548,6 +549,7 @@
             </table>
             <div class="price-total">
                 <p>Total: <span>0<sup>đ</sup></span></p>
+                <button class="table-button" button type="submit">Shopping</button></span>
             </div>
         </form>
     </section>
