@@ -1,5 +1,6 @@
 #homepage {
   overflow-x: hidden;
+  position: relative;
 }
 
 /*OVERIDE SWIPER SLIDE */
@@ -919,5 +920,8 @@ text-align: right;
 }
 .Shop .uk-icon{
   color: #000;
+}
+.uk-accordion>:nth-child(n+2) {
+  margin-top: 10px;
 }
 

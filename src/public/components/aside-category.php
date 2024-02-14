@@ -31,7 +31,7 @@
         </div>
     </div>
     <div class="aside-panel aside-color mb20">
-        <div class="aside-head">Price</div>
+        <div class="aside-head">Colors</div>
         <div class="aside-body">
             <div class="uk-flex uk-flex-middle">
                 <span class="color-item"style="background: #52b745;">
@@ -47,6 +47,17 @@
                     <input type="hidden" name="">
                 </span>
             </div>
+        </div>
+    </div>
+    <div class="aside-panel aside-brands mb20">
+        <div class="aside-head">Brands</div>
+        <div class="aside-body">
+            <ul class="uk-flex uk-flex-column">
+               <li><input type="checkbox" name="" id=""><a href="">      Dells(2)</a></li>
+               <li><input type="checkbox" name="" id=""><a href="">      Iphone(2)</a></li>
+               <li><input type="checkbox" name="" id=""><a href="">      Samsungs(3)</a></li>
+               <li><input type="checkbox" name="" id=""><a href="">      Xiaomi(2)</a></li>
+            </ul>
         </div>
     </div>
 </aside>

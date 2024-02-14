@@ -177,6 +177,7 @@
                 </div>
             </div>
         </div>
+        <div class="backtop"><a class="back-top" href="" uk-totop></a></div>
         <!---------------panel-category--------->
         <div class="panel-category mb50">
             <div class="uk-container uk-container-1520">
@@ -378,7 +379,7 @@
                                                                 <div class="product-item st-2 uk-position-relative">
                                                                     <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
                                                                     <div class="thumb uk-position-relative">
-                                                                        <a href="" class="image img-scaledown">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
                                                                             <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
                                                                         <div class="product-overlay">
                                                                             <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
