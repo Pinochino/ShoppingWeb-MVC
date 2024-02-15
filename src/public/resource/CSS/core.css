@@ -815,7 +815,7 @@
 .cart {
   position: fixed;
   height: 66vh;
-  width: 38%; /* Adjusted width */
+  width: 38%;
   right: -100%;
   top: 120px;
   border-top: 1px solid red;
@@ -823,7 +823,7 @@
   z-index: 1000;
   padding: 12px 20px;
   overflow-y: scroll;
-  margin: auto; /* Centering the cart */
+  margin: auto; 
   text-align: center;
   transition: all 0.2s ease-in-out;
 }

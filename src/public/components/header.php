@@ -68,7 +68,7 @@
                 </div>
                 <div class="header-widget">
                     <div class="uk-flex">
-                        <a href="" class="widget-item">
+                        <a href="#Login" class="widget-item">
                             <span class="uk-icon" uk-icon="user"></span>
                         </a>
                         <a href="" class="widget-item">
@@ -76,7 +76,7 @@
                             <sup class="uk-badge uk-badge-danger">3</sup>
                         </a>
                         <a href="" class="widget-item">
-                            <i class="button-cart" class=" uk-icon " uk-icon="cart">
+                            <i id="button-cart" class="uk-icon" uk-icon="cart">
                                 <!-- <span>0<sup>đ</sup></span> -->
                             </i>
                             <sup class="uk-badge uk-badge-danger">4</sup>

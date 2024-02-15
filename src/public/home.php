@@ -522,7 +522,7 @@
         </div>
     </main>
     <?php require_once 'components/script.php' ?>
-    <section class="cart mt30 uk-visible@m" >
+    <section id="cart-Table" class="cart mt30" >
         <button class="table-close" type="button" uk-close></button>
         <h2>Cart </h2>
         <form action="">
@@ -554,47 +554,7 @@
             </div>
         </form>
     </section>
-    <section id="login" class="mt30">
-        <!-- <form action="">
-            <tbody>
-                <thead>
-                    <tr>
-
-                    </tr>
-                </thead>
-            </tbody>
-        </form> -->
-        <div class="uk-flex uk-flex-between uk-flex-column">
-            <div class="header-login">
-                <span>Sign in</span>
-                <span>Create An Account</span>
-            </div>
-            <div class="body-login">
-                <div class="username">
-                    <span>Username or email <sub>*</sub></span>
-                    <input type="email" name="" id="" placeholder="Your name">
-                </div>
-                <div class="password">
-                    <span>password <sub>*</sub></span>
-                    <input type="text" name="" id="" placeholder="Password">
-                </div>
-            </div>
-            <div class="footer-login">
-                <div class="footer-login-header">
-                    <div class="Remember-me">
-                        <input type="checkbox" name="" id="">
-                        <span>Remember me</span>
-                    </div>
-                    <div class="Lostpassword">
-                       <a href="">Lost your password</a>
-                    </div>
-                </div>
-                <div><button class="login">
-                        Login
-                </button></div>
-            </div>
-        </div>
-    </section>
+    <?php require_once "/XAMPP2/php/PHP WEBSITE/src/public/components/login.php" ?>
 </body>
 
 </html>

@@ -2001,77 +2001,173 @@ a:hover {
     font-weight: 500;
     margin: 30px 0 20px;
 }
-.banner-product-low  .img{
+
+.banner-product-low .img {
     margin-bottom: 40px;
     border-bottom: 1px solid #E9E9E9;
     vertical-align: top;
 }
-.switcher-new-product .uk-container{
+
+.switcher-new-product .uk-container {
     border-bottom: 1px solid #E9E9E9;
 }
-.banner-product-middle, .banner-product-low {
+
+.banner-product-middle,
+.banner-product-low {
     display: flex;
     justify-content: center;
 }
+
 .switcher-new-product .uk-switcher li:nth-child(2) .uk-grid {
     display: flex;
     justify-content: center;
     margin-right: 0;
     margin-bottom: 50px;
 }
-.switcher-new-product li:nth-child(2)  .uk-grid .uk-width-1-2{
+
+.switcher-new-product li:nth-child(2) .uk-grid .uk-width-1-2 {
     border: 1px solid #E9E9E9;
     padding: 15px;
 }
-.more-products .uk-width-1-2{
+
+.more-products .uk-width-1-2 {
     border-right: 1px solid #E9E9E9;
 }
-.switcher-new-product .uk-subnav a{
+
+.switcher-new-product .uk-subnav a {
     font-size: 15px;
     line-height: 23px;
     font-weight: bold;
 }
-.uk-switcher li:nth-child(3) h3{
+
+.uk-switcher li:nth-child(3) h3 {
     font-size: 24px;
     line-height: 26px;
     font-weight: 600;
 }
-.uk-switcher li:nth-child(3) p{
+
+.uk-switcher li:nth-child(3) p {
     font-size: 13px;
     font-weight: lighter;
     line-height: 35px;
     margin-bottom: 30px;
 }
+
 /* RELATED-PRODUCTS */
-.related-products h2{
+.related-products h2 {
     text-align: center;
     font-size: 25px;
     line-height: 50px;
     font-weight: 500;
 }
+
 /* LOGIN */
-#login{
-    border-top: 2px solid red ;
+#Login {
+    border-top: 2px solid red;
     border: 1px solid #e5e5e5;
     max-width: 400px;
     height: auto;
     display: block;
     background: white;
 }
-.header-login{
+
+.header-login {
     display: flex;
     justify-content: space-around;
 }
-.username, .password{
+
+.username,
+.password {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
+
 .footer-login-header {
     display: flex;
     justify-content: space-around;
 }
-.login{
+
+.login {
     display: flex;
     justify-content: center;
+}
+
+#Login .uk-flex {
+    padding: 30px;
+}
+
+.login button {
+    height: 45px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    background: black;
+    color: white;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+.header-login span {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    font-family: FONT;
+}
+
+.header-login span:first-child {
+    color: #000;
+}
+
+.header-login span:last-child {
+    color: var(--background-btn);
+}
+
+.body-login input {
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    outline: none;
+    padding: 10px 20px;
+}
+.body-login input::placeholder{
+    transform: translateX(15px);
+    
+}
+.body-login span{
+    font-size: 15px;
+    line-height: 45px;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+.body-login span sup{
+    color: red;
+}
+.Remember-me input::marker{
+    border-radius: 50%;
+}
+.Lostpassword a{
+    text-decoration: underline;
+    color: #000;
+}
+.header-widget span:first-child{
+    position: relative;
+}
+#Login{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-40px, 100px);
+    border-top: 1px solid red;
+}
+.header-widget a:first-child  span:first-child::before{
+    content: '\eedb';
+    font-family: 'boxicons' !important;
+    display: block;
+    top: 0;
+    right: 0;
+    position: absolute;
+    color: var(--background-btn);
+    transform: translate(-5px, 40px);
 }
