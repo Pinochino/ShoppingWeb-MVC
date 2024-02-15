@@ -16,6 +16,7 @@
     --text-product-color: #216fe6;
     --text-span-color: #a3a3a3;
     --swiper-navigation-size: 15px !important;
+    --border--color: #e5e5e5;
 }
 
 
@@ -1999,4 +2000,78 @@ a:hover {
     line-height: 45px;
     font-weight: 500;
     margin: 30px 0 20px;
+}
+.banner-product-low  .img{
+    margin-bottom: 40px;
+    border-bottom: 1px solid #E9E9E9;
+    vertical-align: top;
+}
+.switcher-new-product .uk-container{
+    border-bottom: 1px solid #E9E9E9;
+}
+.banner-product-middle, .banner-product-low {
+    display: flex;
+    justify-content: center;
+}
+.switcher-new-product .uk-switcher li:nth-child(2) .uk-grid {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 50px;
+}
+.switcher-new-product li:nth-child(2)  .uk-grid .uk-width-1-2{
+    border: 1px solid #E9E9E9;
+    padding: 15px;
+}
+.more-products .uk-width-1-2{
+    border-right: 1px solid #E9E9E9;
+}
+.switcher-new-product .uk-subnav a{
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: bold;
+}
+.uk-switcher li:nth-child(3) h3{
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 600;
+}
+.uk-switcher li:nth-child(3) p{
+    font-size: 13px;
+    font-weight: lighter;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+/* RELATED-PRODUCTS */
+.related-products h2{
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: 500;
+}
+/* LOGIN */
+#login{
+    border-top: 2px solid red ;
+    border: 1px solid #e5e5e5;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    background: white;
+}
+.header-login{
+    display: flex;
+    justify-content: space-around;
+}
+.username, .password{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.footer-login-header {
+    display: flex;
+    justify-content: space-around;
+}
+.login{
+    display: flex;
+    justify-content: center;
 }

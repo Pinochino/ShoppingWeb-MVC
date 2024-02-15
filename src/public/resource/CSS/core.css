@@ -814,11 +814,12 @@
 /*Giỏ Hàng */
 .cart {
   position: fixed;
-  height: 100vh;
+  height: 66vh;
   width: 38%; /* Adjusted width */
   right: -100%;
-  top: 0;
-  background-color: #e5e5e5;
+  top: 120px;
+  border-top: 1px solid red;
+  background-color: white;
   z-index: 1000;
   padding: 12px 20px;
   overflow-y: scroll;
@@ -828,6 +829,18 @@
 }
 .mobile .uk-flex .uk-icon svg{
   transform: translateY(-3px);
+}
+.cart  h2{
+  position: relative;
+  bottom: 27px;
+}
+.cart .uk-close{
+  position: absolute;
+  left: 43px;
+}
+.cart form{
+  position: relative;
+  bottom: 26px;
 }
 .cart.show {
   right: 0; 

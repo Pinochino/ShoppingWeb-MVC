@@ -387,6 +387,10 @@ function searchItem() {
         else el.style.display = "none";
     });
 }
+function changeImage(fileName){
+    let img = document.querySelector("#bannerImage");
+    img.setAttribute("src", fileName);
+}
 
 
 

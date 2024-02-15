@@ -26,13 +26,13 @@
                         <div class="uk-grid" uk-grid>
                             <div class="uk-grid-1-2@l">
                                 <div class="img-high">
-                                    <span class="img img-cover"><img src="/src/public/resource/Images/Product/special-2.webp" alt="" srcset=""></span>
+                                    <span id="bannerImage" class="img img-cover"><img src="/src/public/resource/Images/Product/special-2.webp" alt="" srcset=""></span>
                                 </div>
                                 <div class="img-low">
                                     <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="parallax: true" tabindex="-1" uk-slider>
                                         <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid uk-grid-small">
-                                            <li>
-                                                <img src="/src/public/resource/Images/Product/special-2.webp" width="150" height="150" alt="">
+                                            <li onclick="changeImage('/XAMPP2/php/PHP WEBSITE/src/public/resource/Images/Product/special-3.webp')">
+                                                <img   src="/src/public/resource/Images/Product/special-2.webp" width="150" height="150" alt="">
                                             </li>
                                             <li>
                                                 <img src="/src/public/resource/Images/Product/special-2.webp" width="150" height="150" alt="">
@@ -61,6 +61,7 @@
                                         <span>Flat 4K UHD 11</span>
                                         <span>Brand: <span style="color: red; font-size: 13px; line-height: 30px;">Samsung</span></span>
                                         <span class="price-new-product"><?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?></span>
+                                        <div class="backtop"><a class="back-top" href="" uk-totop></a></div>
                                     </div>
                                 </div>
                                 <div class="body-product-info">
@@ -129,33 +130,116 @@
         <div class="switcher-new-product">
             <div class="uk-container uk-container-1520">
                 <ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
-                    <li><a href="#">Item</a></li>
-                    <li><a href="#">Item</a></li>
-                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Description</a></li>
+                    <li><a href="#">Additional information</a></li>
+                    <li><a href="#">Reviews (0)</a></li>
+                    <li><a href="#">More Products</a></li>
                 </ul>
 
                 <ul class="uk-switcher uk-margin">
-                    <li> 
-                        <div class="image-banner-product" >
-                        <img src="/src/public/resource/Images/Switcher/img1.webp" alt="">
+                    <li>
+                        <div class="image-banner-product">
+                            <img src="/src/public/resource/Images/Switcher/img1.webp" alt="">
                         </div>
-                        
+
                         <div class="infor-banner-product m20">
-                            <h2>Blast past faste</h2>
+                            <h2>Blast past fast.</h2>
                             <p>A14 Bionic, the fastest chip in a smartphone.
-An edge-to-edge OLED display. Ceramic Shield with four times better drop performance. And Night mode on every camera. iPhone 12 has it all — in two perfect sizes.</p>
+                                An edge-to-edge OLED display. Ceramic Shield with four times better drop performance. And Night mode on every camera. iPhone 12 has it all — in two perfect sizes.</p>
                         </div>
                         <div class="banner-product-middle mb20">
-                            <img src="/src/public/resource/Images/Switcher/img2.webp" alt="" srcset="">
+                            <img class="img img-cover" src="/src/public/resource/Images/Switcher/img2.webp" alt="" srcset="">
                         </div>
                         <div class="banner-product-low mb20">
-                            <img src="/src/public/resource/Images/Switcher/img3.webp" alt="" srcset="">
+                            <img class="img img-cover" src="/src/public/resource/Images/Switcher/img3.webp" alt="" srcset="">
                         </div>
                     </li>
-                    <li>Hello again!</li>
-                    <li>Bazinga!</li>
+                    <li>
+                        <div class="uk-grid mb30">
+                            <div class="uk-width-1-2">Color</div>
+                            <div class="uk-width-1-2">Pink, Red</div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Reviews</h3>
+                        <p>There are no reviews yet. <br>
+                            Only logged in customers who have purchased this product may leave a review.
+                        </p>
+                    </li>
+                    <li>
+                        <div class="more-products">
+                            <div class="catalogue-list-product">
+                                <div class="uk-grid-collapse" uk-grid>
+                                    <?php for ($j = 0; $j < 1; $j++) { ?>
+                                        <?php for ($i = 0; $i <= 5; $i++) { ?>
+                                            <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                <div class="product-item">
+                                                    <div class="product-item st-2 uk-position-relative">
+                                                        <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                        <div class="thumb uk-position-relative">
+                                                            <a href="" class="image img-scaledown">
+                                                                <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                            <div class="product-overlay">
+                                                                <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info uk-text-center">
+                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                            <span>Computers</span>
+                                                            <div class="product-name">
+                                                                <a href="">I lov y</a>
+                                                            </div>
+                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php } ?>
+                                    <?php } ?>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
+        </div>
+        <div class="related-products mt30 mb30">
+            <h2>Related Products</h2>
+            <div class="catalogue-list-product">
+                <div class="uk-grid-collapse" uk-grid>
+                    <?php for ($j = 0; $j < 1; $j++) { ?>
+                        <?php for ($i = 0; $i <= 4; $i++) { ?>
+                            <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-5@m mb10">
+                                <div class="product-item">
+                                    <div class="product-item st-2 uk-position-relative">
+                                        <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                        <div class="thumb uk-position-relative">
+                                            <a href="" class="image img-scaledown">
+                                                <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                            <div class="product-overlay">
+                                                <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                            </div>
+                                        </div>
+                                        <div class="info uk-text-center">
+                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                            <span>Computers</span>
+                                            <div class="product-name">
+                                                <a href="">I lov y</a>
+                                            </div>
+                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php } ?>
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+        <div class="footer-catalogue">
+            <?php require_once 'components/footer.php' ?>
         </div>
         <?php require_once 'components/script.php' ?>
 
