@@ -236,7 +236,7 @@ h6 {
 }
 
 .header-widget {
-    margin-top: 1%;
+    margin-top: 5px;
 }
 
 .header-widget .widget-item svg {
@@ -1690,11 +1690,11 @@ a:hover {
     background: #e9e9e9;
 }
 
-.header-catalogue .header-search .search-item {
+.header-search .search-item {
     position: relative;
 }
 
-.header-catalogue .header-search .search-item:not(:first-child):before {
+.header-search .search-item:not(:first-child):before {
     position: absolute;
     content: "";
     height: 20px;
@@ -2175,7 +2175,7 @@ a:hover {
     top: 0;
     right: 0;
     transform: translate(-40px, 100px);
-    border-top: 1px solid red;
+    border-top: 1px solid #F0506E;
     background: white;
     padding: 41px;
 }
@@ -2183,11 +2183,16 @@ a:hover {
 #loginTable.show {
     display: block;
 }
-.invalid{
-    outline: 1px solid red;
-    border-radius: 10px;
-}
-#loginTable input:hover{
-    border: 1px solid green;
+
+.invalid {
+    outline: 1px solid #F0506E;
+    border-radius: 5px;
 }
 
+#loginTable input:hover {
+    border: 1px solid #32D296;
+}
+
+.footer-login{
+    display: flex;
+}

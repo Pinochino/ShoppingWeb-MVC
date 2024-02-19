@@ -69,7 +69,7 @@
                 <div class="header-widget">
                     <div class="uk-flex">
                         <span id="iconLogin"  class="widget-item">
-                            <span class="uk-icon" uk-icon="user"></span>
+                            <span  class="uk-icon" uk-icon="user"></span>
                         </span>
                         <span href="" class="widget-item">
                             <span class="uk-icon" uk-icon="heart"></span>

@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
 <section id="loginTable" class="mt30">
     <form id="form-1" action="" onsubmit="signUp()" method="POST">
         <div class="uk-flex uk-flex-between uk-flex-column">
@@ -30,7 +44,7 @@
                     <div class="form-group">
                         <span>Mật khẩu<sup>*</sup></span>
                         <div class="uk-inline">
-                            <span onclick="openPassword()" class="uk-form-icon uk-icon-eye-slash"  uk-icon="icon: eye-slash"></span>
+                            <a onclick="openPassword()" class="uk-form-icon uk-icon-eye-slash" uk-icon="icon: eye-slash"></a>
                             <input id="password" name="password" class="uk-input" type="password" aria-label="Clickable icon" placeholder="password" autocomplete="new-password">
                         </div>
                         <span class="form-message"></span>
@@ -40,7 +54,7 @@
                     <div class="form-group">
                         <span>Nhập lại mật khẩu<sup>*</sup></span>
                         <div class="uk-inline">
-                            <span onclick="openPassword()" class="uk-form-icon uk-icon-eye-slash" uk-icon="icon: eye-slash"></span>
+                            <a onclick="openPassword()" class="uk-form-icon uk-icon-eye-slash" uk-icon="icon: eye-slash"></a>
                             <input id="password_confirmation" name="password_confirmation" class="uk-input" type="password" aria-label="Clickable icon" placeholder="password" autocomplete="new-password">
                         </div>
                         <span class="form-message"></span>
@@ -50,17 +64,18 @@
             <div class="footer-login mt20">
                 <div class="footer-login-header mb20">
                     <div class="Remember-me mr10">
-                        <input id="checkbox" type="radio" name="" id="">
+                        <input type="radio" value="male" name="gender" class="form-control">
                         <span>Remember me</span>
                     </div>
-                    <div class="Lostpassword">
-                        <a href="">Lost your password</a>
-                    </div>
                 </div>
-                <div class="login">
-                    <button id="sign-up">Login</button>
+                <div class="Lostpassword">
+                    <a href="">Lost your password</a>
                 </div>
             </div>
+            <div class="login">
+                <button id="sign-up">Login</button>
+            </div>
+        </div>
         </div>
     </form>
 </section>
@@ -68,17 +83,19 @@
 <script>
     Validator({
         form: '#form-1',
+        formGroupSelector: '.form-group',
         errorSelector: ".form-message",
         rules: [
             Validator.isRequired('#fullname', "Vui lòng nhập tên đầy đủ của bạn"),
             Validator.isEmail('#email'),
             Validator.minLength('#password', 6),
             Validator.isRequired('#password_confirmation'),
-            Validator.isConfirmed('#password_confirmation', function () {
+            Validator.isRequired('input[name="gender"]'),
+            Validator.isConfirmed('#password_confirmation', function() {
                 return document.querySelector("#form-1 #password").value;
             }, "Mật khẩu nhập lại không chính xác"),
-        ], 
-        onSubmit: function (data) {
+        ],
+        onSubmit: function(data) {
             console.log(data);
         }
     })
