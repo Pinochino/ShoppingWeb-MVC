@@ -506,7 +506,7 @@
                 <div class="panel-body">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <?php for ($i = 1; $i <= 5; $i++) { ?>
+                            <?php for ($i = 1; $i <= 4; $i++) { ?>
                                 <div class="swiper-slide">
                                     <div class="brand-item">
                                         <a href="" class="img img-cover img-zoomin"><img src="/src/public/resource/Images/Brands/Brand-<?php echo $i; ?>.png" alt=""></a>
@@ -514,16 +514,15 @@
                                 </div>
                             <?php } ?>
                         </div>
-                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
-            <?php require_once 'components/footer.php' ?>
         </div>
+        <?php require_once 'components/footer.php' ?>
     </main>
     <?php require_once 'components/script.php' ?>
-    <section id="cart-Table" class="cart mt30" >
-        <button class="table-close" type="button" uk-close></button>
+    <section id="cart-Table" class="cart mt30 cart-hidden">
+        <button id="closeCart" class="table-close" type="button" uk-close></button>
         <h2>Cart </h2>
         <form action="">
             <table>

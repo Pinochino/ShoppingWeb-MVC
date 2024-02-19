@@ -1272,8 +1272,16 @@ a:hover {
 }
 
 .brand-item .img {
-    height: 207px;
+    height: 250px;
+}
 
+.panel-brand .swiper-container {
+    display: flex;
+    justify-content: center;
+}
+
+.panel-brand .swiper-container .swiper-slide {
+    max-width: 360px;
 }
 
 /** FOOTER **/
@@ -1369,6 +1377,7 @@ a:hover {
 .ft-subcribe form .input-text {
     height: 40px;
     width: 100%;
+    outline: none;
     padding: 8px;
     border: 0 #f3f3f3;
     border-radius: 3px;
@@ -2061,7 +2070,7 @@ a:hover {
     font-weight: 500;
 }
 
-/* LOGIN */
+/***************** LOGIN *****************/
 #Login {
     border-top: 2px solid red;
     border: 1px solid #e5e5e5;
@@ -2076,8 +2085,7 @@ a:hover {
     justify-content: space-around;
 }
 
-.username,
-.password {
+.form-group {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -2112,7 +2120,7 @@ a:hover {
     font-size: 18px;
     line-height: 18px;
     font-weight: 500;
-    font-family: FONT;
+    font-family: "Poppins";
 }
 
 .header-login span:first-child {
@@ -2126,48 +2134,61 @@ a:hover {
 .body-login input {
     width: 100%;
     height: 45px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid #e5e5e5;
     outline: none;
     padding: 10px 20px;
 }
-.body-login input::placeholder{
+
+.body-login input::placeholder {
     transform: translateX(15px);
-    
+
 }
-.body-login span{
+
+.body-login span {
     font-size: 15px;
     line-height: 45px;
     font-weight: 400;
     font-family: "Poppins";
 }
-.body-login span sup{
+
+.body-login span sup {
     color: red;
 }
-.Remember-me input::marker{
+
+.Remember-me input::marker {
     border-radius: 50%;
 }
-.Lostpassword a{
+
+.Lostpassword a {
     text-decoration: underline;
     color: #000;
 }
-.header-widget span:first-child{
+
+
+#cart-Table form {
     position: relative;
 }
-#Login{
+
+#loginTable {
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
     transform: translate(-40px, 100px);
     border-top: 1px solid red;
+    background: white;
+    padding: 41px;
 }
-.header-widget a:first-child  span:first-child::before{
-    content: '\eedb';
-    font-family: 'boxicons' !important;
+
+#loginTable.show {
     display: block;
-    top: 0;
-    right: 0;
-    position: absolute;
-    color: var(--background-btn);
-    transform: translate(-5px, 40px);
 }
+.invalid{
+    outline: 1px solid red;
+    border-radius: 10px;
+}
+#loginTable input:hover{
+    border: 1px solid green;
+}
+

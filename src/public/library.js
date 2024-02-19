@@ -193,20 +193,6 @@
         });
     };
 
-    HT.showCart = () => {
-        let iconCart = document.getElementById("button-cart");
-        // console.log(iconCart);
-        let cartTable = document.getElementsByClassName("cart");
-        console.log(cartTable);
-        let removeTable = document.querySelector(".table-close");
-        iconCart.addEventListener('click', () => {
-            cartTable.classList.add(".show");
-        });
-        removeTable.addEventListener('click', () => {
-            cartTable.classList.remove(".show");
-        });
-    }
-
     $(document).ready(function () {
         HT.openCategoryDropdown();
         HT.swiper();
@@ -216,7 +202,6 @@
         HT.brandSwiper();
         HT.setUpPriceRange();
         HT.quantityProduct();
-        HT.showCart();
     });
 })(jQuery);
 /// SIDEBAR
@@ -244,7 +229,6 @@ function outImage(element) {
 
 /// CART
 const btn = document.querySelectorAll('.btncart');
-// console.log(btn);
 btn.forEach(function (button, index) {
     button.addEventListener("click", function (event) {
         {
@@ -321,95 +305,128 @@ function inputChange() {
         });
     };
 };
-function sortItem() {
-    let arr = document.querySelectorAll(""); // Bạn cần đưa ra arr từ một nguồn dữ liệu nào đó
-    let left = 0;
-    let right = arr.length - 1;
-    mergeSort(arr, left, right);
-    console.log(arr);
-}
 
-function mergeSort(arr, left, right) {
-    if (left < right) {
-        let mid = Math.floor((left + right) / 2);
-        mergeSort(arr, left, mid);
-        mergeSort(arr, mid + 1, right);
-        merge(arr, left, mid, right);
+window.addEventListener('DOMContentLoaded', function () {
+    function openCart() {
+        const cart = document.querySelector(".cart");
+        const buttonCart = document.querySelector("#button-cart");
+        const closeCart = document.querySelector("#closeCart");
+
+        buttonCart.addEventListener("click", function () {
+            cart.style.display = "block";
+        });
+
+        closeCart.addEventListener("click", function () {
+            cart.style.display = "none";
+        });
     }
-}
+    openCart();
+});
 
-function merge(arr, left, mid, right) {
-    let i = left;
-    let j = mid + 1;
-    let k = 0;
-    const c = new Array(right - left + 1);
-
-    while (i <= mid && j <= right) {
-        if (arr[i] < arr[j]) {
-            c[k++] = arr[i++];
-        } else {
-            c[k++] = arr[j++];
-        }
-    }
-
-    while (i <= mid) {
-        c[k++] = arr[i++];
-    }
-
-    while (j <= right) {
-        c[k++] = arr[j++];
-    }
-
-    for (let t = 0; t < k; t++) {
-        arr[left + t] = c[t];
-    }
-}
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const cartShow = document.querySelector("i.button-cart.uk-icon");
-//     const cartClose = document.querySelector("button.table-close.uk-icon.uk-close");
-
-//     if (cartShow) {
-//         document.querySelector(".cart").classList.add("show");
-//         cartShow.addEventListener('click', function () {
-//             document.querySelector(".cart").style.right = "0";
-//         });
-//     }
-
-//     if (cartClose) {
-//         cartClose.addEventListener('click', function () {
-//             document.querySelector(".cart").style.right = '-100%';
-//         });
-//     }
-// });
-// document.addEventListener("click", function (event) {
-//     if (event.target.matches('i.button-cart.uk-icon')) {
-//         console.log("Cart icon clicked");
-//         document.querySelector(".cart").style.right = "0";
-//     }
-
-//     if (event.target.matches('button.table-close.uk-icon.uk-close')) {
-//         console.log("Close button clicked");
-//         document.querySelector(".cart").style.right = '-100%';
-//     }
-// });
-// document.querySelector(".cart").classList.remove("show");
-
-function searchItem() {
-    let menuSearh = document.querySelector(".input-text");
-    let menuItems = Array.from(document.querySelectorAll("product-name-main"));
-    menuSearh.value = menuSearh.value.toLowerCase();
-    menuItems.forEach(function (el) {
-        let text = el.innerHTML;
-        if (text.indexOf(menuSearh.value) > -1)
-            el.style.display = "";
-        else el.style.display = "none";
-    });
-}
-function changeImage(fileName){
+function changeImage(fileName) {
     let img = document.querySelector("#bannerImage");
     img.setAttribute("src", fileName);
 }
+
+
+let iconSign = document.querySelector("#iconLogin");
+// let closeTable = document.querySelector("header uk-visible@m");
+iconSign.addEventListener('click', function () {
+    document.querySelector("#loginTable").classList.add("show");
+});
+
+
+// LOGIN
+var passwordReal = true;
+function openPassword() {
+    if (passwordReal) {
+        document.getElementById("password").type = "text";
+        passwordReal = false;
+    } else {
+        document.getElementById("password").type = "password";
+        passwordReal = true;
+    }
+}
+///Important
+// Đối tượng `Validator`
+function Validator(options) {
+
+    // Hàm thực hiện validate
+    function validate(inputElement, rule) {
+        var errorMessage = rule.test(inputElement.value);
+        var errorElement = inputElement.parentElement.parentElement.querySelector(".form-message");
+
+        if (errorMessage) {
+            errorElement.innerText = errorMessage;
+            inputElement.parentElement.classList.add('invalid');
+        } else {
+            errorElement.innerText = '';
+            inputElement.parentElement.classList.remove('invalid');
+        }
+    }
+    // Lấy element của form cần validate
+    var formElement = document.querySelector(options.form);
+    if (formElement) {
+
+        options.rules.forEach(function (rule) {
+            var inputElement = formElement.querySelector(rule.selector);
+            if (inputElement) {
+                // Xử lí trường hợp blur ra khỏi input
+                inputElement.onblur = function () {
+                    validate(inputElement, rule);
+                }
+                // Xử lí mỗi khi người dùng nhập vào input
+                inputElement.oninput = function () {
+                    var errorElement = inputElement.parentElement.parentElement.querySelector(options.errorSelector);
+                    errorElement.innerText = '';
+                    inputElement.parentElement.classList.remove('invalid');
+                }
+            }
+        });
+    }
+}
+// Định nghĩa rules
+// Nguyên tắc của các rules:
+// 1. Khi có lỗi => Trả ra message lỗi;
+// 2. Khi hợp lệ => Không trả ra cái gì cả (undefined)
+Validator.isRequired = function (selector, getComfirmValue, message) {
+    return {
+        selector: selector,
+        test: function (value) {
+            return value.trim() ? undefined : 'Vui lòng nhập trường này';
+        }
+    };
+}
+
+Validator.isEmail = function (selector) {
+    return {
+        selector: selector,
+        test: function (value) {
+            var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            return regex.test(value) ? undefined : 'Trường này phải là email';
+        }
+    };
+}
+
+Validator.minLength = function (selector, min) {
+    return {
+        selector: selector,
+        test: function (value) {
+            return value.length >= min ? undefined : `Vui lòng nhập vào tối thiểu ${min} kí tự`;
+        }
+    };
+}
+
+Validator.isConfirmed = function (selector, getComfirmValue) {
+    return {
+        selector: selector,
+        test: function (value){
+            return value === getComfirmValue() ? undefined : 'Giá trị nhập vào không chính xác';
+        }
+    }
+}
+
+
 
 
 
