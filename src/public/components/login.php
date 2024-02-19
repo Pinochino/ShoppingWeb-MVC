@@ -11,7 +11,7 @@
                         <span>Tên đầy đủ<sup>*</sup></span>
                         <div class="uk-inline">
                             <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
-                            <input id="fullname" class="uk-input" type="text" aria-label="Not clickable icon" placeholder="username">
+                            <input id="fullname" name="fullname" class="uk-input" type="text" aria-label="Not clickable icon" placeholder="username">
                         </div>
                         <span class="form-message"></span>
                     </div>
@@ -21,7 +21,7 @@
                         <span>Email<sup>*</sup></span>
                         <div class="uk-inline">
                             <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
-                            <input id="email" class="uk-input" type="email" aria-label="Not clickable icon" placeholder="username" autocomplete="new-password">
+                            <input id="email" name="email" class="uk-input" type="email" aria-label="Not clickable icon" placeholder="username" autocomplete="new-password">
                         </div>
                         <span class="form-message"></span>
                     </div>
@@ -31,7 +31,7 @@
                         <span>Mật khẩu<sup>*</sup></span>
                         <div class="uk-inline">
                             <span onclick="openPassword()" class="uk-form-icon uk-icon-eye-slash"  uk-icon="icon: eye-slash"></span>
-                            <input id="password" class="uk-input" type="password" aria-label="Clickable icon" placeholder="password" autocomplete="new-password">
+                            <input id="password" name="password" class="uk-input" type="password" aria-label="Clickable icon" placeholder="password" autocomplete="new-password">
                         </div>
                         <span class="form-message"></span>
                     </div>
@@ -41,7 +41,7 @@
                         <span>Nhập lại mật khẩu<sup>*</sup></span>
                         <div class="uk-inline">
                             <span onclick="openPassword()" class="uk-form-icon uk-icon-eye-slash" uk-icon="icon: eye-slash"></span>
-                            <input id="password_confirmation" class="uk-input" type="password" aria-label="Clickable icon" placeholder="password" autocomplete="new-password">
+                            <input id="password_confirmation" name="password_confirmation" class="uk-input" type="password" aria-label="Clickable icon" placeholder="password" autocomplete="new-password">
                         </div>
                         <span class="form-message"></span>
                     </div>
@@ -58,9 +58,7 @@
                     </div>
                 </div>
                 <div class="login">
-                    <button id="sign-up">
-                        Login
-                    </button>
+                    <button id="sign-up">Login</button>
                 </div>
             </div>
         </div>
@@ -72,12 +70,16 @@
         form: '#form-1',
         errorSelector: ".form-message",
         rules: [
-            Validator.isRequired('#fullname'),
+            Validator.isRequired('#fullname', "Vui lòng nhập tên đầy đủ của bạn"),
             Validator.isEmail('#email'),
             Validator.minLength('#password', 6),
+            Validator.isRequired('#password_confirmation'),
             Validator.isConfirmed('#password_confirmation', function () {
                 return document.querySelector("#form-1 #password").value;
             }, "Mật khẩu nhập lại không chính xác"),
-        ]
+        ], 
+        onSubmit: function (data) {
+            console.log(data);
+        }
     })
 </script>

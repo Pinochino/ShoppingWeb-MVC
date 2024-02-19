@@ -350,12 +350,21 @@ function openPassword() {
 ///Important
 // Đối tượng `Validator`
 function Validator(options) {
+    var selectorRule = {};
 
     // Hàm thực hiện validate
     function validate(inputElement, rule) {
-        var errorMessage = rule.test(inputElement.value);
+        var errorMessage;
         var errorElement = inputElement.parentElement.parentElement.querySelector(".form-message");
-
+        
+        // Lấy ra các rules của selector
+        var rules = selectorRule[rule.selector];
+        // Lặp qua từng rule () & kiểm tra
+        // Nếu có lỗi thì dừng kiểm tra
+        for (let i = 0; i < rules.length; i++) {
+            errorMessage = rules[i](inputElement.value);
+            if (errorMessage) break;
+        }
         if (errorMessage) {
             errorElement.innerText = errorMessage;
             inputElement.parentElement.classList.add('invalid');
@@ -363,13 +372,58 @@ function Validator(options) {
             errorElement.innerText = '';
             inputElement.parentElement.classList.remove('invalid');
         }
+
+        return !errorMessage;
     }
     // Lấy element của form cần validate
     var formElement = document.querySelector(options.form);
-    if (formElement) {
 
+    // Khi submit form
+    if (formElement) {
+        formElement.onsubmit = function (e) {
+            e.preventDefault();
+
+            var isFormValid = true;
+
+            // Lặp qua từng rules và vilidate
+            options.rules.forEach(function (rule) {
+                var inputElement = formElement.querySelector(rule.selector);
+                var isValid = validate(inputElement, rule);
+                if (!isValid) {
+                    isFormValid = false;
+                }
+            });
+
+            var enableInputs = formElement.querySelectorAll("[name]:not([disabled])");
+            var formValues = Array.from(enableInputs).reduce(function (values, input) {
+                
+                return (values[input.name] = input.value) && values;
+            }, {});
+            console.log(formValues);
+
+            if (isFormValid) {
+               if (typeof options.onSubmit === 'function') {
+                options.onSubmit({
+                    name: "Hung"
+                });
+               }
+            } else {
+               
+            }
+        }
+    }
+    if (formElement) {
+        // Lặp qua mỗi rule và xử lý (Lắng nghe sự kiện blur, input, ...)
         options.rules.forEach(function (rule) {
             var inputElement = formElement.querySelector(rule.selector);
+            // Lưu lại các rule cho phần input
+            if (Array.isArray(selectorRule[rule.selector])) {
+                selectorRule[rule.selector].push(rule.test);
+            } else {
+                selectorRule[rule.selector] = [rule.test];
+            }
+
+
             if (inputElement) {
                 // Xử lí trường hợp blur ra khỏi input
                 inputElement.onblur = function () {
@@ -389,39 +443,39 @@ function Validator(options) {
 // Nguyên tắc của các rules:
 // 1. Khi có lỗi => Trả ra message lỗi;
 // 2. Khi hợp lệ => Không trả ra cái gì cả (undefined)
-Validator.isRequired = function (selector, getComfirmValue, message) {
+Validator.isRequired = function (selector, message) {
     return {
         selector: selector,
         test: function (value) {
-            return value.trim() ? undefined : 'Vui lòng nhập trường này';
+            return value.trim() ? undefined : message || 'Vui lòng nhập trường này';
         }
     };
 }
 
-Validator.isEmail = function (selector) {
+Validator.isEmail = function (selector, message) {
     return {
         selector: selector,
         test: function (value) {
             var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-            return regex.test(value) ? undefined : 'Trường này phải là email';
+            return regex.test(value) ? undefined : message || 'Trường này phải là email';
         }
     };
 }
 
-Validator.minLength = function (selector, min) {
+Validator.minLength = function (selector, min, message) {
     return {
         selector: selector,
         test: function (value) {
-            return value.length >= min ? undefined : `Vui lòng nhập vào tối thiểu ${min} kí tự`;
+            return value.length >= min ? undefined : message || `Vui lòng nhập vào tối thiểu ${min} kí tự`;
         }
     };
 }
 
-Validator.isConfirmed = function (selector, getComfirmValue) {
+Validator.isConfirmed = function (selector, getComfirmValue, message) {
     return {
         selector: selector,
-        test: function (value){
-            return value === getComfirmValue() ? undefined : 'Giá trị nhập vào không chính xác';
+        test: function (value) {
+            return value === getComfirmValue() ? undefined : message || 'Giá trị nhập vào không chính xác';
         }
     }
 }
