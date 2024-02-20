@@ -64,7 +64,7 @@
                 },
                 // when window width is >= 640px
                 640: {
-                    slidesPerView: 6,
+                    slidesPerView: 5,
                     spaceBetween: 0
                 }
             },
@@ -197,7 +197,7 @@
         HT.openCategoryDropdown();
         HT.swiper();
         HT.specialSwiper();
-        // HT.countdown();
+        HT.countdown();
         HT.propertySwiper();
         HT.brandSwiper();
         HT.setUpPriceRange();

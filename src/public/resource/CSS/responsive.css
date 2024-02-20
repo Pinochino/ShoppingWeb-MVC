@@ -145,6 +145,12 @@
     .panel-commit .uk-grid-medium {
         flex-wrap: nowrap;
     }
+    .panel-commit .panel-body .uk-grid-medium{
+       align-items: center;
+    }
+    .mobile .uk-flex{
+        justify-content: space-around;
+    }
 }
 
 @media(min-width: 531px) and (max-width: 768px) {
@@ -335,6 +341,40 @@
     .panel-banner .swiper-button-next,
     .panel-banner .swiper-button-prev{
         background: none;
+    }
+    .footer-upper .uk-width-1-4{
+        width: 100%;
+    }
+    .footer-upper .uk-width-1-2{
+        display: contents;
+        margin-top: 10px;
+    }
+    .footer-upper .uk-width-1-2 .ft-menu-item:first-child{
+        width: 207px;
+    }
+
+    .footer-menu {
+        margin-top: 20px;
+    }
+    .ft-subcribe form .input-text{
+        height: 30px;
+        width: 50%;
+    }
+    .ft-subcribe form button{
+        padding: 0 23px;
+        height: 30px;
+        right: inherit;
+    }
+    .ft-social .ft-social-item {
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+    }
+    .copyright{
+        margin-top: -45px;
+    }
+    .panel-brand .panel-head{
+        margin-bottom: -9px;
     }
 }
 
