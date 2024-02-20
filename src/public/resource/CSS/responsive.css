@@ -74,27 +74,32 @@
     .twoPercent .slide-item .img img {
         height: 337px;
     }
-    .panel-banner{
+
+    .panel-banner {
         padding: 0;
     }
-    .onePercent{
+
+    .onePercent {
         padding-left: 14px;
     }
-    .twoPercent .slide-item .img img{
+
+    .twoPercent .slide-item .img img {
         height: 367px;
     }
-    
+
 
 }
 
 @media(min-width: 769px) and (max-width: 1023px) {
-    .panel-banner{
+    .panel-banner {
         padding: 0;
     }
+
     .uk-container {
         padding: 0;
     }
-    .panel-banner .banner-item img{
+
+    .panel-banner .banner-item img {
         height: 168px;
     }
 
@@ -103,60 +108,71 @@
     }
 
     .banner-wrapper .banner-item img {
-       padding-left: 9px;
+        padding-left: 9px;
     }
 
     .panel-commit {
         padding: 20px 36px;
     }
+
     .banner-item:nth-child(2) .content-overlay {
         left: 51%;
     }
-    .heading-2{
+
+    .heading-2 {
         padding: 10px;
     }
-    
-.panel-property .st-2 .info {
-    transform: translateY(-88%);
-}
-.st-2{
-    height: 350px;
-}
-.swiper-button-next,
-.swiper-rtl .swiper-button-next,
-.swiper-button-prev,
-.swiper-rtl .swiper-button-prev {
-    display: none;
-}
-.commit-item .infor-title .title>*{
-    font-size: 12px;
-}
-.panel-commit .uk-grid-medium{
-    flex-wrap: nowrap;
-}
+
+    .panel-property .st-2 .info {
+        transform: translateY(-88%);
+    }
+
+    .st-2 {
+        height: 350px;
+    }
+
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-next,
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-prev {
+        display: none;
+    }
+
+    .commit-item .infor-title .title>* {
+        font-size: 12px;
+    }
+
+    .panel-commit .uk-grid-medium {
+        flex-wrap: nowrap;
+    }
 }
 
 @media(min-width: 531px) and (max-width: 768px) {
     .uk-grid {
         padding: 0;
     }
-    .panel-banner .banner-item img{
+
+    .panel-banner .banner-item img {
         height: 168px;
     }
-    .panel-banner .uk-container{
+
+    .panel-banner .uk-container {
         padding-left: 0;
         padding-right: 0;
     }
-    
+
     .banner-wrapper .banner-item img {
         padding-left: 9px;
-     }
+    }
+
     .twoPercent .slide-item .img.img-scaledown {
         height: auto;
     }
+
     .banner-item:nth-child(2) .content-overlay {
         left: 48%;
     }
+
     .onePercent {
         padding-left: 0;
     }
@@ -177,38 +193,46 @@
         padding-right: 20px;
         padding-left: 20px;
     }
-    .panel-category .uk-grid{
+
+    .panel-category .uk-grid {
         margin-right: 0;
     }
-      .uk-grid .uk-first-column .commit-item .uk-flex.uk-flex-middle {
+
+    .uk-grid .uk-first-column .commit-item .uk-flex.uk-flex-middle {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         align-content: center;
         text-align: center;
     }
-    .panel-banner{
+
+    .panel-banner {
         padding: 0 9px;
     }
+
     .uk-grid-stack .uk-first-column {
         padding-right: 0;
     }
-   
+
 }
 
 @media(min-width: 360px) and (max-width: 530px) {
     .uk-container {
         padding: 0;
     }
-    .panel-banner{
+
+    .panel-banner {
         padding: 0 7.5px;
     }
+
     .onePercent {
         display: contents;
     }
-    .twoPercent{
+
+    .twoPercent {
         margin-bottom: 2px;
     }
+
     .slide-item .overlay-title {
         font-size: 25px;
         line-height: 28px;
@@ -233,28 +257,86 @@
         align-content: center;
         text-align: center;
     }
-    .panel-advertise .uk-flex-nowrap{
-       flex-wrap: wrap;
+
+    .panel-advertise .uk-flex-nowrap {
+        flex-wrap: wrap;
     }
-    .st-2 img{
+
+    .st-2 img {
         height: 148px;
     }
-    .panel-product .product-overlay{
+
+    .panel-product .product-overlay {
         visibility: hidden;
     }
-    .product-wrapper.product-switcher .info{
+
+    .product-wrapper.product-switcher .info {
         transform: translateY(-95%);
-    }   
-    .product-wrapper .uk-subnav-pill > .uk-active > a::before{
+    }
+
+    .product-wrapper .uk-subnav-pill>.uk-active>a::before {
         height: 0.5px;
     }
-    .product-item .product-name > *{
+
+    .product-item .product-name>* {
         font-size: 13px;
     }
-    .product-price .uk-flex{
+
+    .product-price .uk-flex {
         display: block;
     }
+    .st-2{
+        height: 300px;
     }
+    .panel-background img{
+        height: 230px;
+    }
+    .panel-background .overlay-name{
+        font-size: 23px;
+    }
+    .panel-background .overlay-discription{
+        font-size: 14px;
+    }
+    .panel-background .btn{
+        transform: translateY(-9px);
+    }
+    .panel-property .swiper-button-next,
+    .panel-property .swiper-button-prev{
+        display: none;
+    }
+    .panel-property .uk-inline .uk-list li > *{
+        color: black;
+        font-size: 15px;
+        line-height: 18px;
+        font-family: "Poppins";
+    }
+    .panel-property .heading-2{
+        padding: 10px 5px;
+        font-size: 15px;
+        border-bottom: 1px solid #e8e8e8;
+    }
+    .panel-property .st-2 .info {
+        transform: translateY(-115%);
+    }
+    .panel-property .uk-button-small{
+        font-size: 10px;
+        height: 20px;
+        line-height: 18px;
+    }
+    .panel-property .uk-dropdown{
+        padding: 15px;
+    }
+    .brand-item .img {
+        height: 155px;
+    }
+    .panel-property .heading-1{
+        font-size: 26px;
+    }
+    .panel-banner .swiper-button-next,
+    .panel-banner .swiper-button-prev{
+        background: none;
+    }
+}
 
 @media(min-width: 315px) and (max-width: 415px) {
     .content-overlay .overlay-title {
@@ -289,5 +371,5 @@
         align-content: center;
         text-align: center;
     }
-  
+
 }
