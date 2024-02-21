@@ -149,9 +149,26 @@
        align-items: center;
     }
     .mobile .uk-flex{
-        justify-content: space-around;
+        justify-content: space-between;
     }
-}
+    .mobile .bx-menu-alt-right{
+        transform: translate(160px, 2px);
+    }
+    .panel-background .img{
+        margin: 0 10px;
+    }
+    .Sign-up-email{
+        background-size: 1410px 328px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-image: url(/src/public/resource/Images/Switcher/img4.webp) 50px stretch;
+    }
+    .panel-property .swiper-button-next,
+    .panel-property .swiper-button-prev{
+        display: none;
+    }
+
+}  
 
 @media(min-width: 531px) and (max-width: 768px) {
     .uk-grid {
@@ -219,7 +236,21 @@
     .uk-grid-stack .uk-first-column {
         padding-right: 0;
     }
-
+    .mobile .bx-menu-alt-right{
+        transform: translate(160px, 2px);
+    }
+    .panel-property .swiper-button-next,
+    .panel-property .swiper-button-prev{
+        display: none;
+    }
+    .panel-background .img{
+        height: 300px;
+        margin-top: -50px;
+    }
+    .brand-item .img {
+        width: 241px;
+        height: 150px;
+    }
 }
 
 @media(min-width: 360px) and (max-width: 530px) {
@@ -375,6 +406,53 @@
     }
     .panel-brand .panel-head{
         margin-bottom: -9px;
+    }
+    .brand-item .img{
+        height: 98px;
+        width: 180px;
+    }
+    .panel-background .overlay .overlay-name{
+        font-size: 22px;
+    }
+    .panel-background .img{
+        margin: 0 10px;
+    }
+    .email-right input{
+        width: 300px;
+        transform: translate(41px, 100%);
+    }
+    .email-common{
+        display: inline;
+    }
+    .Sign-up-email{
+        background-size: 1410px 194px;
+        margin:  15px;
+        border-radius: 10px;
+        height: 194px;
+    }
+    .email-left .uk-icon svg, 
+    .email-left span{
+        display: none;
+    }
+    .email-left h3{
+        transform: translate(40px, 40px);
+    }
+    .email-right .email-right-title{
+        transform: translate(-74%, 143%);
+    }
+    .footer-upper {
+        padding: 30px 15px 60px;
+    }
+    .panel-background .img{
+        margin-top: -50px;
+    margin-bottom: -40px;
+    }
+    .panel-brand .heading-1 {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    .panel-brand .panel-body{
+        margin: 0 10px;
     }
 }
 

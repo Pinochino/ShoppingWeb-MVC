@@ -177,6 +177,13 @@
                 </div>
             </div>
         </div>
+
+        <!-- <div id="my-modal" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog uk-margin-auto-vertical">
+                <img src="/src/public/resource/Images/Advertise/img1.webp" alt="">
+            </div>
+
+        </div> -->
         <div class="backtop"><a class="back-top" href="" uk-totop></a></div>
         <!---------------panel-category--------->
         <div class="panel-category mb50">
@@ -506,15 +513,30 @@
                 <div class="panel-body">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <?php for ($i = 1; $i <= 4; $i++) { ?>
+                            <?php for ($i = 1; $i <= 5; $i++) { ?>
                                 <div class="swiper-slide">
                                     <div class="brand-item">
-                                        <a href="" class="img img-cover img-zoomin"><img src="/src/public/resource/Images/Brands/Brand-<?php echo $i; ?>.png" alt=""></a>
+                                        <a href="" class="img img-scaledown"><img src="/src/public/resource/Images/Brands/Brand-<?php echo $i; ?>.png" alt=""></a>
                                     </div>
                                 </div>
                             <?php } ?>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="Sign-up-email">
+            <div class="email-common">
+                <div class="email-left">
+                    <span uk-icon="icon: vimeo"></span>
+                    <div class="email-left-title">
+                        <h3>Sign up for our email update</h3>
+                        <span>Sign up for emails and unlock first access to exclusive offers, and more</span>
+                    </div>
+                </div>
+                <div class="email-right">
+                    <input type="text" name="" id="" placeholder="Your email adress... ">
+                    <span class="email-right-title">Subcribe</span>
                 </div>
             </div>
         </div>

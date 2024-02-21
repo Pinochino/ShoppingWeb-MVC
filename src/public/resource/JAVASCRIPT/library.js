@@ -197,7 +197,7 @@
         HT.openCategoryDropdown();
         HT.swiper();
         HT.specialSwiper();
-        HT.countdown();
+        // HT.countdown();
         HT.propertySwiper();
         HT.brandSwiper();
         HT.setUpPriceRange();
@@ -334,6 +334,14 @@ let iconSign = document.querySelector("#iconLogin");
 iconSign.addEventListener('click', function () {
     document.querySelector("#loginTable").classList.add("show");
 });
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     var modal = UIkit.modal('#my-modal');
+//     if (!modal.isToggled) {
+//         modal.show();
+//     }
+// });
+
 
 
 
