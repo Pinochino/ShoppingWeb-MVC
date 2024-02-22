@@ -68,8 +68,8 @@
                 </div>
                 <div class="header-widget">
                     <div class="uk-flex">
-                        <span id="iconLogin"  class="widget-item">
-                            <span  class="uk-icon" uk-icon="user"></span>
+                        <span id="iconLogin" class="widget-item">
+                            <span class="uk-icon" uk-icon="user"></span>
                         </span>
                         <span href="" class="widget-item">
                             <span class="uk-icon" uk-icon="heart"></span>
@@ -102,10 +102,97 @@
                                     <li><a href="" class="text-bold green">Top 100 Products </a></li>
                                     <li><a href="" class="text-bold purple">Handpick By Digic</a></li>
                                     <li>
-                                        <a href="">Computers & Laptop <i class="uk-icon" uk-icon="icon: chevron-right"></i></a>
+
+                                        <a href="" uk-toggle="target: #dropdown3">Computers & Laptop <i class="uk-icon" uk-icon="icon: chevron-right"></i></a>
+                                        <div id="dropdown3" uk-dropdown="pos: right-center; mode: hover; animation: slide-left; animate-out: true; duration: 400;">
+                                            <ul class="uk-nav uk-dropdown-nav" uk-grid>
+                                                <li class=" uk-width-1-3 uk-width-1-3@l">
+                                                    <ul class="dropdown3-title">
+                                                        <li>Computers</li>
+                                                        <li>Computers & Tablets</li>
+                                                        <li>Data storage</li>
+                                                        <li>Laptop Accessories</li>
+                                                        <li>Monitors</li>
+                                                        <li>Networking Products</li>
+                                                        <li>Power Strips & Surge</li>
+                                                        <li>Protectors</li>
+                                                        <li>Printers</li>
+                                                    </ul>
+                                                </li>
+                                                <li class="uk-width-1-3 uk-width-1-3@l">
+                                                    <ul class="dropdown3-title">
+                                                        <li>Accessories</li>
+                                                        <li>Blank media</li>
+                                                        <li>Blue light blocking</li>
+                                                        <li>Laptop Accessories</li>
+                                                        <li>Cable Security</li>
+                                                        <li>Cables & Interconnects</li>
+                                                    </ul>
+                                                    <br>
+                                                    <ul class="dropdown3-title">
+                                                        <li>Laptop</li>
+                                                        <li>Samsung Electronics</li>
+                                                        <li>Lanovo</li>
+                                                        <li>Visual Land</li>
+                                                        <li>Xiaomi</li>
+                                                    </ul>
+                                                </li>
+                                                <li class="uk-width-1-3 uk-width-1-3@l">
+                                                    <img src="/src/public/resource/Images/All-departments/img1.webp" alt="" srcset="">
+                                                    <h3>Best for Gaming</h3>
+                                                    <span>Blank case eidtion</span>
+                                                    <div class="overlay-readmore">
+                                                        <a href="" class="btn-readmore btn"><span>Shop now</span><span class="uk-icon" uk-icon="icon:  chevron-right"></span></a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
                                     </li>
                                     <li>
-                                        <a href="">Digital Camera <i class="uk-icon" uk-icon="icon: chevron-right"></i></a>
+                                        <a href="" uk-toggle="target: #dropdown4">Digital Camera <i class="uk-icon" uk-icon="icon: chevron-right"></i></a>
+                                        <div id="dropdown4" uk-dropdown="pos: right-center; mode: hover; animation: slide-left; animate-out: true; duration: 400;">
+                                            <div class="canon">
+                                                <img src="/src/public/resource/Images/All-departments/img1.webp" alt="" srcset="">
+                                                <h3>Best for Gaming</h3>
+                                                <span>Blank case eidtion</span>
+                                                <div class="overlay-readmore">
+                                                    <a href="" class="btn-readmore btn"><span>Shop now</span><span class="uk-icon" uk-icon="icon:  chevron-right"></span></a>
+                                                </div>
+                                            </div>
+                                            <ul class="uk-nav uk-dropdown-nav" uk-grid>
+                                                <li class=" uk-width-1-3 uk-width-1-3@l">
+                                                    <ul class="dropdown3-title">
+                                                        <li>Computers</li>
+                                                        <li>Computers & Tablets</li>
+                                                        <li>Data storage</li>
+                                                        <li>Laptop Accessories</li>
+                                                        <li>Laptop Accessories</li>
+                                                    </ul>
+                                                </li>
+                                                <li class="uk-width-1-3 uk-width-1-3@l">
+                                                    <ul class="dropdown3-title">
+                                                        <li>Accessories</li>
+                                                        <li>Blank media</li>
+                                                        <li>Blue light blocking</li>
+                                                        <li>Laptop Accessories</li>
+                                                        <li>Laptop Accessories</li>
+                                                        
+                                                    </ul>
+
+                                                </li>
+                                                <li class=" uk-width-1-3 uk-width-1-3@l">
+                                                    <ul class="dropdown3-title">
+                                                        <li>Computers</li>
+                                                        <li>Computers & Tablets</li>
+                                                        <li>Data storage</li>
+                                                        <li>Laptop Accessories</li>
+                                                        <li>Monitors</li>
+                                                        
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </li>
                                     <li>
                                         <a href="">Audio & Video <i class="uk-icon" uk-icon="icon:  chevron-right"></i></a>
@@ -135,7 +222,7 @@
                                                 </ul>
                                             </div>
                                         </li>
-                                        <li  class="dropdown-differ">
+                                        <li class="dropdown-differ">
                                             <a href>Shop<span uk-drop-parent-icon></span></a>
                                             <div class="uk-dropdown menu-infor">
                                                 <div class="uk-child-width-1-3" uk-grid>
@@ -171,7 +258,7 @@
                                                             <li class="uk-nav-divider"></li>
                                                             <li><a href="#">Item</a></li>
                                                         </ul>
-                                                    </div>  
+                                                    </div>
                                                 </div>
                                         </li>
                                         <li class="dropdown-differ">
@@ -225,7 +312,7 @@
                                     </ul>
                                     <li>
                                     </li>
-                                    
+
                                 </nav>
                     </div>
                 </div>

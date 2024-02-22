@@ -2157,11 +2157,11 @@ a:hover {
     border: 1px solid #32D296;
 }
 
-.footer-login{
+.footer-login {
     display: flex;
 }
 
-.Sign-up-email{
+.Sign-up-email {
     background: url("/src/public/resource/Images/Switcher/img4.webp");
     background-position: center;
     background-repeat: no-repeat;
@@ -2169,31 +2169,37 @@ a:hover {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.email-common{
+
+.email-common {
     display: flex;
     justify-content: space-between;
     padding: 20px 105px;
     align-items: center;
 }
+
 .email-left {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
 }
-.email-left .uk-icon svg{
+
+.email-left .uk-icon svg {
     height: 40px;
     width: 40px;
 }
+
 .email-left .uk-icon {
     padding: 0 10px;
 }
-.email-left h3{
+
+.email-left h3 {
     font-size: 23px;
     color: white;
     font-weight: 500;
 }
-.email-right .email-right-title{
+
+.email-right .email-right-title {
     background: black;
     position: absolute;
     height: 42px;
@@ -2209,7 +2215,8 @@ a:hover {
     width: 127px;
     text-align: center;
 }
-.email-right input{
+
+.email-right input {
     height: 54px;
     border: 1px solid #e5e5e5;
     width: 650px;
@@ -2218,8 +2225,90 @@ a:hover {
     position: relative;
     padding: 0 20px;
 }
-.email-right .email-right-title:hover{
+
+.email-right .email-right-title:hover {
     background: var(--background-btn);
 }
 
 
+#dropdown3.uk-dropdown {
+    width: 710px;
+    height: 498.4px;
+    background: url("/src/public/resource/Images/All-departments/img2.webp");
+    padding-left: 15px;
+    padding-right: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+#dropdown3.uk-open.uk-dropdown,
+#dropdown4.uk-open.uk-dropdown {
+    top: -174.7px !important;
+    left: 159.2px !important;
+    border-top: 1px solid red;
+    max-width: 1489px;
+    transform: translate(18%, 176px);
+}
+
+#dropdown3 .uk-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.dropdown3-title >  li {
+    color: #828282;
+    font-size: 15px;
+    line-height: 28px;
+    font-family: FONT;
+}
+
+.dropdown3-title li:first-child {
+    font-weight: 500;
+    line-height: 54px;
+    color: black;
+    font-size: 17px;
+}
+
+#dropdown3 .uk-nav .uk-width-1-3:last-child {
+    display: ruby;
+    text-align: center;
+    padding-right: 0;
+    transform: translateY(3%);
+}
+#dropdown3 .uk-nav .uk-width-1-3:last-child > *,
+#dropdown4 .canon > *{
+    margin: 15px 0;
+    color: black;
+}
+#dropdown3 .uk-nav .uk-width-1-3:last-child h3{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+#dropdown3 .uk-nav .uk-width-1-3:last-child .btn{
+    padding: 2px 13px;
+}
+#dropdown4.uk-dropdown{
+    width: 710px;
+    height: 498.4px;
+    background: url("/src/public/resource/Images/All-departments/img3.webp");
+    padding-left: 15px;
+    padding-right: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+
+}
+#dropdown4 h3{
+    font-weight: 600;
+}
+#dropdown4 .uk-grid{
+    transform: translateY(30%);
+}
+.overlay-readmore .btn .uk-icon:hover{
+    background: var(--white-color);
+}

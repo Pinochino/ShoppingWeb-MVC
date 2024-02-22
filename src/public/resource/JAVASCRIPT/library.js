@@ -335,12 +335,7 @@ iconSign.addEventListener('click', function () {
     document.querySelector("#loginTable").classList.add("show");
 });
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     var modal = UIkit.modal('#my-modal');
-//     if (!modal.isToggled) {
-//         modal.show();
-//     }
-// });
+
 
 
 
