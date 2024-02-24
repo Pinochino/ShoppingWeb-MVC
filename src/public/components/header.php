@@ -153,7 +153,7 @@
                                         <a href="" uk-toggle="target: #dropdown4">Digital Camera <i class="uk-icon" uk-icon="icon: chevron-right"></i></a>
                                         <div id="dropdown4" uk-dropdown="pos: right-center; mode: hover; animation: slide-left; animate-out: true; duration: 400;">
                                             <div class="canon">
-                                                <img src="/src/public/resource/Images/All-departments/img1.webp" alt="" srcset="">
+                                                <img src="/src/public/resource/Images/All-departments/img5.png" alt="" srcset="">
                                                 <h3>Best for Gaming</h3>
                                                 <span>Blank case eidtion</span>
                                                 <div class="overlay-readmore">
@@ -164,41 +164,96 @@
                                                 <li class=" uk-width-1-3 uk-width-1-3@l">
                                                     <ul class="dropdown3-title">
                                                         <li>Computers</li>
-                                                        <li>Computers & Tablets</li>
                                                         <li>Data storage</li>
                                                         <li>Laptop Accessories</li>
                                                         <li>Laptop Accessories</li>
+                                                        <li>Computers & Tablets</li>
                                                     </ul>
                                                 </li>
                                                 <li class="uk-width-1-3 uk-width-1-3@l">
                                                     <ul class="dropdown3-title">
                                                         <li>Accessories</li>
                                                         <li>Blank media</li>
+                                                        <li>Laptop Accessories</li>
+                                                        <li>Laptop Accessories</li>
                                                         <li>Blue light blocking</li>
-                                                        <li>Laptop Accessories</li>
-                                                        <li>Laptop Accessories</li>
-                                                        
+
                                                     </ul>
 
                                                 </li>
                                                 <li class=" uk-width-1-3 uk-width-1-3@l">
                                                     <ul class="dropdown3-title">
                                                         <li>Computers</li>
-                                                        <li>Computers & Tablets</li>
+                                                        <li>Monitors</li>
                                                         <li>Data storage</li>
                                                         <li>Laptop Accessories</li>
-                                                        <li>Monitors</li>
-                                                        
+                                                        <li>Computers & Tablets</li>
                                                     </ul>
                                                 </li>
                                             </ul>
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="">Audio & Video <i class="uk-icon" uk-icon="icon:  chevron-right"></i></a>
+                                        <a href="" uk-toggle="target: #dropdown5">Audio & Video <i class="uk-icon" uk-icon="icon:  chevron-right"></i></a>
+                                        <div id="dropdown5" uk-dropdown="pos: right-center; mode: hover; animation: slide-left; animate-out: true; duration: 400;">
+                                            <div class="audio-video">
+                                                <ul class="dropdown3-title">
+                                                    <li>Computers</li>
+                                                    <li>Monitors</li>
+                                                    <li>Data storage</li>
+                                                    <li>Laptop Accessories</li>
+                                                    <li>Computers & Tablets</li>
+                                                </ul>
+                                            </div>
+                                            <div class="canon">
+                                                <h3>Headephones</h3>
+                                                <span>Sale up to 30%</span>
+                                                <div class="overlay-readmore">
+                                                    <a href="" class="btn-readmore btn"><span>Shop now</span><span class="uk-icon" uk-icon="icon:  chevron-right"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                     <li>
-                                        <a href="">Mobiles & Tablets <i class="uk-icon" uk-icon="icon:  chevron-right"></i></a>
+                                        <a href="" uk-toggle="target: #dropdown6">Mobiles & Tablets <i class="uk-icon" uk-icon="icon:  chevron-right"></i></a>
+                                        <div id="dropdown6" uk-dropdown="pos: right-center; mode: hover; animation: slide-left; animate-out: true; duration: 400;">
+                                            <div class="mobile-tablets" uk-grid>
+                                                <div class="uk-width-1-3">
+                                                    <ul class="dropdown3-title">
+                                                        <li>Computers</li>
+                                                        <li>Data storage</li>
+                                                        <li>Laptop Accessories</li>
+                                                        <li>Laptop Accessories</li>
+                                                        <li>Computers & Tablets</li>
+                                                    </ul>
+                                                    <br>
+                                                    <ul class="dropdown3-title">
+                                                        <li>Computers</li>
+                                                        <li>Data storage</li>
+                                                        <li>Laptop Accessories</li>
+                                                        <li>Laptop Accessories</li>
+                                                        <li>Computers & Tablets</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="uk-width-2-3">
+                                                    <ul class="dropdown3-title">
+                                                        <li>Best Seller Product</li>
+                                                        <?php for ($t = 0; $t <= 3; $t++) { ?>
+                                                            <li>
+                                                                <div class="Best-Seller-Product">
+                                                                    <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" class="img img-scaledown">
+                                                                    <div class="Best-Seller-Infor">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Bluetooth Wireless Speaker</span>
+                                                                        <span>$115</span>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        <?php } ?>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                     <li><a href="">TV & Home Theater</a></li>
                                     <li><a href="">Portable Speaker</a></li>

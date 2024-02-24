@@ -86,7 +86,16 @@
     .twoPercent .slide-item .img img {
         height: 367px;
     }
-
+    .footer{
+        position: relative;
+    }
+    .Sign-up-email{
+        position: absolute;
+        bottom: 0;
+        z-index: 1000;
+        left: 0;
+        transform: translate(4%, -23rem);
+    }
 
 }
 
@@ -251,6 +260,9 @@
         width: 241px;
         height: 150px;
     }
+    .footer-4 .ft-menu-item{
+        margin-top: 15px;
+    }
 }
 
 @media(min-width: 360px) and (max-width: 530px) {
@@ -380,8 +392,11 @@
         display: contents;
         margin-top: 10px;
     }
+     .footer-menu .footer-4{
+        display: flex;
+    } 
     .footer-upper .uk-width-1-2 .ft-menu-item:first-child{
-        width: 207px;
+        width: 192px;
     }
 
     .footer-menu {
@@ -409,7 +424,7 @@
     }
     .brand-item .img{
         height: 98px;
-        width: 180px;
+        width: 104%;
     }
     .panel-background .overlay .overlay-name{
         font-size: 22px;
@@ -419,7 +434,7 @@
     }
     .email-right input{
         width: 300px;
-        transform: translate(41px, 100%);
+        transform: translate(9%, 100%);
     }
     .email-common{
         display: inline;
@@ -435,10 +450,10 @@
         display: none;
     }
     .email-left h3{
-        transform: translate(40px, 40px);
+        transform: translate(28px, 40px);
     }
-    .email-right .email-right-title{
-        transform: translate(-74%, 143%);
+    .email-right .email-right-title {
+        transform: translate(-82%, 143%);
     }
     .footer-upper {
         padding: 30px 15px 60px;
@@ -454,9 +469,34 @@
     .panel-brand .panel-body{
         margin: 0 10px;
     }
+    .footer-upper .uk-width-1-2:first-child{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .footer-2{
+        margin-left: 18%;
+    }
+    .footer-2 .ft-menu-item{
+        margin-top: 6px;
+    }
+    .footer-4 .ft-menu-item{
+        margin-top: 10px;
+    }
+    .footer-upper .address span:last-child, .footer-upper .hotline span:last-child {
+        font-size: 14px;
+        line-height: 18px;
+    } 
+
 }
 
 @media(min-width: 315px) and (max-width: 415px) {
+    .email-right input{
+        width: 300px;
+        transform: translate(9%, 100%);
+    }
+    .email-right .email-right-title {
+        transform: translate(-82%, 143%);
+    }
     .content-overlay .overlay-title {
         font-size: 26px;
         line-height: 29px;
@@ -489,5 +529,23 @@
         align-content: center;
         text-align: center;
     }
-
+    .footer-upper .uk-width-1-2:first-child{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .footer-2{
+        margin-left: 18%;
+    }
+    .footer-upper .address span:last-child, .footer-upper .hotline span:last-child {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .footer-4 .ft-menu-item{
+        margin-top: 2.89%;
+    }
+    .footer-upper .address span:last-child, .footer-upper .hotline span:last-child {
+    font-size: 14px;
+    line-height: 18px;
 }
+}
+
