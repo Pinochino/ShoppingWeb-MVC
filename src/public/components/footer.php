@@ -2,7 +2,7 @@
     <div class="uk-container uk-container-1520">
         <div class="footer-upper">
             <div class="uk-grid-medium" uk-grid>
-                <div class="uk-width-1-2" uk-grid>
+                <div class="uk-width-1-2 uk-width-1-2@m" uk-grid>
                     <div class="uk-width-1-2@s">
                         <div class="ft-logo mb20"><a href=""><img src="/src/public/resource/Images/LOGO.webp" alt=""></a></div>
                         <div class="description">
@@ -36,10 +36,10 @@
                     </div>
 
                 </div>
-                <div class="uk-width-1-2">
+                <div class="uk-width-1-2 uk-width-1-2@m">
                     <div class="footer-menu">
                         <div class="uk-grid-medium" uk-grid>
-                            <div class="uk-width-1-2 uk-width-1-2@m">
+                            <div class="uk-width-1-2 uk-width-1-2@m uk-width-1-2@s ">
                                 <div class="ft-menu-item">
                                     <div class="ft-heading">CUSTOMER SERVICE</div>
                                     <ul class="uk-list uk-clearfix">
@@ -52,7 +52,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="uk-width-1-2 uk-width-1-2@m footer-4">
+                            <div class="uk-width-1-2 uk-width-1-2@m uk-width-1-2@s footer-4">
                                 <div class="ft-menu-item">
                                     <div class="ft-heading">CUSTOMER SERVICE</div>
                                     <ul class="uk-list uk-clearfix">

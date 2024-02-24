@@ -101,6 +101,10 @@
                 640: {
                     slidesPerView: 3,
                     spaceBetween: 0
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 0
                 }
             },
             navigation: {

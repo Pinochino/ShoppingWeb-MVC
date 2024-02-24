@@ -12,9 +12,9 @@
     --black-color: black;
     --border-radius-50px: 50%;
     --fz-14: 14px;
-    --background-btn: #f03333;
+    --background-btn:  #EE4266;
     --text-product-color: #216fe6;
-    --text-span-color: #a3a3a3;
+    --text-span-color: #C7C8CC;
     --swiper-navigation-size: 15px !important;
     --border--color: #e5e5e5;
 }
@@ -282,7 +282,7 @@ ul {
 .department-wrapper {
     margin-right: 50px;
     width: 280px;
-    background-color: #F03333;
+    background-color: #EE4266;
     border: 1px;
     border-radius: 5px 5px 0 0;
     height: 56px;
@@ -495,7 +495,7 @@ a:hover {
 }
 
 .btn-readmore:hover::before {
-    background: white;
+    background: #FFF67E;
 }
 
 .btn-readmore:hover .uk-icon svg {
@@ -1258,7 +1258,9 @@ a:hover {
 }
 
 .panel-brand {
+    margin-top: -40px;
     padding: 30px 0;
+    background-color: #EEEDEB;
 }
 
 .panel-brand .heading-1>* {
@@ -1287,10 +1289,12 @@ a:hover {
 /** FOOTER **/
 .footer {
     font-family: url('/src/public/resource/Roboto/Roboto-Medium.ttf');
+
 }
 
+
 .footer-upper {
-    padding: 100px 15px 45px;
+    padding: 40px 15px 45px;
     border-top: 1px solid #f5f5f5;
 }
 
@@ -1517,7 +1521,7 @@ a:hover {
 }
 
 .uk-subnav .uk-dropdown {
-    border-top: 1px solid red;
+    border-top: 1px solid #FFA447;
 }
 
 .uk-subnav .uk-dropdown li>* {

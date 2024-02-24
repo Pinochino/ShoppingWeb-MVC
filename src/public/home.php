@@ -11,7 +11,7 @@
         <!---------------panel-banner--------->
         <div class="panel-banner">
             <div class="uk-container uk-container-1520">
-                <div class="uk-grid">
+                <div class="uk-grid" uk-grid>
                     <div class="uk-width-2-3@m twoPercent uk-width-2-3@s">
                         <div class="panel-slide">
                             <div class="swiper-container">
@@ -139,6 +139,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="uk-width-1-4@m uk-width-1-2@s">
                             <div class="commit-item">
                                 <div class="uk-flex uk-flex-middle">
@@ -195,7 +196,7 @@
                     <div class="panel-body">
                         <div uk-grid>
                             <div class="uk-width-1-2@s uk-width-1-3@m top-categories">
-                                <div class="category-item">
+                                <div class="category-item  uk-card uk-card-hover">
                                     <div class="uk-flex uk-flex-middle">
                                         <a href="" class="img img-scaledown"><img src="/src/public/resource/Images/Top-category/img1.webp" alt="" srcset=""></a>
                                         <div class="infor-title">
@@ -212,7 +213,7 @@
                                 </div>
                             </div>
                             <div class="uk-width-1-2@s uk-width-1-3@m top-categories">
-                                <div class="category-item">
+                                <div class="category-item uk-card uk-card-hover">
                                     <div class="uk-flex uk-flex-middle">
                                         <a href="" class="img img-scaledown"><img src="/src/public/resource/Images/Top-category/img2.webp" alt="" srcset=""></a>
                                         <div class="infor-title">
@@ -229,7 +230,7 @@
                                 </div>
                             </div>
                             <div class="uk-width-1-2@s uk-width-1-3@m top-categories">
-                                <div class="category-item">
+                                <div class="category-item  uk-card uk-card-hover">
                                     <div class="uk-flex uk-flex-middle">
                                         <a href="" class="img img-scaledown"><img src="/src/public/resource/Images/Top-category/img3.webp" alt="" srcset=""></a>
                                         <div class="infor-title">
@@ -246,7 +247,7 @@
                                 </div>
                             </div>
                             <div class="uk-width-1-2@s uk-width-1-3@m top-categories">
-                                <div class="category-item">
+                                <div class="category-item  uk-card uk-card-hover">
                                     <div class="uk-flex uk-flex-middle">
                                         <a href="" class="img img-scaledown"><img src="/src/public/resource/Images/Top-category/img4.webp" alt="" srcset=""></a>
                                         <div class="infor-title">
@@ -263,7 +264,7 @@
                                 </div>
                             </div>
                             <div class="uk-width-1-2@s uk-width-1-3@m top-categories">
-                                <div class="category-item">
+                                <div class="category-item  uk-card uk-card-hover">
                                     <div class="uk-flex uk-flex-middle">
                                         <a href="" class="img img-scaledown"><img src="/src/public/resource/Images/Top-category/img5.webp" alt="" srcset=""></a>
                                         <div class="infor-title">
@@ -280,7 +281,7 @@
                                 </div>
                             </div>
                             <div class="uk-width-1-2@s uk-width-1-3@m top-categories">
-                                <div class="category-item">
+                                <div class="category-item  uk-card uk-card-hover">
                                     <div class="uk-flex uk-flex-middle">
                                         <a href="" class="img img-scaledown"><img src="/src/public/resource/Images/Top-category/img6.webp" alt="" srcset=""></a>
                                         <div class="infor-title">
