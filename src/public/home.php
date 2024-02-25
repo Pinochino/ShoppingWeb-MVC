@@ -377,11 +377,32 @@
                                     <li><a href="#">Best Selling</a></li>
                                 </ul>
                                 <ul class="uk-switcher uk-margin">
-                                    <?php for ($z = 0; $z <= 2; $z++) { ?>
+                                
                                         <li>
                                             <div class="uk-grid-collapse" uk-grid>
-                                                <?php for ($j = 0; $j <= 1; $j++) { ?>
-                                                    <?php for ($i = 0; $i <= 3; $i++) { ?>
+                                            <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                         <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
                                                             <div class="product-item">
                                                                 <div class="product-item st-2 uk-position-relative">
@@ -405,11 +426,526 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    <?php } ?>
-                                                <?php } ?>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                              
                                             </div>
                                         </li>
-                                    <?php  } ?>
+                                        <li>
+                                            <div class="uk-grid-collapse" uk-grid>
+                                            <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                              
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="uk-grid-collapse" uk-grid>
+                                            <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@m mb10">
+                                                            <div class="product-item">
+                                                                <div class="product-item st-2 uk-position-relative">
+                                                                    <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                                    <div class="thumb uk-position-relative">
+                                                                        <a href="/src/public/product-infor.php" class="image img-scaledown">
+                                                                            <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                                        <div class="product-overlay">
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="info uk-text-center">
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                                        <span>Computers</span>
+                                                                        <div class="product-name">
+                                                                            <a href="">I lov y</a>
+                                                                        </div>
+                                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                              
+                                            </div>
+                                        </li>
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -431,7 +967,7 @@
             </div>
         </div>
         <!---------------panel-property--------->
-        <?php for ($k = 0; $k <= 1; $k++) { ?>
+        <!--  -->
             <div class="uk-container uk-container-1520 mb50">
                 <div class="panel-property">
                     <div class="panel-head">
@@ -464,21 +1000,17 @@
                         </div>
                     </div>
                     <div class="panel-body">
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next swiper-button-next-1"></div>
+                        <div class="swiper-button-prev swiper-button-prev-1"></div>
                         <div class="swiper-container" autoplay="true" autoplay-delay="2500" autoplay-disable-on-interaction="false" pagination-clickable="true" navigation="true">
                             <div class="swiper-wrapper">
-                                <?php $productNames = array("iPhone 5", "iPhone 6", "Samsung Galaxy S21", "Google Pixel 4", "OnePlus 9", "Xiaomi Mi 11");
-                                $totalProducts = count($productNames);
-                                for ($i = 0; $i <= 12; $i++) {
-                                    $productName = $productNames[$i % $totalProducts]; ?>
                                     <div class="swiper-slide">
                                         <div class="slide-item">
                                             <div class="product-item st-2 uk-position-relative">
                                                 <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
                                                 <div class="thumb uk-position-relative">
                                                     <a href="" class="image img-scaledown">
-                                                        <img src="/src/public/resource/Images/Product/special-<?php echo rand(0, 3); ?>.webp" alt="" srcset=""></a>
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
                                                     <div class="product-overlay">
                                                         <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
                                                     </div>
@@ -487,7 +1019,7 @@
                                                     <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
                                                     <span>Computers</span>
                                                     <div class="product-name">
-                                                        <a class="product-name-main" href=""><?php echo $productName; ?></a>
+                                                        <a class="product-name-main" href="">iphone 15</a>
                                                     </div>
                                                     <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
                                                     <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
@@ -497,14 +1029,632 @@
                                             </div>
                                         </div>
                                     </div>
-                                <?php } ?>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        <?php } ?>
+        <!-- -->
+
+
+        <div class="uk-container uk-container-1520 mb50">
+                <div class="panel-property1">
+                    <div class="panel-head">
+                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                            <div class="heading-2">Laptops & Computers</div>
+                            <div class="uk-flex uk-flex-middle">
+                                <div class="category-children uk-visible@l">
+                                    <a class="active" href="">Asus</a>
+                                    <a href="">Dell</a>
+                                    <a href="">Acer</a>
+                                    <a href="">HP</a>
+                                    <a href="">Lenovo</a>
+                                    <a href="">MSI</a>
+                                </div>
+                            </div>
+                            <div class="uk-inline uk-hidden@l">
+                                <button class="uk-button uk-button-default" type="button">
+                                    <i class="uk-icon" uk-icon="icon: menu;"></i></button>
+                                <div uk-dropdown="mode: click">
+                                    <ul class="uk-list uk-clearfix mobile-category-children">
+                                        <li><a href="">Asus</a></li>
+                                        <li><a href="">Dell</a></li>
+                                        <li><a href="">Acer</a></li>
+                                        <li><a href="">HP</a></li>
+                                        <li><a href="">Lenovo</a></li>
+                                        <li><a href="">MSI</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="swiper-button-next swiper-button-next-2"></div>
+                        <div class="swiper-button-prev swiper-button-prev-2"></div>
+                        <div class="swiper-container" autoplay="true" autoplay-delay="2500" autoplay-disable-on-interaction="false" pagination-clickable="true" navigation="true">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="swiper-slide">
+                                        <div class="slide-item">
+                                            <div class="product-item st-2 uk-position-relative">
+                                                <div class="badge uk-position-absolute  l10 fz14 text-white border-radius-50 uk-display-inline-block">-10%</div>
+                                                <div class="thumb uk-position-relative">
+                                                    <a href="" class="image img-scaledown">
+                                                        <img src="/src/public/resource/Images/Product/special-0.webp" alt="" srcset=""></a>
+                                                    <div class="product-overlay">
+                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                    </div>
+                                                </div>
+                                                <div class="info uk-text-center">
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                    <span>Computers</span>
+                                                    <div class="product-name">
+                                                        <a class="product-name-main" href="">iphone 15</a>
+                                                    </div>
+                                                    <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?>
+                                                    <span><button class="uk-button uk-button-secondary uk-button-small mt10 btncart">
+                                                            Add to card
+                                                        </button></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         <div class="panel-brand">
             <div class="uk-container uk-container-1520">

@@ -32,8 +32,8 @@
             },
             slidePerview: 1,
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next-1',
+                prevEl: '.swiper-button-prev-1',
             },
         });
     }
@@ -52,6 +52,10 @@
             spaceBetween: 0,
             // Responsive breakpoints
             breakpoints: {
+                280: {
+                    slidesPerView: 2,
+                    spaceBetween: 0
+                },
                 // when window width is >= 320px
                 320: {
                     slidesPerView: 2,
@@ -69,8 +73,49 @@
                 }
             },
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next-1',
+                prevEl: '.swiper-button-prev-1',
+            },
+        });
+    }
+    HT.propertySwiper1 = () => {
+        var swiper = new Swiper(".panel-property1 .swiper-container", {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },
+            // Default parameters
+            slidesPerView: 2.5,
+            spaceBetween: 0,
+            // Responsive breakpoints
+            breakpoints: {
+                280: {
+                    slidesPerView: 2,
+                    spaceBetween: 0
+                },
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 0
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 0
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 5,
+                    spaceBetween: 0
+                }
+            },
+            navigation: {
+                nextEl: '.swiper-button-next-2',
+                prevEl: '.swiper-button-prev-2',
             },
         });
     }
@@ -88,6 +133,10 @@
             // Responsive breakpoints
             breakpoints: {
                 // when window width is >= 320px
+                280: {
+                    slidesPerView: 2,
+                    spaceBetween: 0
+                },
                 320: {
                     slidesPerView: 2,
                     spaceBetween: 0
@@ -198,6 +247,8 @@
     };
 
     $(document).ready(function () {
+        HT.propertySwiper1();
+
         HT.openCategoryDropdown();
         HT.swiper();
         HT.specialSwiper();
