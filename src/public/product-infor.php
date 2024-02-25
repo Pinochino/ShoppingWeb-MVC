@@ -29,10 +29,10 @@
                                     <span id="bannerImage" class="img img-cover"><img src="/src/public/resource/Images/Product/special-2.webp" alt="" srcset=""></span>
                                 </div>
                                 <div class="img-low">
-                                    <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="parallax: true" tabindex="-1" uk-slider>
-                                        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid uk-grid-small">
+                                    <div class="  uk-position-relative uk-visible-toggle uk-light" uk-slider="parallax: true" tabindex="-1" uk-slider>
+                                        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-child-width-1-3@s uk-grid uk-grid-small">
                                             <li onclick="changeImage('/XAMPP2/php/PHP WEBSITE/src/public/resource/Images/Product/special-3.webp')">
-                                                <img   src="/src/public/resource/Images/Product/special-2.webp" width="150" height="150" alt="">
+                                                <img src="/src/public/resource/Images/Product/special-2.webp" width="150" height="150" alt="">
                                             </li>
                                             <li>
                                                 <img src="/src/public/resource/Images/Product/special-2.webp" width="150" height="150" alt="">
@@ -59,8 +59,8 @@
                                 <div class="header-product-info mb20">
                                     <div class="uk-flex uk-flex-column">
                                         <span>Flat 4K UHD 11</span>
-                                        <span>Brand: <span style="color: red; font-size: 13px; line-height: 30px;">Samsung</span></span>
-                                        <span class="price-new-product"><?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\price.php' ?></span>
+                                        <span>Brand: <b style="color: red; font-size: 13px; line-height: 30px;">Samsung</b></span>
+                                        <span class="price-new-product">$80.00 – $120.00</span>
                                         <div class="backtop"><a class="back-top" href="" uk-totop></a></div>
                                     </div>
                                 </div>
@@ -220,6 +220,7 @@
                                             <div class="product-overlay">
                                                 <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
                                                 <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\countdown.php' ?>
+                                                
                                             </div>
                                         </div>
                                         <div class="info uk-text-center">
@@ -242,7 +243,6 @@
             <?php require_once 'components/footer.php' ?>
         </div>
         <?php require_once 'components/script.php' ?>
-
 </body>
 
 </html>

@@ -390,6 +390,15 @@ iconSign.addEventListener('click', function () {
     document.querySelector("#loginTable").classList.add("show");
 });
 
+const slider = UIkit.slider('.uk-slider', {
+    slidesToShow: 4,
+    setMinWidth: 400, // Chỉnh cho màn hình 4 slide
+    setMediumWidth: 600,
+    // autoplay: true,
+    autoplayInterval: 2000,
+    finite: false,
+    outcls: 'uk-invisible'
+});
 
 
 
