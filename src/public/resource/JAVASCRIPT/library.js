@@ -400,7 +400,18 @@ const slider = UIkit.slider('.uk-slider', {
     outcls: 'uk-invisible'
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    UIkit.modal('#pop-up').show();
+});
 
+// window.addEventListener("load", () => {
+//     let loader = document.querySelector(".pl");
+    
+//     loader.classList.add("loader-hidden");
+//     loader.addEventListener("transitioned", () => {
+//     loader.body.removeChild("pl")
+//     });
+// });
 
 
 
