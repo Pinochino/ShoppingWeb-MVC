@@ -286,7 +286,9 @@
     .panel-property1 .info {
         transform: translateY(-80%);
     }
-
+    .pop-up-information{
+        transform: translate(-6%, 21%);
+    }
 }
 
 @media(width: 912px) {
@@ -305,6 +307,10 @@
     .st-2 {
         height: 400px;
     }
+    .pop-up-information{
+        transform: translate(-21%, 21%);
+    }
+    
 }
 
 @media(width: 800px) {
@@ -328,6 +334,12 @@
         transform: translateY(-95%);
     }
 
+    .pop-up-information{
+        transform: translate(-7%, 21%);
+    }
+    .pop-up-header p{
+        margin: 0 0 2px 0;
+    }
 }
 
 @media(width: 768px) {
@@ -463,6 +475,29 @@
         transform: translateY(-109%);
     }
 
+    .pop-up-information{
+        transform: translate(-4%, 21%);
+    }
+    .pop-up-body span{
+        font-size: 30px;
+    }
+    .check-pop-up input{
+        bottom: 4.5px;
+        left:  -3px;
+    }
+    .pop-up-header p{
+        margin:  0 0 4px 0;
+    }
+    .check-pop-up{
+        right: 0;
+        bottom: 0;
+        transform: translate(5px, 28px);
+        position: absolute;
+    }
+    .check-pop-up input {
+        bottom: 5px;
+        left: -16px;
+    }
 }
 
 @media(min-width: 531px) and (max-width: 766px) {
@@ -623,7 +658,7 @@
     }
 
     .brand-item .img {
-        width: 181px;
+        width: 168px;
         height: 110px;
     }
 
@@ -957,9 +992,23 @@
     .uk-slider-items li {
         margin: 0 3px;
     }
-    /* .header-product-info span {
+
+    .pop-up-img img{
+        display: none;
+    }
+    .pop-up-information{
+        transform: translate(-18%, 21%);
+    }
+    .pop-up-body span{
         font-size: 30px;
-    } */
+    }
+    .check-pop-up input{
+        bottom: 4.5px;
+        left:  -3px;
+    }
+    .pop-up-header p{
+        margin:  0 0 4px 0;
+    }
 }
 
 @media(min-width: 430px) and (max-width: 530px) {
@@ -981,6 +1030,9 @@
 
     .mobile .uk-flex {
         color: black;
+    }
+    .pop-up-information {
+        transform: translate(-26%, 21%);
     }
 
 }
@@ -1005,6 +1057,22 @@
     .mobile .uk-flex {
         color: black;
     }
+    .pop-up-img img{
+        display: none;
+    }
+    .pop-up-body span{
+        font-size: 30px;
+    }
+    .check-pop-up input{
+        bottom: 4.5px;
+        left:  -3px;
+    }
+    .pop-up-header p{
+        margin:  0 0 4px 0;
+    }
+    .pop-up-information {
+    transform: translate(-22%, 21%);
+}
 
 }
 
@@ -1075,6 +1143,22 @@
     .footer-upper .address span:last-child, .footer-upper .hotline span:last-child {
         font-size: 12px;
     }
+    .pop-up-img img{
+        display: none;
+    }
+    .pop-up-information{
+        transform: translate(-21%, 21%);
+    }
+    .pop-up-body span{
+        font-size: 30px;
+    }
+    .check-pop-up input{
+        bottom: 4.5px;
+        left:  -3px;
+    }
+    .pop-up-header p{
+        margin:  0 0 4px 0;
+    }
 }
 
 @media (min-width: 360px) and (max-width: 390px) {
@@ -1139,6 +1223,38 @@
     }
     .footer-upper .address span:last-child, .footer-upper .hotline span:last-child {
         font-size: 12px;
+    }
+    .pop-up-img img{
+        display: none;
+    }
+    .pop-up-information{
+        transform: translate(-12%, 21%);
+    }
+    .pop-up-body span{
+        font-size: 30px;
+    }
+    .check-pop-up input{
+        bottom: 4.5px;
+        left:  -3px;
+    }
+    .pop-up-header p{
+        margin:  0 0 4px 0;
+    }
+    .pop-up-img img{
+        display: none;
+    }
+    .pop-up-information{
+        transform: translate(-12%, 21%);
+    }
+    .pop-up-body span{
+        font-size: 30px;
+    }
+    .check-pop-up input{
+        bottom: 4.5px;
+        left:  -3px;
+    }
+    .pop-up-header p{
+        margin:  0 0 4px 0;
     }
 }
 
@@ -1218,6 +1334,9 @@
     }
     .header-product-info span:first-child {
         font-size: 30px;
+    }
+    .pop-up-img img{
+        display: none;
     }
 }
 
@@ -1473,5 +1592,24 @@
 
     .panel-property1 .info {
         transform: translateY(-80%);
+    }
+    .pop-up-img img{
+        display: none;
+    }
+    .pop-up-email input{
+        width: 138.4px;
+    }
+    .pop-up-body span{
+        font-size: 30px;
+    }
+    .pop-up-information{
+        transform: translate(-2%, 16%);
+    }
+    .pop-up-header p{
+        margin: 0 0 2px 0;
+    }
+    .check-pop-up input{
+        bottom: 6px;
+        left: -12%;
     }
 }

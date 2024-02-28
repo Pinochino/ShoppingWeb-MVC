@@ -252,7 +252,7 @@
         HT.openCategoryDropdown();
         HT.swiper();
         HT.specialSwiper();
-        // HT.countdown();
+        HT.countdown();
         HT.propertySwiper();
         HT.brandSwiper();
         HT.setUpPriceRange();
@@ -411,6 +411,10 @@ document.addEventListener('DOMContentLoaded', function() {
 //     loader.addEventListener("transitioned", () => {
 //     loader.body.removeChild("pl")
 //     });
+// });
+// let switcher = document.querySelector("#uk-switcher-3");
+// switcher.addEventListener("click", () => {
+//     switcher.classList.add("pl");
 // });
 
 
