@@ -2312,7 +2312,6 @@ a:hover {
 }
 
 #dropdown3 .uk-nav .uk-width-1-3:last-child {
-    display: ruby;
     text-align: center;
     padding-right: 0;
     transform: translateY(3%);

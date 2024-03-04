@@ -693,6 +693,21 @@
     .panel-property1 .info {
         transform: translateY(-80%);
     }
+    .aside{
+        display: none;
+    }
+    .content-low .uk-subnav {
+        width: 490px;
+    }
+    .content-low .product-overlay{
+        display: none;
+    }
+    .footer-catalogue .footer-upper .uk-grid-medium {
+        margin-right: 0;
+    }
+    .content-shop{
+        width: 407px;
+    }
 }
 
 @media(min-width: 360px) and (max-width: 530px) {

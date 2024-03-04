@@ -248,7 +248,6 @@
 
     $(document).ready(function () {
         HT.propertySwiper1();
-
         HT.openCategoryDropdown();
         HT.swiper();
         HT.specialSwiper();
@@ -389,6 +388,15 @@ let iconSign = document.querySelector("#iconLogin");
 iconSign.addEventListener('click', function () {
     document.querySelector("#loginTable").classList.add("show");
 });
+document.addEventListener('click', function(event) {
+    let targetElement = event.target; // Phần tử mà người dùng đã nhấp vào
+
+    // Kiểm tra nếu người dùng đã nhấp vào phần tử bên ngoài bảng login
+    if (!loginTable.contains(targetElement) && !iconSign.contains(targetElement)) {
+        loginTable.classList.remove("show"); // Đóng bảng login
+    }
+});
+
 
 const slider = UIkit.slider('.uk-slider', {
     slidesToShow: 4,
