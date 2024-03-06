@@ -412,6 +412,15 @@ document.addEventListener('DOMContentLoaded', function() {
     UIkit.modal('#pop-up').show();
 });
 
+// document.addEventListener('DOMContentLoaded', function() {
+//     var isPopupShown = sessionStorage.getItem('popupShown');
+//     if (!isPopupShown) {
+//         UIkit.modal('#pop-up').show();
+//         sessionStorage.setItem('popupShown', true);
+//     }
+// });
+
+
 // window.addEventListener("load", () => {
 //     let loader = document.querySelector(".pl");
     

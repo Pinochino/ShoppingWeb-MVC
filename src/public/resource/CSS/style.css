@@ -18,9 +18,9 @@
     --swiper-navigation-size: 15px !important;
     --border--color: #e5e5e5;
     --hue: 223;
-	--bg: hsl(var(--hue),10%,90%);
-	--fg: hsl(var(--hue),10%,10%);
-	/* font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320)); */
+    --bg: hsl(var(--hue), 10%, 90%);
+    --fg: hsl(var(--hue), 10%, 10%);
+    /* font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320)); */
 }
 
 
@@ -1628,14 +1628,17 @@ a:hover {
 .footer-catalogue {
     background: #344955;
 }
-.footer-catalogue .footer-upper .description{
+
+.footer-catalogue .footer-upper .description {
     color: #FEFBF6;
 }
+
 .footer-catalogue .ft-heading {
     color: white;
 }
 
-.footer-catalogue .ft-menu-item .uk-list li a, .footer-catalogue{
+.footer-catalogue .ft-menu-item .uk-list li a,
+.footer-catalogue {
     color: #FEFBF6;
 }
 
@@ -2060,122 +2063,155 @@ a:hover {
     font-weight: 500;
     margin: 30px 0;
 }
-.related-products .info{
+
+.related-products .info {
     transform: translateY(-34%);
 }
-/***************** LOGIN *****************/
-#Login {
-    border-top: 2px solid red;
-    border: 1px solid #e5e5e5;
-    max-width: 400px;
-    height: auto;
-    display: block;
-    background: white;
-}
-
-.header-login {
-    display: flex;
-    justify-content: space-around;
-}
-
-.form-group {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-.footer-login-header {
-    display: flex;
-    justify-content: space-around;
-}
-
-.login {
-    display: flex;
-    justify-content: center;
-}
-
-#Login .uk-flex {
-    padding: 30px;
-}
-
-.login button {
-    height: 45px;
-    width: 100%;
-    border-radius: 10px;
-    outline: none;
-    background: black;
-    color: white;
-    line-height: 45px;
-    text-transform: uppercase;
-}
-
-.header-login span {
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 500;
-    font-family: "Poppins";
-}
-
-.header-login span:first-child {
-    color: #000;
-}
-
-.header-login span:last-child {
-    color: var(--background-btn);
-}
-
-.body-login input {
-    width: 100%;
-    height: 45px;
-    border-radius: 5px;
-    border: 1px solid #e5e5e5;
-    outline: none;
-    padding: 10px 20px;
-}
-
-.body-login input::placeholder {
-    transform: translateX(15px);
-
-}
-
-.body-login span {
-    font-size: 15px;
-    line-height: 45px;
-    font-weight: 400;
-}
-
-.body-login span sup {
-    color: red;
-}
-
-.Remember-me input::marker {
-    border-radius: 50%;
-}
-
-.Lostpassword a {
-    text-decoration: underline;
-    color: #000;
-}
-
 
 #cart-Table form {
     position: relative;
 }
 
-#loginTable {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-40px, 100px);
-    border-top: 1px solid #F0506E;
-    background: white;
-    padding: 41px;
+/***************** LOGIN *****************/
+#form-1 {
+    display: flex;
+    justify-content: center;
 }
 
-#loginTable.show {
-    display: block;
+.home-login {
+    background-color: #5B86E5;
+    height: 100vh;
+    width: 100%;
+    position: relative;
 }
+
+.sum-login {
+    background: #ABC1F2;
+    display: flex;
+    position: absolute;
+    transform: translateY(15%);
+}
+
+.login-left img {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    transform: translate(3%, 40%);
+}
+
+.login-left {
+    padding: 100px;
+    position: relative;
+}
+
+.login-left p {
+    color: white;
+    font-size: 25px;
+    line-height: 37px;
+    font-weight: 700;
+    font-family: Telegraf;
+}
+
+.login-left p span {
+    color: #437cfe;
+}
+
+.login-right {
+    background: #fff;
+    justify-content: center;
+    border-radius: 25px 0px 0px 25px;
+    display: flex;
+    width: 500px;
+}
+
+.login-right .uk-flex {
+    padding: 20px;
+}
+
+.login-other {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-right .header-login,
+.login-right .login-other,
+.login-right span:first-child {
+    margin-bottom: 16px;
+}
+
+.Username .form-group,
+.Password1 .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-other button {
+    margin: 0 10px;
+    padding: 5px 6px;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #5B86E5;
+    background: #FFFFFF;
+    height: 40px;
+}
+
+.login-right .header-login span {
+    color: black;
+    font-family: 'Poppins';
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.login-right .body-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Username span:first-child,
+.Password1 span:first-child {
+    color: #000;
+    font-size: 15px;
+    font-weight: 400px;
+    font-family: FONT;
+    line-height: 20px;
+}
+
+.Username .uk-form-icon {
+    position: absolute;
+    top: 40%;
+}
+
+.input-login>* {
+    margin: 15px;
+}
+
+#sign-up {
+    height: 38px;
+    width: 232px;
+    background: #5B86E5;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+}
+
+.footer-login span {
+    color: #5B86E5;
+}
+
+.login-other button svg{
+    margin: 0 3px;
+    color: #216fe6;
+}
+
+
+/* position: relative;
+
+
+filter: drop-shadow(0px 26px 56px rgba(0, 0, 0, 0.25)); */
+
 
 .invalid {
     outline: 1px solid #F0506E;
@@ -2188,75 +2224,6 @@ a:hover {
 
 .footer-login {
     display: flex;
-}
-
-.Sign-up-email {
-    background: url("/src/public/resource/Images/Switcher/img4.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 1410px 104px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.email-common {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 105px;
-    align-items: center;
-}
-
-.email-left {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-}
-
-.email-left .uk-icon svg {
-    height: 40px;
-    width: 40px;
-}
-
-.email-left .uk-icon {
-    padding: 0 10px;
-}
-
-.email-left h3 {
-    font-size: 23px;
-    color: white;
-    font-weight: 500;
-}
-
-.email-right .email-right-title {
-    background: black;
-    position: absolute;
-    height: 42px;
-    border: 1px solid black;
-    padding: 6px 10px;
-    transform: translate(-105%, 6px);
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 28px;
-    color: white;
-    border-radius: 30px;
-    font-family: "Poppins";
-    width: 127px;
-    text-align: center;
-}
-
-.email-right input {
-    height: 54px;
-    border: 1px solid #e5e5e5;
-    width: 650px;
-    border-radius: 30px;
-    outline: none;
-    position: relative;
-    padding: 0 20px;
-}
-
-.email-right .email-right-title:hover {
-    background: var(--background-btn);
 }
 
 /* DROPDOWN ALL-DEPARTMENT */
@@ -2457,13 +2424,14 @@ a:hover {
 
 /* POP-UP */
 
-#pop-up .uk-modal-dialog{
+#pop-up .uk-modal-dialog {
     height: 498.587px;
     width: 928px;
     font-family: "Poppins";
     border-radius: 15px;
-} 
-#pop-up .uk-modal-close-default{
+}
+
+#pop-up .uk-modal-close-default {
     border-radius: 50px;
     padding: 10px;
     border: 1px solid #e9e9e9;
@@ -2471,47 +2439,55 @@ a:hover {
     right: 10px;
     left: initial;
 }
-.pop-up-img{
+
+.pop-up-img {
     height: 494.587px;
     width: 477.913px;
 }
-#pop-up  .uk-modal-body{
+
+#pop-up .uk-modal-body {
     padding: 4px 1px;
 }
-.pop-up-img{
+
+.pop-up-img {
     padding: 4px;
 }
-.pop-up-information{
+
+.pop-up-information {
     position: absolute;
-right: 0;
-top: 0;
-display: flex;
-transform: translate(-40%, 21%);
-flex-direction: column;
-text-align: center;
+    right: 0;
+    top: 0;
+    display: flex;
+    transform: translate(-40%, 21%);
+    flex-direction: column;
+    text-align: center;
 }
-.pop-up-header{
+
+.pop-up-header {
     font-size: 20px;
     line-height: 23px;
     font-weight: 700;
 }
+
 #pop-up .pop-up-footer .pop-up-email,
 .pop-up-body,
-.pop-up-footer{
+.pop-up-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.pop-up-body span{
+
+.pop-up-body span {
     font-size: 40px;
     font-weight: 700;
     color: #35374B;
 }
-.pop-up-body span:first-child{
+
+.pop-up-body span:first-child {
     color: var(--background-btn);
 }
 
-.pop-up-email input{
+.pop-up-email input {
     height: 48.4px;
     width: 261.6px;
     padding: 0 15px;
@@ -2520,20 +2496,22 @@ text-align: center;
     outline: none;
 }
 
-#pop-up .pop-up-footer button{
+#pop-up .pop-up-footer button {
     height: 40px;
     width: 113.25px;
     color: white;
-    border: 1px solid ;
+    border: 1px solid;
     outline: none;
     outline: none;
     border-radius: 50px;
     background-color: #F03333;
 }
-#pop-up .pop-up-footer .pop-up-email > *{
+
+#pop-up .pop-up-footer .pop-up-email>* {
     margin: 10px 0;
 }
-.check-pop-up input{
+
+.check-pop-up input {
     position: absolute;
     bottom: 4px;
     left: 4px;
@@ -2542,63 +2520,149 @@ text-align: center;
 
 
 
-  
+
 
 .pl {
-	display: block;
-	width: 6.25em;
-	height: 6.25em;
+    display: block;
+    width: 6.25em;
+    height: 6.25em;
 }
-.pl__ring, .pl__ball {
-	animation: ring 2s ease-out infinite;
-}
+
+.pl__ring,
 .pl__ball {
-	animation-name: ball;
+    animation: ring 2s ease-out infinite;
+}
+
+.pl__ball {
+    animation-name: ball;
 }
 
 /* Dark theme  */
 @media (prefers-color-scheme: dark) {
-	:root {
-		--bg: hsl(var(--hue),10%,10%);
-		--fg: hsl(var(--hue),10%,90%);
-	}
+    :root {
+        --bg: hsl(var(--hue), 10%, 10%);
+        --fg: hsl(var(--hue), 10%, 90%);
+    }
 }
 
 /* Animation */
 @keyframes ring {
-	from {
-		stroke-dasharray: 0 257 0 0 1 0 0 258;
-	}
-	25% {
-		stroke-dasharray: 0 0 0 0 257 0 258 0;
-	}
-	50%, to {
-		stroke-dasharray: 0 0 0 0 0 515 0 0;
-	}
+    from {
+        stroke-dasharray: 0 257 0 0 1 0 0 258;
+    }
+
+    25% {
+        stroke-dasharray: 0 0 0 0 257 0 258 0;
+    }
+
+    50%,
+    to {
+        stroke-dasharray: 0 0 0 0 0 515 0 0;
+    }
 }
+
 @keyframes ball {
-	from, 50% {
-		animation-timing-function: ease-in;
-		stroke-dashoffset: 1;
-	}
-	64% {
-		animation-timing-function: ease-in;
-		stroke-dashoffset: -109;
-	}
-	78% {
-		animation-timing-function: ease-in;
-		stroke-dashoffset: -145;
-	}
-	92% {
-		animation-timing-function: ease-in;
-		stroke-dashoffset: -157;
-	}
-	57%, 71%, 85%, 99%, to {
-		animation-timing-function: ease-out;
-		stroke-dashoffset: -163;
-	}
+
+    from,
+    50% {
+        animation-timing-function: ease-in;
+        stroke-dashoffset: 1;
+    }
+
+    64% {
+        animation-timing-function: ease-in;
+        stroke-dashoffset: -109;
+    }
+
+    78% {
+        animation-timing-function: ease-in;
+        stroke-dashoffset: -145;
+    }
+
+    92% {
+        animation-timing-function: ease-in;
+        stroke-dashoffset: -157;
+    }
+
+    57%,
+    71%,
+    85%,
+    99%,
+    to {
+        animation-timing-function: ease-out;
+        stroke-dashoffset: -163;
+    }
 }
-.loader-hidden{
+
+.loader-hidden {
     visibility: hidden;
     opacity: 0;
-} 
+}
+.Sign-up-email {
+    background: url("/src/public/resource/Images/Switcher/img4.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1410px 104px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.email-common {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 105px;
+    align-items: center;
+}
+
+.email-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.email-left .uk-icon svg {
+    height: 40px;
+    width: 40px;
+}
+
+.email-left .uk-icon {
+    padding: 0 10px;
+}
+
+.email-left h3 {
+    font-size: 23px;
+    color: white;
+    font-weight: 500;
+}
+
+.email-right .email-right-title {
+    background: black;
+    position: absolute;
+    height: 42px;
+    border: 1px solid black;
+    padding: 6px 10px;
+    transform: translate(-105%, 6px);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 28px;
+    color: white;
+    border-radius: 30px;
+    font-family: "Poppins";
+    width: 127px;
+    text-align: center;
+}
+
+.email-right input {
+    height: 54px;
+    border: 1px solid #e5e5e5;
+    width: 650px;
+    border-radius: 30px;
+    outline: none;
+    position: relative;
+    padding: 0 20px;
+}
+
+.email-right .email-right-title:hover {
+    background: var(--background-btn);
+}
