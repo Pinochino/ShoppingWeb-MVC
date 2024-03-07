@@ -60,7 +60,7 @@
                                         <span>Email<sup>*</sup></span>
                                         <div class="uk-inline">
                                             <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
-                                            <input id="email" name="email" class="uk-input" type="email" aria-label="Not clickable icon" placeholder="username" autocomplete="new-password">
+                                            <input id="email" name="email" class="uk-input" type="email" aria-label="Not clickable icon" placeholder="Email" autocomplete="new-password">
                                         </div>
                                         <span class="form-message"></span>
                                     </div>
