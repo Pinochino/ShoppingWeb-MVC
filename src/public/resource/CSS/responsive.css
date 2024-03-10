@@ -598,6 +598,9 @@
 }
 
 @media (width: 540px) {
+    #product-catalogue-home {
+        overflow:  hidden;
+    }
     .onePercent.uk-grid-margin {
         margin-top: 0px;
     }
@@ -697,7 +700,7 @@
         display: none;
     }
     .content-low .uk-subnav {
-        width: 490px;
+        width: 511px;
     }
     .content-low .product-overlay{
         display: none;
@@ -706,7 +709,19 @@
         margin-right: 0;
     }
     .content-shop{
-        width: 407px;
+        width: 517px;
+    }
+    .catalogue-list-product .uk-grid .st-2{
+        margin: 10px 0;
+    }
+    .footer-menu .uk-grid{
+        justify-content: flex-end;
+    }
+    .footer-upper .uk-grid-medium > *{
+        padding-right: 0;
+    }
+    .product-item .info{
+        margin-top: -25%;
     }
 }
 
@@ -1024,6 +1039,12 @@
     .pop-up-header p{
         margin:  0 0 4px 0;
     }
+    .aside{
+        display: none;
+    }
+    /* .content-low .uk-dropnav {
+        width: 347px;
+    } */
 }
 
 @media(min-width: 430px) and (max-width: 530px) {

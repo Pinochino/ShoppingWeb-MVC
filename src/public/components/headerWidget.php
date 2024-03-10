@@ -1,7 +1,7 @@
 <div class="header-widget">
                     <div class="uk-flex">
                         <span id="iconLogin" class="widget-item">
-                            <a href="/src/public/login.php" class="uk-icon" uk-icon="user"></a>
+                            <a href="../assets/login.php" class="uk-icon" uk-icon="user"></a>
                         </span>
                         <span href="" class="widget-item">
                             <span class="uk-icon" uk-icon="heart"></span>

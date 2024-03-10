@@ -1,11 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <?php require_once '../components/head.php' ?>
+</head>
+<body>
 <header class="header uk-visible@m">
     <div class="header-upper">
         <div class="uk-container uk-container-1520">
             <div class="uk-flex uk-flex-between">
                 <div class="header-contact">
-                    <a class="header-contact-item contact-link" href=""><span uk-icon="icon: location; ratio: 1"></span><span>Find Store</span>
+                    <a class="header-contact-item contact-link" href=""><span class="uk-icon" uk-icon="icon: location;"></span><span>Find Store</span>
                     </a>
-                    <a class="header-contact-item contact-link"><span uk-icon="icon: mail"></span><span>Tranhung@gmail.com</span></a>
+                    <a class="header-contact-item contact-link"><span class="uk-icon" uk-icon="icon: mail;"></span><span>Tranhung@gmail.com</span></a>
                 </div>
                 <div class="header-menu">
                     <a href= "/src/public/components/login.php" class="header-menu-item contact-link">Contact us</a>
@@ -19,7 +28,7 @@
         <div class="uk-container uk-container-1520">
             <div class="uk-flex uk-flex-between">
                 <div class="logo">
-                    <a href="home.php"><span><img src="/src/public/resource/Images/LOGO.webp" alt=""></span></a>
+                    <a href="home.php"><span><img src="../resource/Images/LOGO.webp" alt=""></span></a>
                 </div>
                 <div class="header-search">
                     <form action="index.php" method="get" class="uk-form" onkeyup="searchItem()">
@@ -29,7 +38,7 @@
                         <div class="search-dropdown">
                             <div class="search-category-title" uk-toggle="target: #my-dropdown">
                                 <span>All category</span>
-                                <span class="uk-icon" uk-icon="chevron-down"></span>
+                                <span class="uk-icon" uk-icon="icon: chevron-down;"></span>
                             </div>
                             <div id="my-dropdown" class="dropdown-content uk-position-fixed" style="z-index: 9999;">
                                 <!-- Your dropdown content goes here -->
@@ -52,7 +61,7 @@
                             </div>
                         </div>
                         <button class="btn-search">
-                            <span class="uk-icon" uk-icon="search"></span>
+                            <span class="uk-icon" uk-icon="icon: search;"></span>
                         </button>
                     </form>
                     <div class="most-search">
@@ -75,7 +84,7 @@
                 }
                 ?> -->
                 <?php 
-                    require_once 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\headerWidget.php';
+                    require_once '../components/headerWidget.php';
 
                 ?>
 
@@ -474,3 +483,7 @@
         </ul>
     </nav>
 </header>
+<?php require_once '../components/script.php' ?>
+
+</body>
+</html>

@@ -5,14 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php require_once 'components/head.php' ?>
+    <?php require_once '../components/head.php' ?>
+
 
 </head>
 
 <body>
+<?php 
+    $nameError = "";
+
+if (isset($_SESSION["email"])) {
+    $nameError = "";
+    $name = "";
+    $password = "";
+    $gmail = "";
+    
+    if (isset($_POST["btn"])) {
+        $name = $_POST["fullname"];
+        $password = $_POST["password"];
+        $gmail = $_POST["email"];
+    
+        if (empty($_POST["fullname"])) {
+            $nameError = "Không được để trống"; 
+        } else {
+            $name = $_POST["fullname"];
+            if (!preg_match("/^[a-zA-ZÀ-ỹ ]*$/u", $name)) {
+                $nameError = "Không được sử dụng kí tự đặc biệt";
+                if (($name= "Tran Dinh Hung") && ($gmail="Tranhunghp22112004@gmail.com") && ($password = 123456)) {
+                    $_SESSION["email"] = $gmail;
+                    header('location: home.php');
+                } else {
+                    echo "Tài khoản đăng nhập sai";
+                }
+            } 
+        }
+    }
+}
+
+    ?>
     <div class="home-login">
         <section id="loginTable">
-            <form id="form-1" action="" onsubmit="signUp()" method="POST">
+            <form id="form-1" action="home.php" onsubmit="signUp()" method="post">
                 <div class="sum-login">
                 <div class="login-left">
                     <p>
@@ -51,6 +84,7 @@
                                         <div class="uk-inline">
                                             <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
                                             <input id="fullname" name="fullname" class="uk-input" type="text" aria-label="Not clickable icon" placeholder="username">
+                                            <span style="color: red;"><?php echo $nameError; ?></span>
                                         </div>
                                         <span class="form-message"></span>
                                     </div>
@@ -82,7 +116,7 @@
                         </div>
                         <div class="footer-login mt20">
                             <div class="footer-login-header mb20">
-                                <button id="sign-up">Login</button>
+                                <button type="submit" name="btn">Login up</button>
                                 <p>Already have an acount <span>Log in</span></p>
                             </div>
                         </div>
@@ -93,6 +127,7 @@
             </form>
     </section>
     </div>
+    
 
 
 

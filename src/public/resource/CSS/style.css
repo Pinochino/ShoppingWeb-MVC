@@ -2181,7 +2181,7 @@ a:hover {
 
 .Username .uk-form-icon {
     position: absolute;
-    top: 40%;
+    /* top: 40%; */
 }
 
 .input-login>* {

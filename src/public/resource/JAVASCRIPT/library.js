@@ -32,8 +32,8 @@
             },
             slidePerview: 1,
             navigation: {
-                nextEl: '.swiper-button-next-1',
-                prevEl: '.swiper-button-prev-1',
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
         });
     }

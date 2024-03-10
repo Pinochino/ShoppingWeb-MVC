@@ -1,12 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <?php require_once 'components/head.php' ?>
+    <?php require_once '../components/head.php' ?>
 </head>
 
 <body>
-    <?php require_once 'components/header.php' ?>
+    <?php 
+    if (!isset($_SESSION["email"])) {
+        header('location: login.php');
+        exit;
+    }
+    ?>
+
+    <?php require_once '../components/header.php' ?>
     <main id="homepage">
         <!---------------panel-banner--------->
         <div class="panel-banner">
@@ -207,7 +215,7 @@
                                                 <li><a href="">Office Electronics</a></li>
                                                 <li><a href="">Watch</a></li>
                                             </ul>
-                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\readmore.php' ?>
+                                            <?php require '../components/readmore.php' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -224,7 +232,7 @@
                                                 <li><a href="">Office Electronics</a></li>
                                                 <li><a href="">Watch</a></li>
                                             </ul>
-                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\readmore.php' ?>
+                                            <?php require '../components/readmore.php' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -241,7 +249,7 @@
                                                 <li><a href="">Office Electronics</a></li>
                                                 <li><a href="">Watch</a></li>
                                             </ul>
-                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\readmore.php' ?>
+                                            <?php require '../components/readmore.php' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -258,7 +266,7 @@
                                                 <li><a href="">Office Electronics</a></li>
                                                 <li><a href="">Watch</a></li>
                                             </ul>
-                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\readmore.php' ?>
+                                            <?php require '../components/readmore.php' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -275,7 +283,7 @@
                                                 <li><a href="">Office Electronics</a></li>
                                                 <li><a href="">Watch</a></li>
                                             </ul>
-                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\readmore.php' ?>
+                                            <?php require '../components/readmore.php' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -292,7 +300,7 @@
                                                 <li><a href="">Office Electronics</a></li>
                                                 <li><a href="">Watch</a></li>
                                             </ul>
-                                            <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\readmore.php' ?>
+                                            <?php require '../components/readmore.php' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -314,7 +322,7 @@
                                     <div class="overlay uk-position-absolute transform-0-50 l10 t50">
                                         <div class="sub-title">START FROM 3.900.000</div>
                                         <div class="title mb20 mt10">Samsung Wireless <br> Headphones </div>
-                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\readmore.php' ?>
+                                        <?php require '../components/readmore.php' ?>
                                     </div>
                                 </div>
                             </div>
@@ -344,10 +352,10 @@
                                                     <div class="thumb uk-position-relative">
                                                         <a href="product-catalogue.php" class="image img-scaledown">
                                                             <img src="/src/public/resource/Images/Product/special-<?php echo $i; ?>.webp" alt="" srcset=""></a>
-                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\toolbox.php' ?>
+                                                        <?php require '../components/toolbox.php' ?>
                                                     </div>
                                                     <div class="info uk-text-center">
-                                                        <?php require 'C:\XAMPP2\php\PHP WEBSITE\src\public\components\review.php' ?>
+                                                        <?php require '../components/review.php' ?>
                                                         <div class="product-name">
                                                             <a href="">I lov y</a>
                                                         </div>
@@ -1691,9 +1699,9 @@
                 </div>
             </div>
         </div>
-        <?php require_once 'components/footer.php' ?>
+        <?php require_once '../components/footer.php' ?>
     </main>
-    <?php require_once 'components/script.php' ?>
+    <?php require_once '../components/script.php' ?>
     <section id="cart-Table" class="cart mt30 cart-hidden">
         <button id="closeCart" class="table-close" type="button" uk-close></button>
         <h2>Cart </h2>
